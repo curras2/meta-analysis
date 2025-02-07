@@ -59,10 +59,15 @@ for i in leagues_list:
 
     picks_df = team_league_df[["pick1", "pick2", "pick3", "pick4", "pick5"]]
 
+    bans_df = team_league_df[["ban1", "ban2", "ban3", "ban4", "ban5"]]
+
     total_games = len(team_league_df) / 2
 
     pick_counts = picks_df.stack().value_counts()
+    ban_counts = bans_df.stack().value_counts()
 
     pickrate = (pick_counts / total_games) *100
+    banrate = (ban_counts / total_games) *100
 
-    print(pickrate.sort_values(ascending=False))
+    # print(pickrate.sort_values(ascending=False))
+    print(banrate.sort_values(ascending=False))

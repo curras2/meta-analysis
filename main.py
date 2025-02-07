@@ -70,4 +70,14 @@ for i in leagues_list:
     banrate = (ban_counts / total_games) *100
 
     # print(pickrate.sort_values(ascending=False))
-    print(banrate.sort_values(ascending=False))
+    # print(banrate.sort_values(ascending=False))
+
+    player_league_df = league_filtered_df[league_filtered_df["position"] != "team"].copy()
+
+    champs_df = player_league_df[["champion", "result"]]
+    wr_champs_df = champs_df.groupby("champion")["result"].mean().reset_index()
+    
+    wr_champs_df = wr_champs_df.rename(columns={"result": "winrate"})
+    wr_champs_df["winrate"] = wr_champs_df["winrate"] * 100
+
+    print(wr_champs_df.sort_values(by="winrate", ascending=False))

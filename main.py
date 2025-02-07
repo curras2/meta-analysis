@@ -100,4 +100,10 @@ for i in leagues_list:
     baron_df = baron_df[baron_df["barons"] != 0]
     wr_baron_df = (baron_df["result"].mean()) * 100
 
-    print(wr_baron_df)
+    # print(wr_baron_df)
+
+    herald_df = team_league_df[["heralds", "result"]]
+    herald_df = herald_df[herald_df["heralds"] != 0]
+    wr_herald_df = (herald_df["result"].mean()) * 100
+
+    print(wr_herald_df)

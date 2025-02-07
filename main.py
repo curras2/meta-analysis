@@ -6,7 +6,7 @@ lol_df = pd.read_csv(lol_csv_path , sep="," , dtype={'url': str})
 
 leagues_list = [
     "LTA S",
-    "LTA N"
+    # "LTA N"
     ]
 
 for i in leagues_list:
@@ -24,7 +24,6 @@ for i in leagues_list:
         "patch",
         "side",
         "position",
-        "playername",
         "teamname",
         "champion",
         "ban1",
@@ -55,3 +54,15 @@ for i in leagues_list:
     ]
 
     league_filtered_df = league_df[columns_needed].copy()
+
+    team_league_df = league_filtered_df[league_filtered_df["position"] == "team"].copy()
+
+    picks_df = team_league_df[["pick1", "pick2", "pick3", "pick4", "pick5"]]
+
+    total_games = len(team_league_df) / 2
+
+    pick_counts = picks_df.stack().value_counts()
+
+    pickrate = (pick_counts / total_games) *100
+
+    print(pickrate.sort_values(ascending=False))

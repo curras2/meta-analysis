@@ -95,3 +95,9 @@ for i in leagues_list:
     wr_elder_df = (elder_df["result"].mean()) * 100
 
     # print(wr_elder_df)
+
+    baron_df = team_league_df[["barons", "result"]]
+    baron_df = baron_df[baron_df["barons"] != 0]
+    wr_baron_df = (baron_df["result"].mean()) * 100
+
+    print(wr_baron_df)

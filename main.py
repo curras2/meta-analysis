@@ -118,4 +118,30 @@ for i in leagues_list:
     elementaldrake_df = elementaldrake_df[elementaldrake_df["elementaldrakes"] == 4]
     wr_elementaldrake_df = (elementaldrake_df["result"].mean()) * 100
 
-    print(wr_elementaldrake_df)
+    # print(wr_elementaldrake_df)
+
+    drakes_df = team_league_df[["elementaldrakes", "infernals", "mountains", "clouds", "oceans", "chemtechs", "hextechs", "result"]]
+    drakes_df = drakes_df[drakes_df["elementaldrakes"] == 4]
+
+    def get_soul(row):
+        if row["infernals"] >= 2:
+            return "Infernal"
+        elif row["mountains"] >= 2:
+            return "Mountain"
+        elif row["clouds"] >= 2:
+            return "Cloud"
+        elif row["oceans"] >= 2:
+            return "Ocean"
+        elif row["chemtechs"] >= 2:
+            return "Chemtech"
+        elif row["hextechs"] >= 2:
+            return "Hextech"
+        else:
+            return "Unknown"
+
+    drakes_df["soul"] = drakes_df.apply(get_soul, axis=1)
+    wr_drakes_df = drakes_df.groupby("soul")["result"].mean().reset_index()
+    wr_drakes_df = wr_drakes_df.rename(columns={"result":"winrate"})
+    wr_drakes_df["winrate"] = wr_drakes_df["winrate"] * 100
+
+    print(wr_drakes_df.sort_values(by="winrate", ascending=False))

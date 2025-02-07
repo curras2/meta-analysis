@@ -112,4 +112,10 @@ for i in leagues_list:
     void_grub_df = void_grub_df[void_grub_df["void_grubs"] > 3]
     wr_void_grub_df = (void_grub_df["result"].mean()) * 100
 
-    print(wr_void_grub_df)
+    # print(wr_void_grub_df)
+
+    elementaldrake_df = team_league_df[["elementaldrakes", "result"]]
+    elementaldrake_df = elementaldrake_df[elementaldrake_df["elementaldrakes"] == 4]
+    wr_elementaldrake_df = (elementaldrake_df["result"].mean()) * 100
+
+    print(wr_elementaldrake_df)

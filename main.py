@@ -75,7 +75,9 @@ for i in leagues_list:
     player_league_df = league_filtered_df[league_filtered_df["position"] != "team"].copy()
 
     champs_df = player_league_df[["champion", "result"]]
-    wr_champs_df = champs_df.groupby("champion")["result"].mean().reset_index()
+    wr_champs_df = champs_df.groupby("champion").agg(
+    winrate=("result", "mean"),
+    count=("result", "count")).reset_index()
     
     wr_champs_df = wr_champs_df.rename(columns={"result": "winrate"})
     wr_champs_df["winrate"] = wr_champs_df["winrate"] * 100
@@ -83,7 +85,9 @@ for i in leagues_list:
     # print(wr_champs_df.sort_values(by="winrate", ascending=False))
 
     side_df = team_league_df[["side", "result"]]
-    wr_side_df = side_df.groupby("side")["result"].mean().reset_index()
+    wr_side_df = side_df.groupby("side").agg(
+    winrate=("result", "mean"),
+    count=("result", "count")).reset_index()
     
     wr_side_df = wr_side_df.rename(columns={"result": "winrate"})
     wr_champs_df["winrate"] = wr_champs_df["winrate"] * 100
@@ -92,33 +96,43 @@ for i in leagues_list:
 
     elder_df = team_league_df[["elders", "result"]]
     elder_df = elder_df[elder_df["elders"] != 0]
-    wr_elder_df = (elder_df["result"].mean()) * 100
+    wr_elder_df = elder_df.agg(
+    winrate=("result", "mean"),
+    count=("result", "count"))
 
     # print(wr_elder_df)
 
     baron_df = team_league_df[["barons", "result"]]
     baron_df = baron_df[baron_df["barons"] != 0]
-    wr_baron_df = (baron_df["result"].mean()) * 100
+    wr_baron_df = baron_df.agg(
+    winrate=("result", "mean"),
+    count=("result", "count"))
 
     # print(wr_baron_df)
 
     herald_df = team_league_df[["heralds", "result"]]
     herald_df = herald_df[herald_df["heralds"] != 0]
-    wr_herald_df = (herald_df["result"].mean()) * 100
+    wr_herald_df = herald_df.agg(
+    winrate=("result", "mean"),
+    count=("result", "count"))
 
     # print(wr_herald_df)
 
     void_grub_df = team_league_df[["void_grubs", "result"]]
     void_grub_df = void_grub_df[void_grub_df["void_grubs"] > 3]
-    wr_void_grub_df = (void_grub_df["result"].mean()) * 100
+    wr_void_grub_df = void_grub_df.agg(
+    winrate=("result", "mean"),
+    count=("result", "count"))
 
     # print(wr_void_grub_df)
 
     elementaldrake_df = team_league_df[["elementaldrakes", "result"]]
     elementaldrake_df = elementaldrake_df[elementaldrake_df["elementaldrakes"] == 4]
-    wr_elementaldrake_df = (elementaldrake_df["result"].mean()) * 100
+    wr_elementaldrake_df = elementaldrake_df.agg(
+    winrate=("result", "mean"),
+    count=("result", "count"))
 
-    # print(wr_elementaldrake_df)
+    print(wr_elementaldrake_df)
 
     drakes_df = team_league_df[["elementaldrakes", "infernals", "mountains", "clouds", "oceans", "chemtechs", "hextechs", "result"]]
     drakes_df = drakes_df[drakes_df["elementaldrakes"] == 4]
@@ -140,8 +154,10 @@ for i in leagues_list:
             return "Unknown"
 
     drakes_df["soul"] = drakes_df.apply(get_soul, axis=1)
-    wr_drakes_df = drakes_df.groupby("soul")["result"].mean().reset_index()
+    wr_drakes_df = drakes_df.groupby("soul").agg(
+    winrate=("result", "mean"),
+    count=("result", "count")).reset_index()
     wr_drakes_df = wr_drakes_df.rename(columns={"result":"winrate"})
     wr_drakes_df["winrate"] = wr_drakes_df["winrate"] * 100
 
-    print(wr_drakes_df.sort_values(by="winrate", ascending=False))
+    # print(wr_drakes_df.sort_values(by="winrate", ascending=False))

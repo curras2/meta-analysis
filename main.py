@@ -106,4 +106,10 @@ for i in leagues_list:
     herald_df = herald_df[herald_df["heralds"] != 0]
     wr_herald_df = (herald_df["result"].mean()) * 100
 
-    print(wr_herald_df)
+    # print(wr_herald_df)
+
+    void_grub_df = team_league_df[["void_grubs", "result"]]
+    void_grub_df = void_grub_df[void_grub_df["void_grubs"] > 3]
+    wr_void_grub_df = (void_grub_df["result"].mean()) * 100
+
+    print(wr_void_grub_df)

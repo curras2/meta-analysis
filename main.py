@@ -132,7 +132,7 @@ for i in leagues_list:
     winrate=("result", "mean"),
     count=("result", "count"))
 
-    print(wr_elementaldrake_df)
+    # print(wr_elementaldrake_df)
 
     drakes_df = team_league_df[["elementaldrakes", "infernals", "mountains", "clouds", "oceans", "chemtechs", "hextechs", "result"]]
     drakes_df = drakes_df[drakes_df["elementaldrakes"] == 4]
@@ -161,3 +161,20 @@ for i in leagues_list:
     wr_drakes_df["winrate"] = wr_drakes_df["winrate"] * 100
 
     # print(wr_drakes_df.sort_values(by="winrate", ascending=False))
+
+    game_length_df = team_league_df[["gameid", "gamelength"]]
+    game_length_df = game_length_df.groupby("gameid")["gamelength"].mean().reset_index()
+
+    game_length_df = game_length_df["gamelength"].mean()
+
+    def calculate_time_seconds(sec_time):
+        sec_time = int(sec_time)
+        minutes = sec_time // 60
+        seconds = sec_time % 60
+
+        time_return = f"{minutes:02}:{seconds:02}"
+
+        return time_return
+    
+    print(calculate_time_seconds(game_length_df))
+    

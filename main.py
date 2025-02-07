@@ -90,4 +90,8 @@ for i in leagues_list:
 
     # print(wr_side_df.sort_values(by="winrate", ascending=False))
 
-    
+    elder_df = team_league_df[["elders", "result"]]
+    elder_df = elder_df[elder_df["elders"] != 0]
+    wr_elder_df = (elder_df["result"].mean()) * 100
+
+    # print(wr_elder_df)

@@ -80,4 +80,14 @@ for i in leagues_list:
     wr_champs_df = wr_champs_df.rename(columns={"result": "winrate"})
     wr_champs_df["winrate"] = wr_champs_df["winrate"] * 100
 
-    print(wr_champs_df.sort_values(by="winrate", ascending=False))
+    # print(wr_champs_df.sort_values(by="winrate", ascending=False))
+
+    side_df = team_league_df[["side", "result"]]
+    wr_side_df = side_df.groupby("side")["result"].mean().reset_index()
+    
+    wr_side_df = wr_side_df.rename(columns={"result": "winrate"})
+    wr_champs_df["winrate"] = wr_champs_df["winrate"] * 100
+
+    # print(wr_side_df.sort_values(by="winrate", ascending=False))
+
+    

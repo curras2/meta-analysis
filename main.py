@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import df_generators as df_gen
+import analysis as an
 
 lol_df = df_gen.create_lol_df()
 
@@ -16,20 +17,8 @@ for i in leagues_list:
 
     team_league_df = df_gen.create_team_league_df(league_columns_filtered_df)
 
-    picks_df = team_league_df[["pick1", "pick2", "pick3", "pick4", "pick5"]]
-
-    bans_df = team_league_df[["ban1", "ban2", "ban3", "ban4", "ban5"]]
-
-    total_games = len(team_league_df) / 2
-
-    pick_counts = picks_df.stack().value_counts()
-    ban_counts = bans_df.stack().value_counts()
-
-    pickrate = (pick_counts / total_games) *100
-    banrate = (ban_counts / total_games) *100
-
-    # print(pickrate.sort_values(ascending=False))
-    # print(banrate.sort_values(ascending=False))
+    pickrate = an.pickrate_analysis(team_league_df)
+    banrate = an.banrate_analysis(team_league_df)
 
     player_league_df = df_gen.create_player_league_df(league_columns_filtered_df)
 

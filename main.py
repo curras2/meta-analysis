@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
+import df_generators as df_gen
 
-lol_csv_path = "extras/2025_LoL_esports_match_data_from_OraclesElixir.csv"
-lol_df = pd.read_csv(lol_csv_path , sep="," , dtype={'url': str})
+lol_df = df_gen.create_lol_df()
 
 leagues_list = [
     "LTA S",
@@ -10,52 +10,11 @@ leagues_list = [
     ]
 
 for i in leagues_list:
-    league_df = lol_df[lol_df["league"] == i].copy()
+    league_df = df_gen.create_league_df(lol_df, i)
 
-    columns_needed = [
-        "gameid",
-        "datacompleteness",
-        "league",
-        "year",
-        "split",
-        "playoffs",
-        "date",
-        "game",
-        "patch",
-        "side",
-        "position",
-        "teamname",
-        "champion",
-        "ban1",
-        "ban2",
-        "ban3",
-        "ban4",
-        "ban5",
-        "pick1",
-        "pick2",
-        "pick3",
-        "pick4",
-        "pick5",
-        "gamelength",
-        "result",
-        "dragons",
-        "elementaldrakes",
-        "infernals",
-        "mountains",
-        "clouds",
-        "oceans",
-        "chemtechs",
-        "hextechs",
-        "dragons (type unknown)",
-        "elders",
-        "heralds",
-        "void_grubs",
-        "barons"
-    ]
+    league_columns_filtered_df = df_gen.define_columns_df(league_df)
 
-    league_filtered_df = league_df[columns_needed].copy()
-
-    team_league_df = league_filtered_df[league_filtered_df["position"] == "team"].copy()
+    team_league_df = df_gen.create_team_league_df(league_columns_filtered_df)
 
     picks_df = team_league_df[["pick1", "pick2", "pick3", "pick4", "pick5"]]
 
@@ -72,7 +31,7 @@ for i in leagues_list:
     # print(pickrate.sort_values(ascending=False))
     # print(banrate.sort_values(ascending=False))
 
-    player_league_df = league_filtered_df[league_filtered_df["position"] != "team"].copy()
+    player_league_df = df_gen.create_player_league_df(league_columns_filtered_df)
 
     champs_df = player_league_df[["champion", "result"]]
     wr_champs_df = champs_df.groupby("champion").agg(

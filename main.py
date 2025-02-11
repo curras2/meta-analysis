@@ -26,7 +26,7 @@ for i in leagues_list:
     wr_side_dict = an.side_winrate_analysis(team_league_df)
     wr_objectives_dict = an.objectives_analysis(team_league_df)
     wr_dragon_soul_dict = an.dragon_soul_winrate_analysis(team_league_df)
-    game_length_mean = an.game_length_analysis(team_league_df)
+    game_length_dict = an.game_length_analysis(team_league_df)
     
 
     conn.upsert_pickrate_record(pickrate)
@@ -35,3 +35,4 @@ for i in leagues_list:
     conn.upsert_side_winrate_record(wr_side_dict)
     conn.upsert_objectives_winrate_record(wr_objectives_dict)
     conn.upsert_dragon_soul_winrate_record(wr_dragon_soul_dict)
+    conn.upsert_game_length_mean_record(game_length_dict)

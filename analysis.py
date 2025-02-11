@@ -188,7 +188,14 @@ def game_length_analysis(team_league_df):
     
     game_length_mean = calculate_time_seconds(game_length_df)
 
-    return game_length_mean
+    game_length_dict = {
+        "game_length_mean" : game_length_mean,
+        "league" : team_league_df.iloc[0]["league"],
+        "patch" : team_league_df.iloc[0]["patch"],
+        "split" : team_league_df.iloc[0]["split"]
+    }
+
+    return game_length_dict
 
 def objectives_analysis(team_league_df):
 

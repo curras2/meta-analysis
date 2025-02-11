@@ -10,6 +10,14 @@ def create_league_df(lol_df, league):
     league_df = lol_df[lol_df["league"] == league].copy()
     return league_df
 
+def create_split_df(league_df, split):
+    split_df = league_df[league_df["split"] == split].copy()
+    return split_df
+
+def create_patch_df(split_df, patch):
+    patch_df = split_df[split_df["patch"] == patch].copy()
+    return patch_df
+
 def define_columns_df(league_df):
     columns_needed = [
         "gameid",
@@ -56,10 +64,10 @@ def define_columns_df(league_df):
 
     return league_filtered_df
 
-def create_team_league_df(league_columns_filtered_df):
-    team_league_df = league_columns_filtered_df[league_columns_filtered_df["position"] == "team"].copy()
-    return team_league_df
+def create_team_df(columns_filtered_df):
+    team_df = columns_filtered_df[columns_filtered_df["position"] == "team"].copy()
+    return team_df
 
-def create_player_league_df(league_columns_filtered_df):
-    player_league_df = league_columns_filtered_df[league_columns_filtered_df["position"] != "team"].copy()
-    return player_league_df
+def create_player_df(columns_filtered_df):
+    player_df = columns_filtered_df[columns_filtered_df["position"] != "team"].copy()
+    return player_df

@@ -1,7 +1,6 @@
-import pandas as pd
-import numpy as np
 import df_generators as df_gen
 import analysis as an
+import db_conn as conn
 
 lol_df = df_gen.create_lol_df()
 
@@ -32,4 +31,6 @@ for i in leagues_list:
     wr_soul_df = an.soul_winrate_analysis(team_league_df)
     wr_dragon_soul_df = an.dragon_soul_winrate_analysis(team_league_df)
     game_length_mean = an.game_length_analysis(team_league_df)
-    
+
+    conn.upsert_pickrate_record(pickrate)
+    conn.upsert_banrate_record(banrate)

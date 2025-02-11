@@ -6,6 +6,12 @@ def pickrate_analysis(team_league_df):
     pick_counts = picks_df.stack().value_counts()
     
     pickrate = (pick_counts / total_games) *100
+
+    pickrate = pickrate.to_dict()
+
+    pickrate["league"] = team_league_df.iloc[0]["league"]
+    pickrate["patch"] = team_league_df.iloc[0]["patch"]
+    pickrate["split"] = team_league_df.iloc[0]["split"]
     
     return pickrate
 
@@ -17,6 +23,12 @@ def banrate_analysis(team_league_df):
     ban_counts = bans_df.stack().value_counts()
     
     banrate = (ban_counts / total_games) *100
+
+    banrate = banrate.to_dict()
+
+    banrate["league"] = team_league_df.iloc[0]["league"]
+    banrate["patch"] = team_league_df.iloc[0]["patch"]
+    banrate["split"] = team_league_df.iloc[0]["split"]
     
     return banrate
 

@@ -65,48 +65,73 @@ def side_winrate_analysis(team_league_df):
 def elder_winrate_analysis(team_league_df):
     elder_df = team_league_df[["elders", "result"]]
     elder_df = elder_df[elder_df["elders"] != 0]
-    wr_elder_df = elder_df.agg(
+    wr_elder_dict = elder_df.agg(
         winrate=("result", "mean"),
         count=("result", "count")
-    )
-    
-    return wr_elder_df
+    ).to_dict()
+
+    wr_elder_dict = {
+        "winrate": wr_elder_dict["result"]["winrate"] * 100,
+        "count": wr_elder_dict["result"]["count"],
+    }
+
+    return wr_elder_dict
 
 def baron_winrate_analysis(team_league_df):
     baron_df = team_league_df[["barons", "result"]]
     baron_df = baron_df[baron_df["barons"] != 0]
-    wr_baron_df = baron_df.agg(
+    wr_baron_dict = baron_df.agg(
     winrate=("result", "mean"),
-    count=("result", "count"))
+    count=("result", "count")).to_dict()
 
-    return wr_baron_df
+    wr_baron_dict = {
+        "winrate": wr_baron_dict["result"]["winrate"]* 100,
+        "count": wr_baron_dict["result"]["count"],
+    }
+
+    return wr_baron_dict
 
 def herald_winrate_analysis(team_league_df):
     herald_df = team_league_df[["heralds", "result"]]
     herald_df = herald_df[herald_df["heralds"] != 0]
-    wr_herald_df = herald_df.agg(
+    wr_herald_dict = herald_df.agg(
     winrate=("result", "mean"),
-    count=("result", "count"))
+    count=("result", "count")).to_dict()
 
-    return wr_herald_df
+    wr_herald_dict = {
+        "winrate": wr_herald_dict["result"]["winrate"]* 100,
+        "count": wr_herald_dict["result"]["count"],
+    }
+
+    return wr_herald_dict
 
 def void_grub_winrate_analysis(team_league_df):
     void_grub_df = team_league_df[["void_grubs", "result"]]
     void_grub_df = void_grub_df[void_grub_df["void_grubs"] > 3]
-    wr_void_grub_df = void_grub_df.agg(
+    wr_void_grub_dict = void_grub_df.agg(
     winrate=("result", "mean"),
-    count=("result", "count"))
+    count=("result", "count")).to_dict()
 
-    return wr_void_grub_df
+    wr_void_grub_dict = {
+        "winrate": wr_void_grub_dict["result"]["winrate"]* 100,
+        "count": wr_void_grub_dict["result"]["count"],
+    }
+
+    return wr_void_grub_dict
 
 def soul_winrate_analysis(team_league_df):
     soul = team_league_df[["elementaldrakes", "result"]]
     soul = soul[soul["elementaldrakes"] == 4]
-    wr_soul = soul.agg(
+    wr_soul_dict = soul.agg(
     winrate=("result", "mean"),
-    count=("result", "count"))
+    count=("result", "count")).to_dict()
 
-    return wr_soul
+    wr_soul_dict = {
+        "winrate": wr_soul_dict["result"]["winrate"]* 100,
+        "count": wr_soul_dict["result"]["count"],
+    }
+
+    return wr_soul_dict
 
 def dragon_soul_winrate_analysis(team_league_df):
     dragon_soul_df = team_league_df[["elementaldrakes", "infernals", "mountains", "clouds", "oceans", "chemtechs", "hextechs", "result"]]
@@ -158,3 +183,19 @@ def game_length_analysis(team_league_df):
     game_length_mean = calculate_time_seconds(game_length_df)
 
     return game_length_mean
+
+def objectives_analysis(team_league_df):
+
+    objectives_dict = {
+        "elder": elder_winrate_analysis(team_league_df),
+        "baron": baron_winrate_analysis(team_league_df),
+        "herald": herald_winrate_analysis(team_league_df),
+        "void_grub": void_grub_winrate_analysis(team_league_df),
+        "soul": soul_winrate_analysis(team_league_df),
+        "league" : team_league_df.iloc[0]["league"],
+        "patch" : team_league_df.iloc[0]["patch"],
+        "split" : team_league_df.iloc[0]["split"]
+
+    }
+
+    return objectives_dict

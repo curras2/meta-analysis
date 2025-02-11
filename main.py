@@ -25,7 +25,7 @@ for i in leagues_list:
     wr_champs_dict = an.champ_winrate_analysis(player_league_df)
     wr_side_dict = an.side_winrate_analysis(team_league_df)
     wr_objectives_dict = an.objectives_analysis(team_league_df)
-    wr_dragon_soul_df = an.dragon_soul_winrate_analysis(team_league_df)
+    wr_dragon_soul_dict = an.dragon_soul_winrate_analysis(team_league_df)
     game_length_mean = an.game_length_analysis(team_league_df)
     
 
@@ -34,3 +34,4 @@ for i in leagues_list:
     conn.upsert_champion_winrate_record(wr_champs_dict)
     conn.upsert_side_winrate_record(wr_side_dict)
     conn.upsert_objectives_winrate_record(wr_objectives_dict)
+    conn.upsert_dragon_soul_winrate_record(wr_dragon_soul_dict)

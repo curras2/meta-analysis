@@ -163,7 +163,13 @@ def dragon_soul_winrate_analysis(team_league_df):
     
     wr_dragon_soul_df["winrate"] = wr_dragon_soul_df["winrate"] * 100
 
-    return wr_dragon_soul_df
+    wr_dragon_soul_dict = wr_dragon_soul_df.set_index("soul")[["winrate", "count"]].to_dict(orient="index")
+
+    wr_dragon_soul_dict["league"] = team_league_df.iloc[0]["league"]
+    wr_dragon_soul_dict["patch"] = team_league_df.iloc[0]["patch"]
+    wr_dragon_soul_dict["split"] = team_league_df.iloc[0]["split"]
+
+    return wr_dragon_soul_dict
 
 def game_length_analysis(team_league_df):
     game_length_df = team_league_df[["gameid", "gamelength"]]

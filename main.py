@@ -22,8 +22,8 @@ for i in leagues_list:
     # Análise
     pickrate = an.pickrate_analysis(team_league_df)
     banrate = an.banrate_analysis(team_league_df)
-    wr_champs_df = an.champ_winrate_analysis(player_league_df)
-    wr_side_df = an.side_winrate_analysis(team_league_df)
+    wr_champs_dict = an.champ_winrate_analysis(player_league_df)
+    wr_side_dict = an.side_winrate_analysis(team_league_df)
     wr_elder_df = an.elder_winrate_analysis(team_league_df)
     wr_baron_df = an.baron_winrate_analysis(team_league_df)
     wr_herald_df = an.herald_winrate_analysis(team_league_df)
@@ -34,4 +34,5 @@ for i in leagues_list:
 
     conn.upsert_pickrate_record(pickrate)
     conn.upsert_banrate_record(banrate)
-    conn.upsert_champion_winrate_record(wr_champs_df)
+    conn.upsert_champion_winrate_record(wr_champs_dict)
+    conn.upsert_side_winrate_record(wr_side_dict)

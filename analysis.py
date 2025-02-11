@@ -54,10 +54,13 @@ def side_winrate_analysis(team_league_df):
     winrate=("result", "mean"),
     count=("result", "count")).reset_index()
     
-    wr_side_df = wr_side_df.rename(columns={"result": "winrate"})
-    wr_side_df["winrate"] = wr_side_df["winrate"] * 100
+    wr_side_dict = wr_side_df.set_index("side")[["winrate", "count"]].to_dict(orient="index")
 
-    return wr_side_df
+    wr_side_dict["league"] = team_league_df.iloc[0]["league"]
+    wr_side_dict["patch"] = team_league_df.iloc[0]["patch"]
+    wr_side_dict["split"] = team_league_df.iloc[0]["split"]
+
+    return wr_side_dict
 
 def elder_winrate_analysis(team_league_df):
     elder_df = team_league_df[["elders", "result"]]

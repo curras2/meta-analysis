@@ -38,10 +38,15 @@ def champ_winrate_analysis(player_league_df):
     winrate=("result", "mean"),
     count=("result", "count")).reset_index()
     
-    wr_champs_df = wr_champs_df.rename(columns={"result": "winrate"})
     wr_champs_df["winrate"] = wr_champs_df["winrate"] * 100
 
-    return wr_champs_df
+    wr_champs_dict = wr_champs_df.set_index("champion")[["winrate", "count"]].to_dict(orient="index")
+
+    wr_champs_dict["league"] = player_league_df.iloc[0]["league"]
+    wr_champs_dict["patch"] = player_league_df.iloc[0]["patch"]
+    wr_champs_dict["split"] = player_league_df.iloc[0]["split"]
+
+    return wr_champs_dict
 
 def side_winrate_analysis(team_league_df):
     side_df = team_league_df[["side", "result"]]

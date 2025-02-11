@@ -34,3 +34,4 @@ for i in leagues_list:
 
     conn.upsert_pickrate_record(pickrate)
     conn.upsert_banrate_record(banrate)
+    conn.upsert_champion_winrate_record(wr_champs_df)

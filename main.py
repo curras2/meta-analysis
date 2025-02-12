@@ -26,8 +26,6 @@ for league in unique_leagues:
                     try:
                         columns_filtered_df = df_gen.define_columns_df(patch_df)
 
-                        columns_filtered_df.to_csv(f'{league}.csv')
-
                         team_df = df_gen.create_team_df(columns_filtered_df)
 
                         player_df = df_gen.create_player_df(columns_filtered_df)

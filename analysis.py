@@ -65,15 +65,22 @@ def side_winrate_analysis(team_df):
 def elder_winrate_analysis(team_df):
     elder_df = team_df[["elders", "result"]]
     elder_df = elder_df[elder_df["elders"] != 0]
-    wr_elder_dict = elder_df.agg(
-        winrate=("result", "mean"),
-        count=("result", "count")
-    ).to_dict()
 
-    wr_elder_dict = {
-        "winrate": wr_elder_dict["result"]["winrate"] * 100,
-        "count": wr_elder_dict["result"]["count"],
-    }
+    if not elder_df.empty:
+        wr_elder_dict = elder_df.agg(
+            winrate=("result", "mean"),
+            count=("result", "count")
+        ).to_dict()
+
+        wr_elder_dict = {
+            "winrate": wr_elder_dict["result"]["winrate"] * 100,
+            "count": wr_elder_dict["result"]["count"],
+        }
+    else:
+        wr_elder_dict = {
+            "winrate": 0,
+            "count": 0,
+        }
 
     return wr_elder_dict
 

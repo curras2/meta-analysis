@@ -71,3 +71,8 @@ def create_team_df(columns_filtered_df):
 def create_player_df(columns_filtered_df):
     player_df = columns_filtered_df[columns_filtered_df["position"] != "team"].copy()
     return player_df
+
+def create_dataframe_from_list(dict_list):
+    df = pd.DataFrame(dict_list)
+
+    return df

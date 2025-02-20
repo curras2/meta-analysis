@@ -1,7 +1,6 @@
 import df_generators as df_gen
 import analysis as an
 import db_conn as conn
-import traceback
 
 lol_df = df_gen.create_lol_df()
 
@@ -50,3 +49,12 @@ for league in unique_leagues:
                     except Exception as e:
                         columns_filtered_df.to_csv(f'{league} error.csv')
                         print(f"{league} ---- {e}")
+
+pickrate_results_dict_list = conn.get_pickrate()
+banrate_results_dict_list = conn.get_banrate()
+champion_winrate_results_dict_list = conn.get_champion_winrate()
+side_winrate_results_dict_list = conn.get_side_winrate()
+objectives_winrate_results_dict_list = conn.get_objectives_winrate()
+dragon_soul_winrate_results_dict_list = conn.get_dragon_soul_winrate()
+game_length_mean_results_dict_list = conn.get_game_length_mean()
+

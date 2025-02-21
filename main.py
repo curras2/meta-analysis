@@ -1,6 +1,7 @@
 import df_generators as df_gen
 import analysis as an
 import db_conn as conn
+import traceback
 
 lol_df = df_gen.create_lol_df()
 
@@ -48,7 +49,7 @@ for league in unique_leagues:
                         conn.upsert_game_length_mean_record(game_length_dict)
                     except Exception as e:
                         columns_filtered_df.to_csv(f'{league} error.csv')
-                        print(f"{league} ---- {e}")
+                        print(f"{league} ---- {traceback.print_exception(e)}")
 
 pickrate_results_dict_list = conn.get_pickrate()
 banrate_results_dict_list = conn.get_banrate()

@@ -41,3 +41,43 @@ def upsert_dragon_soul_winrate_record(data):
 
 def upsert_game_length_mean_record(data):
     upsert_record(game_length_mean_collection, data)
+
+def get_records(collection):
+    results = collection.find()
+
+    return results
+
+def get_banrate():
+    results = get_records(banrate_collection)
+
+    return results
+
+def get_pickrate():
+    results = get_records(pickrate_collection)
+
+    return results
+
+def get_champion_winrate():
+    results = get_records(champion_winrate_collection)
+
+    return results
+
+def get_objectives_winrate():
+    results = get_records(objectives_winrate_collection)
+
+    return results
+
+def get_side_winrate():
+    results = get_records(side_winrate_collection)
+
+    return results
+
+def get_dragon_soul_winrate():
+    results = get_records(dragon_soul_winrate_collection)
+
+    return results
+
+def get_game_length_mean():
+    results = get_records(game_length_mean_collection)
+
+    return results

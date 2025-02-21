@@ -207,12 +207,23 @@ def game_length_analysis(team_df):
 
 def objectives_analysis(team_df):
 
+    elder_dict = elder_winrate_analysis(team_df)
+    baron_dict = baron_winrate_analysis(team_df)
+    herald_dict = herald_winrate_analysis(team_df)
+    void_grub_dict = void_grub_winrate_analysis(team_df)
+    soul_dict = soul_winrate_analysis(team_df)
+
     objectives_dict = {
-        "elder": elder_winrate_analysis(team_df),
-        "baron": baron_winrate_analysis(team_df),
-        "herald": herald_winrate_analysis(team_df),
-        "void_grub": void_grub_winrate_analysis(team_df),
-        "soul": soul_winrate_analysis(team_df),
+        "elder": elder_dict["winrate"],
+        "elder games": elder_dict["count"],
+        "baron": baron_dict["winrate"],
+        "baron games": baron_dict["count"],
+        "herald": herald_dict["winrate"],
+        "herald games": herald_dict["count"],
+        "void_grub": void_grub_dict["winrate"],
+        "void_grub games": void_grub_dict["count"],
+        "soul": soul_dict["winrate"],
+        "soul games": soul_dict["count"],
         "league" : team_df.iloc[0]["league"],
         "patch" : team_df.iloc[0]["patch"],
         "split" : team_df.iloc[0]["split"]

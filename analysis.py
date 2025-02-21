@@ -37,12 +37,11 @@ def banrate_analysis(team_df):
 def champ_winrate_analysis(player_df):
     champs_df = player_df[["champion", "result"]]
     wr_champs_df = champs_df.groupby("champion").agg(
-    winrate=("result", "mean"),
-    count=("result", "count")).reset_index()
+    winrate=("result", "mean")).reset_index()
     
     wr_champs_df["winrate"] = wr_champs_df["winrate"] * 100
 
-    wr_champs_dict = wr_champs_df.set_index("champion")[["winrate", "count"]].to_dict(orient="index")
+    wr_champs_dict = dict(zip(wr_champs_df["champion"], wr_champs_df["winrate"]))
 
     wr_champs_dict["league"] = player_df.iloc[0]["league"]
     wr_champs_dict["patch"] = player_df.iloc[0]["patch"]
@@ -53,10 +52,9 @@ def champ_winrate_analysis(player_df):
 def side_winrate_analysis(team_df):
     side_df = team_df[["side", "result"]]
     wr_side_df = side_df.groupby("side").agg(
-    winrate=("result", "mean"),
-    count=("result", "count")).reset_index()
+    winrate=("result", "mean")).reset_index()
     
-    wr_side_dict = wr_side_df.set_index("side")[["winrate", "count"]].to_dict(orient="index")
+    wr_side_dict = dict(zip(wr_side_df["champion"], wr_side_df["winrate"]))
 
     wr_side_dict["league"] = team_df.iloc[0]["league"]
     wr_side_dict["patch"] = team_df.iloc[0]["patch"]

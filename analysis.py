@@ -12,6 +12,7 @@ def pickrate_analysis(team_df):
     pickrate["league"] = team_df.iloc[0]["league"]
     pickrate["patch"] = team_df.iloc[0]["patch"]
     pickrate["split"] = team_df.iloc[0]["split"]
+    pickrate["total games"] = total_games
     
     return pickrate
 
@@ -29,6 +30,7 @@ def banrate_analysis(team_df):
     banrate["league"] = team_df.iloc[0]["league"]
     banrate["patch"] = team_df.iloc[0]["patch"]
     banrate["split"] = team_df.iloc[0]["split"]
+    banrate["total games"] = total_games
     
     return banrate
 

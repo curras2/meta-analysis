@@ -54,7 +54,7 @@ def side_winrate_analysis(team_df):
     wr_side_df = side_df.groupby("side").agg(
     winrate=("result", "mean")).reset_index()
     
-    wr_side_dict = dict(zip(wr_side_df["champion"], wr_side_df["winrate"]))
+    wr_side_dict = dict(zip(wr_side_df["side"], wr_side_df["winrate"]))
 
     wr_side_dict["league"] = team_df.iloc[0]["league"]
     wr_side_dict["patch"] = team_df.iloc[0]["patch"]
@@ -166,11 +166,12 @@ def dragon_soul_winrate_analysis(team_df):
     winrate=("result", "mean"),
     count=("result", "count")).reset_index()
     
-    wr_dragon_soul_df = wr_dragon_soul_df.rename(columns={"result":"winrate"})
-    
     wr_dragon_soul_df["winrate"] = wr_dragon_soul_df["winrate"] * 100
 
-    wr_dragon_soul_dict = wr_dragon_soul_df.set_index("soul")[["winrate", "count"]].to_dict(orient="index")
+    wr_dragon_soul_dict = {}
+    for _, row in wr_dragon_soul_df.iterrows():
+        wr_dragon_soul_dict[row["soul"]] = row["winrate"]
+        wr_dragon_soul_dict[f"{row['soul']} games"] = row["count"]
 
     wr_dragon_soul_dict["league"] = team_df.iloc[0]["league"]
     wr_dragon_soul_dict["patch"] = team_df.iloc[0]["patch"]

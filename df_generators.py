@@ -3,7 +3,7 @@ import pandas as pd
 def create_lol_df():
     lol_csv_path = "extras/2025_LoL_esports_match_data_from_OraclesElixir.csv"
     lol_df = pd.read_csv(lol_csv_path , sep="," , dtype={'url': str})
-
+    lol_df.loc[lol_df['league'].str.upper() == 'MSI','split'] = 'MSI'
     return lol_df
 
 def create_league_df(lol_df, league):

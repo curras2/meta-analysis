@@ -114,7 +114,7 @@ def herald_winrate_analysis(team_df):
 
 def void_grub_winrate_analysis(team_df):
     void_grub_df = team_df[["void_grubs", "result"]]
-    void_grub_df = void_grub_df[void_grub_df["void_grubs"] > 3]
+    void_grub_df = void_grub_df[void_grub_df["void_grubs"] > 1]
     wr_void_grub_dict = void_grub_df.agg(
     winrate=("result", "mean"),
     count=("result", "count")).to_dict()

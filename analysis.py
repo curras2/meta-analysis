@@ -5,7 +5,7 @@ def pickrate_analysis(team_df):
     
     pick_counts = picks_df.stack().value_counts()
     
-    pickrate = (pick_counts / total_games) *100
+    pickrate = (pick_counts / total_games)
 
     league = team_df.iloc[0]["league"]
     patch = team_df.iloc[0]["patch"]
@@ -33,7 +33,7 @@ def banrate_analysis(team_df):
     
     ban_counts = bans_df.stack().value_counts()
     
-    banrate = (ban_counts / total_games) *100
+    banrate = (ban_counts / total_games)
 
     league = team_df.iloc[0]["league"]
     patch = team_df.iloc[0]["patch"]
@@ -59,7 +59,7 @@ def champ_winrate_analysis(player_df):
     wr_champs_df = champs_df.groupby("champion").agg(
     winrate=("result", "mean")).reset_index()
     
-    wr_champs_df["winrate"] = wr_champs_df["winrate"] * 100
+    wr_champs_df["winrate"] = wr_champs_df["winrate"]
 
     wr_champs_dict = dict(zip(wr_champs_df["champion"], wr_champs_df["winrate"]))
 
@@ -93,7 +93,7 @@ def elder_winrate_analysis(team_df):
         ).to_dict()
 
         wr_elder_dict = {
-            "winrate": wr_elder_dict["result"]["winrate"] * 100,
+            "winrate": wr_elder_dict["result"]["winrate"] ,
             "count": wr_elder_dict["result"]["count"],
         }
     else:
@@ -112,7 +112,7 @@ def baron_winrate_analysis(team_df):
     count=("result", "count")).to_dict()
 
     wr_baron_dict = {
-        "winrate": wr_baron_dict["result"]["winrate"]* 100,
+        "winrate": wr_baron_dict["result"]["winrate"],
         "count": wr_baron_dict["result"]["count"],
     }
 
@@ -126,7 +126,7 @@ def herald_winrate_analysis(team_df):
     count=("result", "count")).to_dict()
 
     wr_herald_dict = {
-        "winrate": wr_herald_dict["result"]["winrate"]* 100,
+        "winrate": wr_herald_dict["result"]["winrate"],
         "count": wr_herald_dict["result"]["count"],
     }
 
@@ -140,7 +140,7 @@ def void_grub_winrate_analysis(team_df):
     count=("result", "count")).to_dict()
 
     wr_void_grub_dict = {
-        "winrate": wr_void_grub_dict["result"]["winrate"]* 100,
+        "winrate": wr_void_grub_dict["result"]["winrate"],
         "count": wr_void_grub_dict["result"]["count"],
     }
 
@@ -154,7 +154,7 @@ def soul_winrate_analysis(team_df):
     count=("result", "count")).to_dict()
 
     wr_soul_dict = {
-        "winrate": wr_soul_dict["result"]["winrate"]* 100,
+        "winrate": wr_soul_dict["result"]["winrate"],
         "count": wr_soul_dict["result"]["count"],
     }
 
@@ -186,7 +186,7 @@ def dragon_soul_winrate_analysis(team_df):
     winrate=("result", "mean"),
     count=("result", "count")).reset_index()
     
-    wr_dragon_soul_df["winrate"] = wr_dragon_soul_df["winrate"] * 100
+    wr_dragon_soul_df["winrate"] = wr_dragon_soul_df["winrate"] 
 
     wr_dragon_soul_dict = {}
     for _, row in wr_dragon_soul_df.iterrows():
@@ -207,7 +207,7 @@ def atakhan_winrate_analysis(team_df):
     count=("result", "count")).to_dict()
 
     wr_atakhan_dict = {
-        "winrate": wr_atakhan_dict["result"]["winrate"]* 100,
+        "winrate": wr_atakhan_dict["result"]["winrate"],
         "count": wr_atakhan_dict["result"]["count"],
     }
 

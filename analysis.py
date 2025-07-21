@@ -179,6 +179,20 @@ def dragon_soul_winrate_analysis(team_df):
 
     return wr_dragon_soul_dict
 
+def atakhan_winrate_analysis(team_df):
+    atakhan_df = team_df[["atakhans", "result"]]
+    atakhan_df = atakhan_df[atakhan_df["atakhans"] > 0]
+    wr_atakhan_dict = atakhan_df.agg(
+    winrate=("result", "mean"),
+    count=("result", "count")).to_dict()
+
+    wr_atakhan_dict = {
+        "winrate": wr_atakhan_dict["result"]["winrate"]* 100,
+        "count": wr_atakhan_dict["result"]["count"],
+    }
+
+    return wr_atakhan_dict
+
 def game_length_analysis(team_df):
     game_length_df = team_df[["gameid", "gamelength"]]
     game_length_df = game_length_df.groupby("gameid")["gamelength"].mean().reset_index()
@@ -212,6 +226,7 @@ def objectives_analysis(team_df):
     herald_dict = herald_winrate_analysis(team_df)
     void_grub_dict = void_grub_winrate_analysis(team_df)
     soul_dict = soul_winrate_analysis(team_df)
+    atakhan_dict = atakhan_winrate_analysis(team_df)
 
     objectives_dict = {
         "elder": elder_dict["winrate"],
@@ -224,6 +239,8 @@ def objectives_analysis(team_df):
         "void_grub games": void_grub_dict["count"],
         "soul": soul_dict["winrate"],
         "soul games": soul_dict["count"],
+        "atakhan": atakhan_dict["winrate"],
+        "atakhan games": atakhan_dict["count"],
         "league" : team_df.iloc[0]["league"],
         "patch" : team_df.iloc[0]["patch"],
         "split" : team_df.iloc[0]["split"]

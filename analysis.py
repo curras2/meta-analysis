@@ -25,14 +25,24 @@ def banrate_analysis(team_df):
     
     banrate = (ban_counts / total_games) *100
 
-    banrate = banrate.to_dict()
+    league = team_df.iloc[0]["league"]
+    patch = team_df.iloc[0]["patch"]
+    split = team_df.iloc[0]["split"]
 
-    banrate["league"] = team_df.iloc[0]["league"]
-    banrate["patch"] = team_df.iloc[0]["patch"]
-    banrate["split"] = team_df.iloc[0]["split"]
-    banrate["total games"] = total_games
+    results_list = []
     
-    return banrate
+    for champion, rate in banrate.items():
+        record = {
+            "league": league,
+            "patch": patch,
+            "split": split,
+            "total games": total_games,
+            "champion": champion,
+            "banrate": rate
+        }
+        results_list.append(record)
+    
+    return results_list
 
 def champ_winrate_analysis(player_df):
     champs_df = player_df[["champion", "result"]]

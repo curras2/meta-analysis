@@ -60,14 +60,13 @@ def champ_winrate_analysis(player_df):
     winrate=("result", "mean")).reset_index()
     
     wr_champs_df["winrate"] = wr_champs_df["winrate"]
+    wr_champs_df["league"] = player_df.iloc[0]["league"]
+    wr_champs_df["patch"] = player_df.iloc[0]["patch"]
+    wr_champs_df["split"] = player_df.iloc[0]["split"]
 
-    wr_champs_dict = dict(zip(wr_champs_df["champion"], wr_champs_df["winrate"]))
+    results_list = wr_champs_df.to_dict('records')
 
-    wr_champs_dict["league"] = player_df.iloc[0]["league"]
-    wr_champs_dict["patch"] = player_df.iloc[0]["patch"]
-    wr_champs_dict["split"] = player_df.iloc[0]["split"]
-
-    return wr_champs_dict
+    return results_list
 
 def side_winrate_analysis(team_df):
     side_df = team_df[["side", "result"]]

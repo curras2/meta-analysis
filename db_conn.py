@@ -14,12 +14,14 @@ dragon_soul_winrate_collection = conn[ext.dragon_soul_winrate_collection]
 game_length_mean_collection = conn[ext.game_length_mean_collection]
 
 def upsert_record(collection, new_data):
-    query = {
-        "league": new_data["league"],
-        "split": new_data["split"],
-        "patch": new_data["patch"],
-    }
-    collection.update_one(query, {"$set": new_data}, upsert=True)
+    for i in new_data:
+        query = {
+            "league": i["league"],
+            "split": i["split"],
+            "patch": i["patch"],
+            "champion": i["champion"]
+        }
+        collection.update_one(query, {"$set": i}, upsert=True)
 
 def upsert_banrate_record(data):
     upsert_record(banrate_collection, data)

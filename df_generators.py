@@ -57,7 +57,8 @@ def define_columns_df(league_df):
         "elders",
         "heralds",
         "void_grubs",
-        "barons"
+        "barons",
+        "atakhans"
     ]
 
     league_filtered_df = league_df[columns_needed].copy()

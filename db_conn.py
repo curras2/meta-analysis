@@ -26,6 +26,8 @@ def upsert_record(collection, new_data):
             query["side"] = i["side"]
         elif "soul" in i:
             query["soul"] = i["soul"]
+        elif "objective" in i:
+            query["objective"] = i["objective"]
         
         collection.update_one(query, {"$set": i}, upsert=True)
 

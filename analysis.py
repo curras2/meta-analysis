@@ -183,19 +183,14 @@ def dragon_soul_winrate_analysis(team_df):
     wr_dragon_soul_df = dragon_soul_df.groupby("soul").agg(
     winrate=("result", "mean"),
     count=("result", "count")).reset_index()
-    
-    wr_dragon_soul_df["winrate"] = wr_dragon_soul_df["winrate"] 
 
-    wr_dragon_soul_dict = {}
-    for _, row in wr_dragon_soul_df.iterrows():
-        wr_dragon_soul_dict[row["soul"]] = row["winrate"]
-        wr_dragon_soul_dict[f"{row['soul']} games"] = row["count"]
+    wr_dragon_soul_df["league"] = team_df.iloc[0]["league"]
+    wr_dragon_soul_df["patch"] = team_df.iloc[0]["patch"]
+    wr_dragon_soul_df["split"] = team_df.iloc[0]["split"]
 
-    wr_dragon_soul_dict["league"] = team_df.iloc[0]["league"]
-    wr_dragon_soul_dict["patch"] = team_df.iloc[0]["patch"]
-    wr_dragon_soul_dict["split"] = team_df.iloc[0]["split"]
+    results_list = wr_dragon_soul_df.to_dict('records')
 
-    return wr_dragon_soul_dict
+    return results_list
 
 def atakhan_winrate_analysis(team_df):
     atakhan_df = team_df[["atakhans", "result"]]

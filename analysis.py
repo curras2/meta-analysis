@@ -1,3 +1,5 @@
+import pandas as pd
+
 def pickrate_analysis(team_df):
     picks_df = team_df[["pick1", "pick2", "pick3", "pick4", "pick5"]]
     
@@ -59,7 +61,6 @@ def champ_winrate_analysis(player_df):
     wr_champs_df = champs_df.groupby("champion").agg(
     winrate=("result", "mean")).reset_index()
     
-    wr_champs_df["winrate"] = wr_champs_df["winrate"]
     wr_champs_df["league"] = player_df.iloc[0]["league"]
     wr_champs_df["patch"] = player_df.iloc[0]["patch"]
     wr_champs_df["split"] = player_df.iloc[0]["split"]
@@ -72,14 +73,14 @@ def side_winrate_analysis(team_df):
     side_df = team_df[["side", "result"]]
     wr_side_df = side_df.groupby("side").agg(
     winrate=("result", "mean")).reset_index()
-    
-    wr_side_dict = dict(zip(wr_side_df["side"], wr_side_df["winrate"]))
 
-    wr_side_dict["league"] = team_df.iloc[0]["league"]
-    wr_side_dict["patch"] = team_df.iloc[0]["patch"]
-    wr_side_dict["split"] = team_df.iloc[0]["split"]
+    wr_side_df["league"] = team_df.iloc[0]["league"]
+    wr_side_df["patch"] = team_df.iloc[0]["patch"]
+    wr_side_df["split"] = team_df.iloc[0]["split"]
 
-    return wr_side_dict
+    results_list = wr_side_df.to_dict('records')
+
+    return results_list
 
 def elder_winrate_analysis(team_df):
     elder_df = team_df[["elders", "result"]]
@@ -93,12 +94,14 @@ def elder_winrate_analysis(team_df):
 
         wr_elder_dict = {
             "winrate": wr_elder_dict["result"]["winrate"] ,
-            "count": wr_elder_dict["result"]["count"],
+            "games": wr_elder_dict["result"]["count"],
+            "objective": "elder"
         }
     else:
         wr_elder_dict = {
             "winrate": 0,
-            "count": 0,
+            "games": 0,
+            "objective": "elder"
         }
 
     return wr_elder_dict
@@ -112,7 +115,8 @@ def baron_winrate_analysis(team_df):
 
     wr_baron_dict = {
         "winrate": wr_baron_dict["result"]["winrate"],
-        "count": wr_baron_dict["result"]["count"],
+        "games": wr_baron_dict["result"]["count"],
+        "objective": "baron" 
     }
 
     return wr_baron_dict
@@ -126,7 +130,8 @@ def herald_winrate_analysis(team_df):
 
     wr_herald_dict = {
         "winrate": wr_herald_dict["result"]["winrate"],
-        "count": wr_herald_dict["result"]["count"],
+        "games": wr_herald_dict["result"]["count"],
+        "objective": "herald"
     }
 
     return wr_herald_dict
@@ -140,7 +145,8 @@ def void_grub_winrate_analysis(team_df):
 
     wr_void_grub_dict = {
         "winrate": wr_void_grub_dict["result"]["winrate"],
-        "count": wr_void_grub_dict["result"]["count"],
+        "games": wr_void_grub_dict["result"]["count"],
+        "objective": "void grub"
     }
 
     return wr_void_grub_dict
@@ -154,7 +160,8 @@ def soul_winrate_analysis(team_df):
 
     wr_soul_dict = {
         "winrate": wr_soul_dict["result"]["winrate"],
-        "count": wr_soul_dict["result"]["count"],
+        "games": wr_soul_dict["result"]["count"],
+        "objective": "soul"
     }
 
     return wr_soul_dict
@@ -184,19 +191,14 @@ def dragon_soul_winrate_analysis(team_df):
     wr_dragon_soul_df = dragon_soul_df.groupby("soul").agg(
     winrate=("result", "mean"),
     count=("result", "count")).reset_index()
-    
-    wr_dragon_soul_df["winrate"] = wr_dragon_soul_df["winrate"] 
 
-    wr_dragon_soul_dict = {}
-    for _, row in wr_dragon_soul_df.iterrows():
-        wr_dragon_soul_dict[row["soul"]] = row["winrate"]
-        wr_dragon_soul_dict[f"{row['soul']} games"] = row["count"]
+    wr_dragon_soul_df["league"] = team_df.iloc[0]["league"]
+    wr_dragon_soul_df["patch"] = team_df.iloc[0]["patch"]
+    wr_dragon_soul_df["split"] = team_df.iloc[0]["split"]
 
-    wr_dragon_soul_dict["league"] = team_df.iloc[0]["league"]
-    wr_dragon_soul_dict["patch"] = team_df.iloc[0]["patch"]
-    wr_dragon_soul_dict["split"] = team_df.iloc[0]["split"]
+    results_list = wr_dragon_soul_df.to_dict('records')
 
-    return wr_dragon_soul_dict
+    return results_list
 
 def atakhan_winrate_analysis(team_df):
     atakhan_df = team_df[["atakhans", "result"]]
@@ -207,7 +209,8 @@ def atakhan_winrate_analysis(team_df):
 
     wr_atakhan_dict = {
         "winrate": wr_atakhan_dict["result"]["winrate"],
-        "count": wr_atakhan_dict["result"]["count"],
+        "games": wr_atakhan_dict["result"]["count"],
+        "objective": "atakhan"
     }
 
     return wr_atakhan_dict
@@ -247,23 +250,21 @@ def objectives_analysis(team_df):
     soul_dict = soul_winrate_analysis(team_df)
     atakhan_dict = atakhan_winrate_analysis(team_df)
 
-    objectives_dict = {
-        "elder": elder_dict["winrate"],
-        "elder games": elder_dict["count"],
-        "baron": baron_dict["winrate"],
-        "baron games": baron_dict["count"],
-        "herald": herald_dict["winrate"],
-        "herald games": herald_dict["count"],
-        "void_grub": void_grub_dict["winrate"],
-        "void_grub games": void_grub_dict["count"],
-        "soul": soul_dict["winrate"],
-        "soul games": soul_dict["count"],
-        "atakhan": atakhan_dict["winrate"],
-        "atakhan games": atakhan_dict["count"],
-        "league" : team_df.iloc[0]["league"],
-        "patch" : team_df.iloc[0]["patch"],
-        "split" : team_df.iloc[0]["split"]
+    objectives_list = [
+        elder_dict,
+        baron_dict,
+        herald_dict,
+        void_grub_dict,
+        soul_dict,
+        atakhan_dict
+    ]
 
-    }
+    objectives_df = pd.DataFrame(objectives_list)
 
-    return objectives_dict
+    objectives_df["league"] = team_df.iloc[0]["league"]
+    objectives_df["patch"] = team_df.iloc[0]["patch"]
+    objectives_df["split"] = team_df.iloc[0]["split"] 
+
+    results_list = objectives_df.to_dict('records')
+
+    return results_list

@@ -15,12 +15,20 @@ game_length_mean_collection = conn[ext.game_length_mean_collection]
 
 def upsert_record(collection, new_data):
     for i in new_data:
-        query = {
-            "league": i["league"],
-            "split": i["split"],
-            "patch": i["patch"],
-            "champion": i["champion"]
-        }
+        if "champion" in i:
+            query = {
+                "league": i["league"],
+                "split": i["split"],
+                "patch": i["patch"],
+                "champion": i["champion"]
+            }
+        else:
+            query = {
+                "league": i["league"],
+                "split": i["split"],
+                "patch": i["patch"],
+                "side": i["side"]
+            }
         collection.update_one(query, {"$set": i}, upsert=True)
 
 def upsert_banrate_record(data):

@@ -152,8 +152,13 @@ def void_grub_winrate_analysis(team_df):
     return wr_void_grub_dict
 
 def soul_winrate_analysis(team_df):
-    soul = team_df[["elementaldrakes", "result"]]
-    soul = soul[soul["elementaldrakes"] == 4]
+    if team_df.iloc[0]["league"] != "LPL":
+        soul = team_df[["elementaldrakes", "result"]]
+        soul = soul[soul["elementaldrakes"] == 4]
+    else:
+        soul = team_df[["dragons (type unknown)", "result"]]
+        soul = soul[soul["dragons (type unknown)"] == 4]
+    
     wr_soul_dict = soul.agg(
     winrate=("result", "mean"),
     count=("result", "count")).to_dict()
@@ -251,16 +256,19 @@ def objectives_analysis(team_df):
     herald_dict = herald_winrate_analysis(team_df)
     void_grub_dict = void_grub_winrate_analysis(team_df)
     soul_dict = soul_winrate_analysis(team_df)
-    atakhan_dict = atakhan_winrate_analysis(team_df)
+    if team_df.iloc[0]["league"] != "LPL":
+        atakhan_dict = atakhan_winrate_analysis(team_df)
 
     objectives_list = [
         elder_dict,
         baron_dict,
         herald_dict,
         void_grub_dict,
-        soul_dict,
-        atakhan_dict
+        soul_dict
     ]
+
+    if team_df.iloc[0]["league"] != "LPL":
+        objectives_list.append(atakhan_dict)
 
     objectives_df = pd.DataFrame(objectives_list)
 

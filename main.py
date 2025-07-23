@@ -8,9 +8,22 @@ lol_df = df_gen.create_lol_df()
 unique_patches = lol_df['patch'].unique()
 unique_splits = lol_df['split'].unique()
 unique_leagues = lol_df['league'].unique()
+leagues_filter = [
+    "LCK",
+    "LTA S",
+    "LTA N",
+    "LPL",
+    "LEC",
+    "MSI",
+    "LCP",
+    "LJL",
+    "PCS",
+    "MSI",
+    "VCS"
+]
 
 for league in unique_leagues:
-    if league == "LPL":
+    if league not in leagues_filter:
         continue
 
     league_df = df_gen.create_league_df(lol_df, league)

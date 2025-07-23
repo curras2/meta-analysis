@@ -239,7 +239,10 @@ def game_length_analysis(team_df):
         "split" : team_df.iloc[0]["split"]
     }
 
-    return game_length_dict
+    results_list = []
+    results_list.append(game_length_dict)
+
+    return results_list
 
 def objectives_analysis(team_df):
 

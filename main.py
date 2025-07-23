@@ -44,22 +44,24 @@ for league in unique_leagues:
                         player_df = df_gen.create_player_df(columns_filtered_df)
 
                         # Análise
-                        pickrate = an.pickrate_analysis(team_df)
-                        banrate = an.banrate_analysis(team_df)
-                        wr_champs_dict = an.champ_winrate_analysis(player_df)
-                        wr_side_dict = an.side_winrate_analysis(team_df)
-                        wr_objectives_dict = an.objectives_analysis(team_df)
-                        wr_dragon_soul_dict = an.dragon_soul_winrate_analysis(team_df)
-                        game_length_dict = an.game_length_analysis(team_df)
+                        pickrate_dict_list = an.pickrate_analysis(team_df)
+                        banrate_dict_list = an.banrate_analysis(team_df)
+                        wr_champs_dict_list = an.champ_winrate_analysis(player_df)
+                        wr_side_dict_list = an.side_winrate_analysis(team_df)
+                        wr_objectives_dict_list = an.objectives_analysis(team_df)
+                        if league != "LPL":
+                            wr_dragon_soul_dict_list = an.dragon_soul_winrate_analysis(team_df)
+                        game_length_dict_list = an.game_length_analysis(team_df)
                         
 
-                        conn.upsert_pickrate_record(pickrate)
-                        conn.upsert_banrate_record(banrate)
-                        conn.upsert_champion_winrate_record(wr_champs_dict)
-                        conn.upsert_side_winrate_record(wr_side_dict)
-                        conn.upsert_objectives_winrate_record(wr_objectives_dict)
-                        conn.upsert_dragon_soul_winrate_record(wr_dragon_soul_dict)
-                        conn.upsert_game_length_mean_record(game_length_dict)
+                        conn.upsert_pickrate_record(pickrate_dict_list)
+                        conn.upsert_banrate_record(banrate_dict_list)
+                        conn.upsert_champion_winrate_record(wr_champs_dict_list)
+                        conn.upsert_side_winrate_record(wr_side_dict_list)
+                        conn.upsert_objectives_winrate_record(wr_objectives_dict_list)
+                        if league != "LPL":
+                            conn.upsert_dragon_soul_winrate_record(wr_dragon_soul_dict_list)
+                        conn.upsert_game_length_mean_record(game_length_dict_list)
                     except Exception as e:
                         columns_filtered_df.to_csv(f'{league} error.csv')
                         print(f"{league} ---- {traceback.print_exception(e)}")

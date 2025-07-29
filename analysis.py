@@ -20,6 +20,7 @@ def pickrate_analysis(team_df):
             "league": league,
             "patch": patch,
             "split": split,
+            "picked games": round(rate*total_games),
             "total games": total_games,
             "champion": champion,
             "pickrate": rate
@@ -48,6 +49,7 @@ def banrate_analysis(team_df):
             "league": league,
             "patch": patch,
             "split": split,
+            "banned games": round(rate*total_games),
             "total games": total_games,
             "champion": champion,
             "banrate": rate

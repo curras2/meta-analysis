@@ -77,3 +77,27 @@ def create_dataframe_from_list(dict_list):
     df = pd.DataFrame(dict_list)
 
     return df
+
+def merge_dataframe_champions(pickrate_df, banrate_df, winrate_df):
+    merge_keys = ['league', 'patch', 'split', 'champion']
+    
+    first_merged_df = pd.merge(
+        pickrate_df, 
+        banrate_df,
+        on=merge_keys,
+        how='outer'
+    )
+    first_merged_df['total games'] = first_merged_df['total games_x'].combine_first(first_merged_df['total games_y'])
+
+    first_merged_df.drop(columns=['total games_x', 'total games_y'], inplace=True)
+
+    final_merged_df = pd.merge(
+        first_merged_df, 
+        winrate_df,
+        on=merge_keys,
+        how='outer'
+    )
+
+    final_merged_df.fillna(0, inplace=True)
+
+    return final_merged_df

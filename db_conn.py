@@ -1,5 +1,6 @@
 from pymongo import MongoClient
 import extras.extras as ext
+from bson.codec_options import CodecOptions
 
 client = MongoClient(ext.string_connection)
 
@@ -53,7 +54,10 @@ def upsert_game_length_mean_record(data):
     upsert_record(game_length_mean_collection, data)
 
 def get_records(collection):
-    results = collection.find()
+    codec_options = CodecOptions(unicode_decode_error_handler='replace')
+    collection_with_options = collection.with_options(codec_options=codec_options)
+
+    results = collection_with_options.find({}, {'_id': 0})
 
     return results
 

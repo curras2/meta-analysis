@@ -2,6 +2,7 @@ import df_generators as df_gen
 import analysis as an
 import db_conn as conn
 import traceback
+import os
 
 lol_df = df_gen.create_lol_df()
 
@@ -82,10 +83,18 @@ objectives_winrate_results_df = df_gen.create_dataframe_from_list(objectives_win
 dragon_soul_winrate_results_df = df_gen.create_dataframe_from_list(dragon_soul_winrate_results_dict_list)
 game_length_mean_results_df = df_gen.create_dataframe_from_list(game_length_mean_results_dict_list)
 
-pickrate_results_df.to_csv("extras/csv/pickrate.csv", index=False)
-banrate_results_df.to_csv("extras/csv/banrate.csv", index=False)
-champion_winrate_results_df.to_csv("extras/csv/champion_winrate.csv", index=False)
-side_winrate_results_df.to_csv("extras/csv/side_winrate.csv", index=False)
-objectives_winrate_results_df.to_csv("extras/csv/objectives_winrate.csv", index=False)
-dragon_soul_winrate_results_df.to_csv("extras/csv/dragon_soul_winrate.csv", index=False)
-game_length_mean_results_df.to_csv("extras/csv/game_length.csv", index=False)
+# pickrate_results_df.to_csv("extras/csv/pickrate.csv", index=False)
+# banrate_results_df.to_csv("extras/csv/banrate.csv", index=False)
+# champion_winrate_results_df.to_csv("extras/csv/champion_winrate.csv", index=False)
+# side_winrate_results_df.to_csv("extras/csv/side_winrate.csv", index=False)
+# objectives_winrate_results_df.to_csv("extras/csv/objectives_winrate.csv", index=False)
+# dragon_soul_winrate_results_df.to_csv("extras/csv/dragon_soul_winrate.csv", index=False)
+# game_length_mean_results_df.to_csv("extras/csv/game_length.csv", index=False)
+
+pickrate_results_df.to_json("extras/json/pickrate.json", orient='records', indent=2)
+banrate_results_df.to_json("extras/json/banrate.json", orient='records', indent=2)
+champion_winrate_results_df.to_json("extras/json/champion_winrate.json", orient='records', indent=2)
+side_winrate_results_df.to_json("extras/json/side_winrate.json", orient='records', indent=2)
+objectives_winrate_results_df.to_json("extras/json/objectives_winrate.json", orient='records', indent=2)
+dragon_soul_winrate_results_df.to_json("extras/json/dragon_soul_winrate.json", orient='records', indent=2)
+game_length_mean_results_df.to_json("extras/json/game_length.json", orient='records', indent=2)

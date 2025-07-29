@@ -87,6 +87,9 @@ def merge_dataframe_champions(pickrate_df, banrate_df, winrate_df):
         on=merge_keys,
         how='outer'
     )
+    first_merged_df['total games'] = first_merged_df['total games_x'].combine_first(first_merged_df['total games_y'])
+
+    first_merged_df.drop(columns=['total games_x', 'total games_y'], inplace=True)
 
     final_merged_df = pd.merge(
         first_merged_df, 

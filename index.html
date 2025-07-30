@@ -16,6 +16,7 @@
             <button data-view="champions" data-source="champions.json" class="active">Stats por Campeão</button>
             <button data-view="objectives" data-source="objectives_winrate.json">Win Rate por Objetivo</button>
             <button data-view="souls" data-source="dragon_soul_winrate.json">Win Rate por Alma</button>
+            <button data-view="sides" data-source="side_winrate.json">Win Rate por Lado</button>
         </nav>
     </header>
 
@@ -48,6 +49,11 @@
                 <div id="soul-filter-group" class="filter-group hidden">
                     <label for="soul-filter">Almas:</label>
                     <select id="soul-filter" multiple></select>
+                </div>
+
+                <div id="side-filter-group" class="filter-group hidden">
+                    <label for="side-filter">Lados:</label>
+                    <select id="side-filter" multiple></select>
                 </div>
             </div>
             

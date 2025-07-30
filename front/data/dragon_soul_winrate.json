@@ -1,0 +1,2354 @@
+[
+  {
+    "patch":15.01,
+    "soul":"Cloud",
+    "league":"LCK",
+    "split":"Cup",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.01,
+    "soul":"Hextech",
+    "league":"LCK",
+    "split":"Cup",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.01,
+    "soul":"Infernal",
+    "league":"LCK",
+    "split":"Cup",
+    "count":3,
+    "winrate":0.6666666667
+  },
+  {
+    "patch":15.01,
+    "soul":"Mountain",
+    "league":"LCK",
+    "split":"Cup",
+    "count":5,
+    "winrate":1.0
+  },
+  {
+    "patch":15.01,
+    "soul":"Ocean",
+    "league":"LCK",
+    "split":"Cup",
+    "count":6,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Cloud",
+    "league":"LCK",
+    "split":"Cup",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Hextech",
+    "league":"LCK",
+    "split":"Cup",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Ocean",
+    "league":"LCK",
+    "split":"Cup",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.03,
+    "soul":"Chemtech",
+    "league":"LCK",
+    "split":"Cup",
+    "count":6,
+    "winrate":1.0
+  },
+  {
+    "patch":15.03,
+    "soul":"Mountain",
+    "league":"LCK",
+    "split":"Cup",
+    "count":4,
+    "winrate":1.0
+  },
+  {
+    "patch":15.03,
+    "soul":"Ocean",
+    "league":"LCK",
+    "split":"Cup",
+    "count":2,
+    "winrate":0.5
+  },
+  {
+    "patch":15.06,
+    "soul":"Chemtech",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.06,
+    "soul":"Cloud",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.06,
+    "soul":"Hextech",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.06,
+    "soul":"Infernal",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":2,
+    "winrate":0.5
+  },
+  {
+    "patch":15.06,
+    "soul":"Mountain",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.06,
+    "soul":"Ocean",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Chemtech",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Cloud",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Hextech",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":3,
+    "winrate":0.6666666667
+  },
+  {
+    "patch":15.07,
+    "soul":"Infernal",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Mountain",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Ocean",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Chemtech",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":3,
+    "winrate":0.6666666667
+  },
+  {
+    "patch":15.08,
+    "soul":"Cloud",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Hextech",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Infernal",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Mountain",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Ocean",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Chemtech",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":5,
+    "winrate":0.8
+  },
+  {
+    "patch":15.09,
+    "soul":"Cloud",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":6,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Infernal",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":4,
+    "winrate":0.75
+  },
+  {
+    "patch":15.09,
+    "soul":"Mountain",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Ocean",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Chemtech",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":4,
+    "winrate":0.75
+  },
+  {
+    "patch":15.1,
+    "soul":"Cloud",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Hextech",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":5,
+    "winrate":0.8
+  },
+  {
+    "patch":15.1,
+    "soul":"Infernal",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Mountain",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":4,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Ocean",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Chemtech",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Cloud",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Hextech",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Infernal",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Mountain",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Ocean",
+    "league":"LCK",
+    "split":"Rounds 1-2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.01,
+    "soul":"Chemtech",
+    "league":"LCP",
+    "split":"Split 1",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.01,
+    "soul":"Cloud",
+    "league":"LCP",
+    "split":"Split 1",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.01,
+    "soul":"Infernal",
+    "league":"LCP",
+    "split":"Split 1",
+    "count":2,
+    "winrate":0.5
+  },
+  {
+    "patch":15.01,
+    "soul":"Mountain",
+    "league":"LCP",
+    "split":"Split 1",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Infernal",
+    "league":"LCP",
+    "split":"Split 1",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Mountain",
+    "league":"LCP",
+    "split":"Split 1",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Ocean",
+    "league":"LCP",
+    "split":"Split 1",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.03,
+    "soul":"Chemtech",
+    "league":"LCP",
+    "split":"Split 1",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.03,
+    "soul":"Cloud",
+    "league":"LCP",
+    "split":"Split 1",
+    "count":6,
+    "winrate":1.0
+  },
+  {
+    "patch":15.03,
+    "soul":"Hextech",
+    "league":"LCP",
+    "split":"Split 1",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.03,
+    "soul":"Infernal",
+    "league":"LCP",
+    "split":"Split 1",
+    "count":4,
+    "winrate":1.0
+  },
+  {
+    "patch":15.03,
+    "soul":"Mountain",
+    "league":"LCP",
+    "split":"Split 1",
+    "count":4,
+    "winrate":1.0
+  },
+  {
+    "patch":15.03,
+    "soul":"Ocean",
+    "league":"LCP",
+    "split":"Split 1",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Chemtech",
+    "league":"LCP",
+    "split":"Split 2",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Hextech",
+    "league":"LCP",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Infernal",
+    "league":"LCP",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Ocean",
+    "league":"LCP",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Chemtech",
+    "league":"LCP",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Cloud",
+    "league":"LCP",
+    "split":"Split 2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Hextech",
+    "league":"LCP",
+    "split":"Split 2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Infernal",
+    "league":"LCP",
+    "split":"Split 2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Mountain",
+    "league":"LCP",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Ocean",
+    "league":"LCP",
+    "split":"Split 2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Chemtech",
+    "league":"LCP",
+    "split":"Split 2",
+    "count":2,
+    "winrate":0.5
+  },
+  {
+    "patch":15.1,
+    "soul":"Cloud",
+    "league":"LCP",
+    "split":"Split 2",
+    "count":4,
+    "winrate":0.5
+  },
+  {
+    "patch":15.1,
+    "soul":"Hextech",
+    "league":"LCP",
+    "split":"Split 2",
+    "count":6,
+    "winrate":0.6666666667
+  },
+  {
+    "patch":15.1,
+    "soul":"Infernal",
+    "league":"LCP",
+    "split":"Split 2",
+    "count":6,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Mountain",
+    "league":"LCP",
+    "split":"Split 2",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Ocean",
+    "league":"LCP",
+    "split":"Split 2",
+    "count":4,
+    "winrate":1.0
+  },
+  {
+    "patch":15.01,
+    "soul":"Chemtech",
+    "league":"LEC",
+    "split":"Winter",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.01,
+    "soul":"Cloud",
+    "league":"LEC",
+    "split":"Winter",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.01,
+    "soul":"Hextech",
+    "league":"LEC",
+    "split":"Winter",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.01,
+    "soul":"Mountain",
+    "league":"LEC",
+    "split":"Winter",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.01,
+    "soul":"Ocean",
+    "league":"LEC",
+    "split":"Winter",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Chemtech",
+    "league":"LEC",
+    "split":"Winter",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Cloud",
+    "league":"LEC",
+    "split":"Winter",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Hextech",
+    "league":"LEC",
+    "split":"Winter",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Infernal",
+    "league":"LEC",
+    "split":"Winter",
+    "count":5,
+    "winrate":0.8
+  },
+  {
+    "patch":15.02,
+    "soul":"Mountain",
+    "league":"LEC",
+    "split":"Winter",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Ocean",
+    "league":"LEC",
+    "split":"Winter",
+    "count":3,
+    "winrate":0.6666666667
+  },
+  {
+    "patch":15.03,
+    "soul":"Chemtech",
+    "league":"LEC",
+    "split":"Winter",
+    "count":4,
+    "winrate":1.0
+  },
+  {
+    "patch":15.03,
+    "soul":"Cloud",
+    "league":"LEC",
+    "split":"Winter",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.03,
+    "soul":"Hextech",
+    "league":"LEC",
+    "split":"Winter",
+    "count":4,
+    "winrate":1.0
+  },
+  {
+    "patch":15.03,
+    "soul":"Infernal",
+    "league":"LEC",
+    "split":"Winter",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.03,
+    "soul":"Mountain",
+    "league":"LEC",
+    "split":"Winter",
+    "count":4,
+    "winrate":1.0
+  },
+  {
+    "patch":15.03,
+    "soul":"Ocean",
+    "league":"LEC",
+    "split":"Winter",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.06,
+    "soul":"Cloud",
+    "league":"LEC",
+    "split":"Spring",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.06,
+    "soul":"Hextech",
+    "league":"LEC",
+    "split":"Spring",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.06,
+    "soul":"Mountain",
+    "league":"LEC",
+    "split":"Spring",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.06,
+    "soul":"Ocean",
+    "league":"LEC",
+    "split":"Spring",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Chemtech",
+    "league":"LEC",
+    "split":"Spring",
+    "count":4,
+    "winrate":0.75
+  },
+  {
+    "patch":15.07,
+    "soul":"Cloud",
+    "league":"LEC",
+    "split":"Spring",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Hextech",
+    "league":"LEC",
+    "split":"Spring",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Infernal",
+    "league":"LEC",
+    "split":"Spring",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Mountain",
+    "league":"LEC",
+    "split":"Spring",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Ocean",
+    "league":"LEC",
+    "split":"Spring",
+    "count":4,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Chemtech",
+    "league":"LEC",
+    "split":"Spring",
+    "count":4,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Cloud",
+    "league":"LEC",
+    "split":"Spring",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Hextech",
+    "league":"LEC",
+    "split":"Spring",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Infernal",
+    "league":"LEC",
+    "split":"Spring",
+    "count":5,
+    "winrate":0.6
+  },
+  {
+    "patch":15.08,
+    "soul":"Mountain",
+    "league":"LEC",
+    "split":"Spring",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Chemtech",
+    "league":"LEC",
+    "split":"Spring",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Cloud",
+    "league":"LEC",
+    "split":"Spring",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Hextech",
+    "league":"LEC",
+    "split":"Spring",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Infernal",
+    "league":"LEC",
+    "split":"Spring",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Mountain",
+    "league":"LEC",
+    "split":"Spring",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Ocean",
+    "league":"LEC",
+    "split":"Spring",
+    "count":1,
+    "winrate":0.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Chemtech",
+    "league":"LEC",
+    "split":"Spring",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Cloud",
+    "league":"LEC",
+    "split":"Spring",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Hextech",
+    "league":"LEC",
+    "split":"Spring",
+    "count":7,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Infernal",
+    "league":"LEC",
+    "split":"Spring",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Mountain",
+    "league":"LEC",
+    "split":"Spring",
+    "count":4,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Ocean",
+    "league":"LEC",
+    "split":"Spring",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Chemtech",
+    "league":"LJL",
+    "split":"Forge",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Hextech",
+    "league":"LJL",
+    "split":"Forge",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Infernal",
+    "league":"LJL",
+    "split":"Forge",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Mountain",
+    "league":"LJL",
+    "split":"Forge",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Ocean",
+    "league":"LJL",
+    "split":"Forge",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.04,
+    "soul":"Chemtech",
+    "league":"LJL",
+    "split":"Forge",
+    "count":2,
+    "winrate":0.5
+  },
+  {
+    "patch":15.04,
+    "soul":"Cloud",
+    "league":"LJL",
+    "split":"Forge",
+    "count":1,
+    "winrate":0.0
+  },
+  {
+    "patch":15.04,
+    "soul":"Hextech",
+    "league":"LJL",
+    "split":"Forge",
+    "count":3,
+    "winrate":0.6666666667
+  },
+  {
+    "patch":15.04,
+    "soul":"Infernal",
+    "league":"LJL",
+    "split":"Forge",
+    "count":2,
+    "winrate":0.5
+  },
+  {
+    "patch":15.04,
+    "soul":"Mountain",
+    "league":"LJL",
+    "split":"Forge",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.04,
+    "soul":"Ocean",
+    "league":"LJL",
+    "split":"Forge",
+    "count":2,
+    "winrate":0.5
+  },
+  {
+    "patch":15.07,
+    "soul":"Chemtech",
+    "league":"LJL",
+    "split":"Storm",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Cloud",
+    "league":"LJL",
+    "split":"Storm",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Hextech",
+    "league":"LJL",
+    "split":"Storm",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Infernal",
+    "league":"LJL",
+    "split":"Storm",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Mountain",
+    "league":"LJL",
+    "split":"Storm",
+    "count":3,
+    "winrate":0.6666666667
+  },
+  {
+    "patch":15.07,
+    "soul":"Ocean",
+    "league":"LJL",
+    "split":"Storm",
+    "count":5,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Chemtech",
+    "league":"LJL",
+    "split":"Storm",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Hextech",
+    "league":"LJL",
+    "split":"Storm",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Infernal",
+    "league":"LJL",
+    "split":"Storm",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Mountain",
+    "league":"LJL",
+    "split":"Storm",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Ocean",
+    "league":"LJL",
+    "split":"Storm",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Chemtech",
+    "league":"LJL",
+    "split":"Ignite",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Ocean",
+    "league":"LJL",
+    "split":"Ignite",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Chemtech",
+    "league":"LJL",
+    "split":"Ignite",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Cloud",
+    "league":"LJL",
+    "split":"Ignite",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Hextech",
+    "league":"LJL",
+    "split":"Ignite",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Infernal",
+    "league":"LJL",
+    "split":"Ignite",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Mountain",
+    "league":"LJL",
+    "split":"Ignite",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Ocean",
+    "league":"LJL",
+    "split":"Ignite",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.12,
+    "soul":"Chemtech",
+    "league":"LJL",
+    "split":"Ignite",
+    "count":1,
+    "winrate":0.0
+  },
+  {
+    "patch":15.12,
+    "soul":"Cloud",
+    "league":"LJL",
+    "split":"Ignite",
+    "count":1,
+    "winrate":0.0
+  },
+  {
+    "patch":15.12,
+    "soul":"Hextech",
+    "league":"LJL",
+    "split":"Ignite",
+    "count":1,
+    "winrate":0.0
+  },
+  {
+    "patch":15.12,
+    "soul":"Infernal",
+    "league":"LJL",
+    "split":"Ignite",
+    "count":1,
+    "winrate":0.0
+  },
+  {
+    "patch":15.12,
+    "soul":"Mountain",
+    "league":"LJL",
+    "split":"Ignite",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.12,
+    "soul":"Ocean",
+    "league":"LJL",
+    "split":"Ignite",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Chemtech",
+    "league":"LTA S",
+    "split":"Split 1",
+    "count":2,
+    "winrate":0.5
+  },
+  {
+    "patch":15.02,
+    "soul":"Hextech",
+    "league":"LTA S",
+    "split":"Split 1",
+    "count":4,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Infernal",
+    "league":"LTA S",
+    "split":"Split 1",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Mountain",
+    "league":"LTA S",
+    "split":"Split 1",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Ocean",
+    "league":"LTA S",
+    "split":"Split 1",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.03,
+    "soul":"Chemtech",
+    "league":"LTA S",
+    "split":"Split 1",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.03,
+    "soul":"Cloud",
+    "league":"LTA S",
+    "split":"Split 1",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.03,
+    "soul":"Infernal",
+    "league":"LTA S",
+    "split":"Split 1",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.03,
+    "soul":"Ocean",
+    "league":"LTA S",
+    "split":"Split 1",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Chemtech",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":1,
+    "winrate":0.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Cloud",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Hextech",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Infernal",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Mountain",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Ocean",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Chemtech",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":2,
+    "winrate":0.5
+  },
+  {
+    "patch":15.08,
+    "soul":"Cloud",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Hextech",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Infernal",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Mountain",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Ocean",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Chemtech",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Cloud",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Hextech",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Infernal",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Mountain",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Ocean",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Cloud",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Hextech",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Mountain",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Ocean",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":2,
+    "winrate":0.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Chemtech",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Cloud",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Hextech",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Infernal",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Mountain",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":2,
+    "winrate":0.5
+  },
+  {
+    "patch":15.11,
+    "soul":"Ocean",
+    "league":"LTA S",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Chemtech",
+    "league":"LTA N",
+    "split":"Split 1",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Cloud",
+    "league":"LTA N",
+    "split":"Split 1",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Hextech",
+    "league":"LTA N",
+    "split":"Split 1",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Infernal",
+    "league":"LTA N",
+    "split":"Split 1",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Mountain",
+    "league":"LTA N",
+    "split":"Split 1",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.02,
+    "soul":"Ocean",
+    "league":"LTA N",
+    "split":"Split 1",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.03,
+    "soul":"Cloud",
+    "league":"LTA N",
+    "split":"Split 1",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.03,
+    "soul":"Hextech",
+    "league":"LTA N",
+    "split":"Split 1",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.03,
+    "soul":"Mountain",
+    "league":"LTA N",
+    "split":"Split 1",
+    "count":1,
+    "winrate":0.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Chemtech",
+    "league":"LTA N",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Cloud",
+    "league":"LTA N",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Hextech",
+    "league":"LTA N",
+    "split":"Split 2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Infernal",
+    "league":"LTA N",
+    "split":"Split 2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Mountain",
+    "league":"LTA N",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Chemtech",
+    "league":"LTA N",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Hextech",
+    "league":"LTA N",
+    "split":"Split 2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Infernal",
+    "league":"LTA N",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Mountain",
+    "league":"LTA N",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Chemtech",
+    "league":"LTA N",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Hextech",
+    "league":"LTA N",
+    "split":"Split 2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Infernal",
+    "league":"LTA N",
+    "split":"Split 2",
+    "count":4,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Mountain",
+    "league":"LTA N",
+    "split":"Split 2",
+    "count":3,
+    "winrate":0.6666666667
+  },
+  {
+    "patch":15.09,
+    "soul":"Ocean",
+    "league":"LTA N",
+    "split":"Split 2",
+    "count":3,
+    "winrate":0.6666666667
+  },
+  {
+    "patch":15.1,
+    "soul":"Chemtech",
+    "league":"LTA N",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Cloud",
+    "league":"LTA N",
+    "split":"Split 2",
+    "count":4,
+    "winrate":0.75
+  },
+  {
+    "patch":15.1,
+    "soul":"Hextech",
+    "league":"LTA N",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Infernal",
+    "league":"LTA N",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Ocean",
+    "league":"LTA N",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Chemtech",
+    "league":"LTA N",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Cloud",
+    "league":"LTA N",
+    "split":"Split 2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Hextech",
+    "league":"LTA N",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Infernal",
+    "league":"LTA N",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Mountain",
+    "league":"LTA N",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Ocean",
+    "league":"LTA N",
+    "split":"Split 2",
+    "count":4,
+    "winrate":1.0
+  },
+  {
+    "patch":15.03,
+    "soul":"Chemtech",
+    "league":"PCS",
+    "split":"Split 1",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.03,
+    "soul":"Infernal",
+    "league":"PCS",
+    "split":"Split 1",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.03,
+    "soul":"Mountain",
+    "league":"PCS",
+    "split":"Split 1",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.04,
+    "soul":"Chemtech",
+    "league":"PCS",
+    "split":"Split 1",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.04,
+    "soul":"Cloud",
+    "league":"PCS",
+    "split":"Split 1",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.04,
+    "soul":"Infernal",
+    "league":"PCS",
+    "split":"Split 1",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.05,
+    "soul":"Infernal",
+    "league":"PCS",
+    "split":"Split 1",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.05,
+    "soul":"Mountain",
+    "league":"PCS",
+    "split":"Split 1",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Cloud",
+    "league":"PCS",
+    "split":"Split 2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Hextech",
+    "league":"PCS",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Infernal",
+    "league":"PCS",
+    "split":"Split 2",
+    "count":3,
+    "winrate":0.6666666667
+  },
+  {
+    "patch":15.07,
+    "soul":"Mountain",
+    "league":"PCS",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.07,
+    "soul":"Ocean",
+    "league":"PCS",
+    "split":"Split 2",
+    "count":2,
+    "winrate":0.5
+  },
+  {
+    "patch":15.08,
+    "soul":"Chemtech",
+    "league":"PCS",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Cloud",
+    "league":"PCS",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Infernal",
+    "league":"PCS",
+    "split":"Split 2",
+    "count":3,
+    "winrate":0.6666666667
+  },
+  {
+    "patch":15.08,
+    "soul":"Mountain",
+    "league":"PCS",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.08,
+    "soul":"Ocean",
+    "league":"PCS",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Chemtech",
+    "league":"PCS",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Hextech",
+    "league":"PCS",
+    "split":"Split 2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Mountain",
+    "league":"PCS",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Chemtech",
+    "league":"PCS",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Cloud",
+    "league":"PCS",
+    "split":"Split 2",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Hextech",
+    "league":"PCS",
+    "split":"Split 2",
+    "count":1,
+    "winrate":0.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Infernal",
+    "league":"PCS",
+    "split":"Split 2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Mountain",
+    "league":"PCS",
+    "split":"Split 2",
+    "count":5,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Ocean",
+    "league":"PCS",
+    "split":"Split 2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Chemtech",
+    "league":"PCS",
+    "split":"Split 2",
+    "count":3,
+    "winrate":0.6666666667
+  },
+  {
+    "patch":15.11,
+    "soul":"Cloud",
+    "league":"PCS",
+    "split":"Split 2",
+    "count":2,
+    "winrate":0.5
+  },
+  {
+    "patch":15.11,
+    "soul":"Infernal",
+    "league":"PCS",
+    "split":"Split 2",
+    "count":5,
+    "winrate":0.8
+  },
+  {
+    "patch":15.11,
+    "soul":"Mountain",
+    "league":"PCS",
+    "split":"Split 2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Ocean",
+    "league":"PCS",
+    "split":"Split 2",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.14,
+    "soul":"Chemtech",
+    "league":"PCS",
+    "split":"Split 3",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.14,
+    "soul":"Hextech",
+    "league":"PCS",
+    "split":"Split 3",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.14,
+    "soul":"Infernal",
+    "league":"PCS",
+    "split":"Split 3",
+    "count":1,
+    "winrate":0.0
+  },
+  {
+    "patch":15.14,
+    "soul":"Ocean",
+    "league":"PCS",
+    "split":"Split 3",
+    "count":2,
+    "winrate":0.5
+  },
+  {
+    "patch":15.04,
+    "soul":"Chemtech",
+    "league":"VCS",
+    "split":"Spring",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.04,
+    "soul":"Hextech",
+    "league":"VCS",
+    "split":"Spring",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.04,
+    "soul":"Mountain",
+    "league":"VCS",
+    "split":"Spring",
+    "count":3,
+    "winrate":0.6666666667
+  },
+  {
+    "patch":15.04,
+    "soul":"Ocean",
+    "league":"VCS",
+    "split":"Spring",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.05,
+    "soul":"Chemtech",
+    "league":"VCS",
+    "split":"Spring",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.05,
+    "soul":"Cloud",
+    "league":"VCS",
+    "split":"Spring",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.05,
+    "soul":"Hextech",
+    "league":"VCS",
+    "split":"Spring",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.05,
+    "soul":"Infernal",
+    "league":"VCS",
+    "split":"Spring",
+    "count":4,
+    "winrate":1.0
+  },
+  {
+    "patch":15.05,
+    "soul":"Mountain",
+    "league":"VCS",
+    "split":"Spring",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Chemtech",
+    "league":"VCS",
+    "split":"Summer",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Mountain",
+    "league":"VCS",
+    "split":"Summer",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.09,
+    "soul":"Ocean",
+    "league":"VCS",
+    "split":"Summer",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Chemtech",
+    "league":"VCS",
+    "split":"Summer",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Cloud",
+    "league":"VCS",
+    "split":"Summer",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Hextech",
+    "league":"VCS",
+    "split":"Summer",
+    "count":6,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Infernal",
+    "league":"VCS",
+    "split":"Summer",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Mountain",
+    "league":"VCS",
+    "split":"Summer",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.1,
+    "soul":"Ocean",
+    "league":"VCS",
+    "split":"Summer",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Chemtech",
+    "league":"VCS",
+    "split":"Summer",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Cloud",
+    "league":"VCS",
+    "split":"Summer",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Hextech",
+    "league":"VCS",
+    "split":"Summer",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Infernal",
+    "league":"VCS",
+    "split":"Summer",
+    "count":5,
+    "winrate":1.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Mountain",
+    "league":"VCS",
+    "split":"Summer",
+    "count":1,
+    "winrate":0.0
+  },
+  {
+    "patch":15.11,
+    "soul":"Ocean",
+    "league":"VCS",
+    "split":"Summer",
+    "count":1,
+    "winrate":0.0
+  },
+  {
+    "patch":15.13,
+    "soul":"Cloud",
+    "league":"VCS",
+    "split":"Finals",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.13,
+    "soul":"Hextech",
+    "league":"VCS",
+    "split":"Finals",
+    "count":1,
+    "winrate":1.0
+  },
+  {
+    "patch":15.13,
+    "soul":"Chemtech",
+    "league":"MSI",
+    "split":"MSI",
+    "count":4,
+    "winrate":1.0
+  },
+  {
+    "patch":15.13,
+    "soul":"Cloud",
+    "league":"MSI",
+    "split":"MSI",
+    "count":2,
+    "winrate":1.0
+  },
+  {
+    "patch":15.13,
+    "soul":"Hextech",
+    "league":"MSI",
+    "split":"MSI",
+    "count":3,
+    "winrate":1.0
+  },
+  {
+    "patch":15.13,
+    "soul":"Infernal",
+    "league":"MSI",
+    "split":"MSI",
+    "count":6,
+    "winrate":1.0
+  },
+  {
+    "patch":15.13,
+    "soul":"Mountain",
+    "league":"MSI",
+    "split":"MSI",
+    "count":12,
+    "winrate":0.9166666667
+  },
+  {
+    "patch":15.13,
+    "soul":"Ocean",
+    "league":"MSI",
+    "split":"MSI",
+    "count":10,
+    "winrate":0.9
+  }
+]

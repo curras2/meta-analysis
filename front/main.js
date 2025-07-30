@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     
     let allData = [];
-    let currentView = 'champions'; // 'champions' ou 'objectives'
+    let currentView = 'champions';
     let sortState = { column: 'banrate', direction: 'desc' }; 
     let isGrouped = false;
 
@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const groupByBtn = document.getElementById('group-by-btn');
     const resetViewBtn = document.getElementById('reset-view-btn');
 
-    // Inicializa todos os filtros
     const choicesLeague = new Choices('#league-filter', { removeItemButton: true, placeholder: true, placeholderValue: 'Selecione...' });
     const choicesPatch = new Choices('#patch-filter', { removeItemButton: true, placeholder: true, placeholderValue: 'Selecione...' });
     const choicesSplit = new Choices('#split-filter', { removeItemButton: true, placeholder: true, placeholderValue: 'Selecione...' });
     const choicesChampion = new Choices('#champion-filter', { removeItemButton: true, placeholder: true, placeholderValue: 'Selecione...' });
     const choicesObjective = new Choices('#objective-filter', { removeItemButton: true, placeholder: true, placeholderValue: 'Selecione...' });
+    const choicesSoul = new Choices('#soul-filter', { removeItemButton: true, placeholder: true, placeholderValue: 'Selecione...' });
 
     async function loadAndRender(jsonPath) {
         tableContainer.innerHTML = '<p>Carregando dados...</p>';
@@ -39,32 +39,38 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('#view-selector button.active').classList.remove('active');
         document.querySelector(`button[data-view="${view}"]`).classList.add('active');
 
-        // Mostra/esconde os filtros específicos
         document.getElementById('champion-filter-group').classList.toggle('hidden', view !== 'champions');
         document.getElementById('objective-filter-group').classList.toggle('hidden', view !== 'objectives');
+        document.getElementById('soul-filter-group').classList.toggle('hidden', view !== 'souls');
         
-        // Atualiza o texto do botão e a ordenação padrão
-        if (view === 'champions') {
-            groupByBtn.textContent = 'Agrupar por Campeão';
-            sortState = { column: 'banrate', direction: 'desc' };
-        } else {
-            groupByBtn.textContent = 'Agrupar por Objetivo';
-            sortState = { column: 'winrate', direction: 'desc' };
+        switch (view) {
+            case 'champions':
+                groupByBtn.textContent = 'Agrupar por Campeão';
+                sortState = { column: 'banrate', direction: 'desc' };
+                break;
+            case 'objectives':
+                groupByBtn.textContent = 'Agrupar por Objetivo';
+                sortState = { column: 'winrate', direction: 'desc' };
+                break;
+            case 'souls':
+                groupByBtn.textContent = 'Agrupar por Alma';
+                sortState = { column: 'winrate', direction: 'desc' };
+                break;
         }
 
         loadAndRender(source);
     }
 
     function populateFilters() {
-        // Limpa todas as opções anteriores
-        [choicesLeague, choicesPatch, choicesSplit, choicesChampion, choicesObjective].forEach(c => c.clearStore());
+        [choicesLeague, choicesPatch, choicesSplit, choicesChampion, choicesObjective, choicesSoul].forEach(c => c.clearStore());
         
         const unique = {
             leagues: [...new Set(allData.map(item => item.league))].sort(),
             patches: [...new Set(allData.map(item => String(item.patch)))].sort((a, b) => a.localeCompare(b, undefined, { numeric: true })),
             splits: [...new Set(allData.map(item => item.split))].sort(),
             champions: [...new Set(allData.map(item => item.champion))].sort(),
-            objectives: [...new Set(allData.map(item => item.objective))].sort()
+            objectives: [...new Set(allData.map(item => item.objective))].sort(),
+            souls: [...new Set(allData.map(item => item.soul))].sort()
         };
 
         choicesLeague.setChoices(unique.leagues.map(val => ({ value: val, label: val })), 'value', 'label', true);
@@ -73,62 +79,50 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (currentView === 'champions') {
             choicesChampion.setChoices(unique.champions.map(val => ({ value: val, label: val })), 'value', 'label', true);
-        } else {
+        } else if (currentView === 'objectives') {
             choicesObjective.setChoices(unique.objectives.map(val => ({ value: val, label: val })), 'value', 'label', true);
+        } else if (currentView === 'souls') {
+            choicesSoul.setChoices(unique.souls.map(val => ({ value: val, label: val })), 'value', 'label', true);
         }
     }
     
     function setupEventListeners() {
         viewSelector.addEventListener('click', (e) => {
-            if (e.target.tagName === 'BUTTON') {
+            if (e.target.tagName === 'BUTTON' && !e.target.classList.contains('active')) {
                 switchView(e.target.dataset.view, e.target.dataset.source);
             }
         });
 
-        [choicesLeague, choicesPatch, choicesSplit, choicesChampion, choicesObjective].forEach(choiceInstance => {
+        [choicesLeague, choicesPatch, choicesSplit, choicesChampion, choicesObjective, choicesSoul].forEach(choiceInstance => {
             choiceInstance.passedElement.element.addEventListener('change', renderTable);
         });
         
-        groupByBtn.addEventListener('click', () => {
-            isGrouped = true;
-            renderTable();
-        });
-
-        resetViewBtn.addEventListener('click', () => {
-            isGrouped = false;
-            populateFilters(); // Repopula e limpa seleções
-            renderTable();
-        });
+        groupByBtn.addEventListener('click', () => { isGrouped = true; renderTable(); });
+        resetViewBtn.addEventListener('click', () => { isGrouped = false; populateFilters(); renderTable(); });
     }
 
     function groupDataByChampion(data) {
-        if (data.length === 0) {
-            return [];
-        }
+        if (data.length === 0) return [];
+        const grouped = {};
+        const columnsToProcess = ['picked games', 'banned games', 'total_games', 'winrate'];
 
         const seenCombinations = new Set();
         let trueTotalGames = 0;
-
         data.forEach(row => {
             const combinationKey = `${row.league}|${row.patch}|${row.split}`;
             if (!seenCombinations.has(combinationKey)) {
-                trueTotalGames += row['total games'] || 0;
+                trueTotalGames += row['total_games'] || 0;
                 seenCombinations.add(combinationKey);
             }
         });
 
-        const grouped = {};
-        const columnsToProcess = ['picked games', 'banned games', 'winrate'];
-
         data.forEach(row => {
             const champion = row.champion;
             if (!champion) return;
-
             if (!grouped[champion]) {
                 grouped[champion] = { champion: champion, record_count: 0 };
                 columnsToProcess.forEach(col => grouped[champion][col] = 0);
             }
-            
             grouped[champion].record_count++;
             columnsToProcess.forEach(col => {
                 if (row.hasOwnProperty(col) && typeof row[col] === 'number') {
@@ -137,30 +131,25 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        const finalResult = Object.values(grouped).map(group => {
+        return Object.values(grouped).map(group => {
             const denominator = trueTotalGames > 0 ? trueTotalGames : 1;
             const recordCount = group.record_count > 0 ? group.record_count : 1;
-
             return {
                 'champion': group.champion,
                 'record_count': group.record_count,
                 'picked games': group['picked games'],
-                'pickrate': (group['picked games'] / denominator), 
+                'pickrate': (group['picked games'] / denominator),
                 'banned games': group['banned games'],
-                'banrate': (group['banned games'] / denominator), 
+                'banrate': (group['banned games'] / denominator),
                 'winrate': (group['winrate'] / recordCount),
-                'total games': trueTotalGames 
+                'total_games': trueTotalGames
             };
         });
-
-        return finalResult;
     }
     
-    // NOVA FUNÇÃO PARA AGRUPAR OBJETIVOS
     function groupDataByObjective(data) {
         if (data.length === 0) return [];
         const grouped = {};
-
         data.forEach(row => {
             const objective = row.objective;
             if (!objective) return;
@@ -176,7 +165,6 @@ document.addEventListener('DOMContentLoaded', () => {
             grouped[objective].total_games += row.games || 0;
             grouped[objective].weighted_winrate_sum += (row.winrate || 0) * (row.games || 0);
         });
-
         return Object.values(grouped).map(group => {
             const totalGames = group.total_games > 0 ? group.total_games : 1;
             return {
@@ -184,6 +172,35 @@ document.addEventListener('DOMContentLoaded', () => {
                 'record_count': group.record_count,
                 'games': group.total_games,
                 'winrate': group.weighted_winrate_sum / totalGames
+            };
+        });
+    }
+
+    function groupDataBySoul(data) {
+        if (data.length === 0) return [];
+        const grouped = {};
+        data.forEach(row => {
+            const soul = row.soul;
+            if (!soul) return;
+            if (!grouped[soul]) {
+                grouped[soul] = {
+                    soul: soul,
+                    record_count: 0,
+                    total_count: 0,
+                    weighted_winrate_sum: 0
+                };
+            }
+            grouped[soul].record_count++;
+            grouped[soul].total_count += row.count || 0;
+            grouped[soul].weighted_winrate_sum += (row.winrate || 0) * (row.count || 0);
+        });
+        return Object.values(grouped).map(group => {
+            const totalCount = group.total_count > 0 ? group.total_count : 1;
+            return {
+                'soul': group.soul,
+                'record_count': group.record_count,
+                'count': group.total_count,
+                'winrate': group.weighted_winrate_sum / totalCount
             };
         });
     }
@@ -199,26 +216,39 @@ document.addEventListener('DOMContentLoaded', () => {
             (selectedSplits.length === 0 || selectedSplits.includes(item.split))
         );
         
-        if (currentView === 'champions') {
-            const selectedChampions = choicesChampion.getValue(true);
-            if (selectedChampions.length > 0) {
-                filteredData = filteredData.filter(item => selectedChampions.includes(item.champion));
-            }
-        } else { // objectives view
-            const selectedObjectives = choicesObjective.getValue(true);
-            if (selectedObjectives.length > 0) {
-                filteredData = filteredData.filter(item => selectedObjectives.includes(item.objective));
-            }
+        switch (currentView) {
+            case 'champions':
+                const selectedChampions = choicesChampion.getValue(true);
+                if (selectedChampions.length > 0) {
+                    filteredData = filteredData.filter(item => selectedChampions.includes(item.champion));
+                }
+                break;
+            case 'objectives':
+                const selectedObjectives = choicesObjective.getValue(true);
+                if (selectedObjectives.length > 0) {
+                    filteredData = filteredData.filter(item => selectedObjectives.includes(item.objective));
+                }
+                break;
+            case 'souls':
+                const selectedSouls = choicesSoul.getValue(true);
+                if (selectedSouls.length > 0) {
+                    filteredData = filteredData.filter(item => selectedSouls.includes(item.soul));
+                }
+                break;
         }
         
         let dataToRender;
         if (isGrouped) {
-            dataToRender = currentView === 'champions' ? groupDataByChampion(filteredData) : groupDataByObjective(filteredData);
+            switch (currentView) {
+                case 'champions': dataToRender = groupDataByChampion(filteredData); break;
+                case 'objectives': dataToRender = groupDataByObjective(filteredData); break;
+                case 'souls': dataToRender = groupDataBySoul(filteredData); break;
+                default: dataToRender = filteredData;
+            }
         } else {
             dataToRender = filteredData;
         }
 
-        // ... O resto da função renderTable e addSortListeners continua exatamente igual ...
         dataToRender.sort((a, b) => {
             if (!a.hasOwnProperty(sortState.column) || !b.hasOwnProperty(sortState.column)) return 0;
             const valA = a[sortState.column];
@@ -275,7 +305,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Carga Inicial da primeira visão
-    switchView('champions', 'champions.json');
     setupEventListeners();
+    switchView('champions', 'champions.json');
 });

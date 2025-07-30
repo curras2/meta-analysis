@@ -9,18 +9,52 @@ body {
 header {
     text-align: center;
     margin-bottom: 30px;
-    border-bottom: 1px solid #444;
-    padding-bottom: 20px;
 }
 
 h1 {
     color: #9147ff;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 main {
     max-width: 1400px;
     margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #777;
+    font-size: 0.9em;
+}
+
+nav#view-selector {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #3a3a44;
+    margin-bottom: 20px;
+}
+
+nav#view-selector button {
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    color: #aaa;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+nav#view-selector button:hover {
+    color: #fff;
+}
+
+nav#view-selector button.active {
+    color: #9147ff;
+    font-weight: bold;
+    border-bottom-color: #9147ff;
 }
 
 .controls {
@@ -43,6 +77,10 @@ main {
     min-width: 220px;
 }
 
+.filter-group.hidden {
+    display: none;
+}
+
 label {
     margin-bottom: 5px;
     font-size: 0.9em;
@@ -52,6 +90,7 @@ label {
 .actions {
     display: flex;
     gap: 10px;
+    margin-top: 15px;
 }
 
 .actions button {
@@ -70,7 +109,7 @@ label {
     transform: translateY(-1px);
 }
 
-#group-by-champion-btn {
+#group-by-btn {
     background-color: #9147ff;
     color: #fff;
     border-color: #9147ff;
@@ -96,6 +135,7 @@ thead tr {
 th, td {
     padding: 14px 18px;
     text-align: left;
+    white-space: nowrap;
 }
 
 th {

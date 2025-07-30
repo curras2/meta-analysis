@@ -1,65 +1,102 @@
 document.addEventListener('DOMContentLoaded', () => {
     
     let allData = [];
-    let sortState = { column: 'record_count', direction: 'desc' }; 
+    let currentView = 'champions'; // 'champions' ou 'objectives'
+    let sortState = { column: 'banrate', direction: 'desc' }; 
     let isGrouped = false;
 
     const tableContainer = document.getElementById('table-container');
-    const groupByChampionBtn = document.getElementById('group-by-champion-btn');
+    const viewSelector = document.getElementById('view-selector');
+    const groupByBtn = document.getElementById('group-by-btn');
     const resetViewBtn = document.getElementById('reset-view-btn');
-    const choicesLeague = new Choices('#league-filter', { removeItemButton: true, placeholder: true, placeholderValue: 'Selecione ligas...' });
-    const choicesPatch = new Choices('#patch-filter', { removeItemButton: true, placeholder: true, placeholderValue: 'Selecione patches...' });
-    const choicesSplit = new Choices('#split-filter', { removeItemButton: true, placeholder: true, placeholderValue: 'Selecione splits...' });
-    const choicesChampion = new Choices('#champion-filter', { removeItemButton: true, placeholder: true, placeholderValue: 'Selecione campeões...' });
 
-    async function main() {
+    // Inicializa todos os filtros
+    const choicesLeague = new Choices('#league-filter', { removeItemButton: true, placeholder: true, placeholderValue: 'Selecione...' });
+    const choicesPatch = new Choices('#patch-filter', { removeItemButton: true, placeholder: true, placeholderValue: 'Selecione...' });
+    const choicesSplit = new Choices('#split-filter', { removeItemButton: true, placeholder: true, placeholderValue: 'Selecione...' });
+    const choicesChampion = new Choices('#champion-filter', { removeItemButton: true, placeholder: true, placeholderValue: 'Selecione...' });
+    const choicesObjective = new Choices('#objective-filter', { removeItemButton: true, placeholder: true, placeholderValue: 'Selecione...' });
+
+    async function loadAndRender(jsonPath) {
         tableContainer.innerHTML = '<p>Carregando dados...</p>';
         try {
-
-            const response = await fetch('front/data/champions.json'); 
+            const response = await fetch(`front/data/${jsonPath}`);
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
             allData = await response.json();
             
-            populateAllFiltersOnce();
-            setupEventListeners();
+            populateFilters();
             renderTable();
         } catch (error) {
-            console.error('Erro:', error);
-            tableContainer.innerHTML = `<p style="color: red;">Falha ao carregar dados.</p>`;
+            console.error('Erro ao carregar ou processar dados:', error);
+            tableContainer.innerHTML = `<p style="color: red;">Falha ao carregar ${jsonPath}.</p>`;
         }
     }
 
-    function populateAllFiltersOnce() {
+    function switchView(view, source) {
+        currentView = view;
+        isGrouped = false;
+
+        document.querySelector('#view-selector button.active').classList.remove('active');
+        document.querySelector(`button[data-view="${view}"]`).classList.add('active');
+
+        // Mostra/esconde os filtros específicos
+        document.getElementById('champion-filter-group').classList.toggle('hidden', view !== 'champions');
+        document.getElementById('objective-filter-group').classList.toggle('hidden', view !== 'objectives');
+        
+        // Atualiza o texto do botão e a ordenação padrão
+        if (view === 'champions') {
+            groupByBtn.textContent = 'Agrupar por Campeão';
+            sortState = { column: 'banrate', direction: 'desc' };
+        } else {
+            groupByBtn.textContent = 'Agrupar por Objetivo';
+            sortState = { column: 'winrate', direction: 'desc' };
+        }
+
+        loadAndRender(source);
+    }
+
+    function populateFilters() {
+        // Limpa todas as opções anteriores
+        [choicesLeague, choicesPatch, choicesSplit, choicesChampion, choicesObjective].forEach(c => c.clearStore());
+        
         const unique = {
             leagues: [...new Set(allData.map(item => item.league))].sort(),
             patches: [...new Set(allData.map(item => String(item.patch)))].sort((a, b) => a.localeCompare(b, undefined, { numeric: true })),
             splits: [...new Set(allData.map(item => item.split))].sort(),
-            champions: [...new Set(allData.map(item => item.champion))].sort()
+            champions: [...new Set(allData.map(item => item.champion))].sort(),
+            objectives: [...new Set(allData.map(item => item.objective))].sort()
         };
+
         choicesLeague.setChoices(unique.leagues.map(val => ({ value: val, label: val })), 'value', 'label', true);
         choicesPatch.setChoices(unique.patches.map(val => ({ value: val, label: val })), 'value', 'label', true);
         choicesSplit.setChoices(unique.splits.map(val => ({ value: val, label: val })), 'value', 'label', true);
-        choicesChampion.setChoices(unique.champions.map(val => ({ value: val, label: val })), 'value', 'label', true);
+        
+        if (currentView === 'champions') {
+            choicesChampion.setChoices(unique.champions.map(val => ({ value: val, label: val })), 'value', 'label', true);
+        } else {
+            choicesObjective.setChoices(unique.objectives.map(val => ({ value: val, label: val })), 'value', 'label', true);
+        }
     }
     
     function setupEventListeners() {
-        document.getElementById('league-filter').addEventListener('change', renderTable);
-        document.getElementById('patch-filter').addEventListener('change', renderTable);
-        document.getElementById('split-filter').addEventListener('change', renderTable);
-        document.getElementById('champion-filter').addEventListener('change', renderTable);
+        viewSelector.addEventListener('click', (e) => {
+            if (e.target.tagName === 'BUTTON') {
+                switchView(e.target.dataset.view, e.target.dataset.source);
+            }
+        });
+
+        [choicesLeague, choicesPatch, choicesSplit, choicesChampion, choicesObjective].forEach(choiceInstance => {
+            choiceInstance.passedElement.element.addEventListener('change', renderTable);
+        });
         
-        groupByChampionBtn.addEventListener('click', () => {
+        groupByBtn.addEventListener('click', () => {
             isGrouped = true;
-            sortState = { column: 'record_count', direction: 'desc' };
             renderTable();
         });
 
         resetViewBtn.addEventListener('click', () => {
             isGrouped = false;
-            sortState = { column: 'banrate', direction: 'desc' };
-
-            [choicesLeague, choicesPatch, choicesSplit, choicesChampion].forEach(c => c.clearStore());
-            populateAllFiltersOnce();
+            populateFilters(); // Repopula e limpa seleções
             renderTable();
         });
     }
@@ -118,22 +155,70 @@ document.addEventListener('DOMContentLoaded', () => {
 
         return finalResult;
     }
+    
+    // NOVA FUNÇÃO PARA AGRUPAR OBJETIVOS
+    function groupDataByObjective(data) {
+        if (data.length === 0) return [];
+        const grouped = {};
+
+        data.forEach(row => {
+            const objective = row.objective;
+            if (!objective) return;
+            if (!grouped[objective]) {
+                grouped[objective] = {
+                    objective: objective,
+                    record_count: 0,
+                    total_games: 0,
+                    weighted_winrate_sum: 0
+                };
+            }
+            grouped[objective].record_count++;
+            grouped[objective].total_games += row.games || 0;
+            grouped[objective].weighted_winrate_sum += (row.winrate || 0) * (row.games || 0);
+        });
+
+        return Object.values(grouped).map(group => {
+            const totalGames = group.total_games > 0 ? group.total_games : 1;
+            return {
+                'objective': group.objective,
+                'record_count': group.record_count,
+                'games': group.total_games,
+                'winrate': group.weighted_winrate_sum / totalGames
+            };
+        });
+    }
 
     function renderTable() {
         const selectedLeagues = choicesLeague.getValue(true);
         const selectedPatches = choicesPatch.getValue(true);
         const selectedSplits = choicesSplit.getValue(true);
-        const selectedChampions = choicesChampion.getValue(true);
 
         let filteredData = allData.filter(item => 
             (selectedLeagues.length === 0 || selectedLeagues.includes(item.league)) &&
             (selectedPatches.length === 0 || selectedPatches.includes(String(item.patch))) &&
-            (selectedSplits.length === 0 || selectedSplits.includes(item.split)) &&
-            (selectedChampions.length === 0 || selectedChampions.includes(item.champion))
+            (selectedSplits.length === 0 || selectedSplits.includes(item.split))
         );
         
-        let dataToRender = isGrouped ? groupDataByChampion(filteredData) : filteredData;
+        if (currentView === 'champions') {
+            const selectedChampions = choicesChampion.getValue(true);
+            if (selectedChampions.length > 0) {
+                filteredData = filteredData.filter(item => selectedChampions.includes(item.champion));
+            }
+        } else { // objectives view
+            const selectedObjectives = choicesObjective.getValue(true);
+            if (selectedObjectives.length > 0) {
+                filteredData = filteredData.filter(item => selectedObjectives.includes(item.objective));
+            }
+        }
+        
+        let dataToRender;
+        if (isGrouped) {
+            dataToRender = currentView === 'champions' ? groupDataByChampion(filteredData) : groupDataByObjective(filteredData);
+        } else {
+            dataToRender = filteredData;
+        }
 
+        // ... O resto da função renderTable e addSortListeners continua exatamente igual ...
         dataToRender.sort((a, b) => {
             if (!a.hasOwnProperty(sortState.column) || !b.hasOwnProperty(sortState.column)) return 0;
             const valA = a[sortState.column];
@@ -148,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const headers = Object.keys(dataToRender[0]);
+        const headers = Object.keys(dataToRender[0] || {});
         const getSortIndicator = col => sortState.column === col ? (sortState.direction === 'asc' ? ' ▲' : ' ▼') : '';
         
         let tableHTML = '<table><thead><tr>';
@@ -190,5 +275,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    main();
+    // Carga Inicial da primeira visão
+    switchView('champions', 'champions.json');
+    setupEventListeners();
 });

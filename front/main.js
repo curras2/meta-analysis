@@ -45,6 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('soul-filter-group').classList.toggle('hidden', view !== 'souls');
         document.getElementById('side-filter-group').classList.toggle('hidden', view !== 'sides');
         
+        const isGroupable = ['champions', 'objectives', 'souls', 'sides', 'game_length'].includes(view);
+        groupByBtn.style.display = isGroupable ? 'inline-block' : 'none';
+        
         switch (view) {
             case 'champions':
                 groupByBtn.textContent = 'Agrupar por Campeão';
@@ -61,6 +64,10 @@ document.addEventListener('DOMContentLoaded', () => {
             case 'sides':
                 groupByBtn.textContent = 'Agrupar por Lado';
                 sortState = { column: 'winrate', direction: 'desc' };
+                break;
+            case 'game_length':
+                groupByBtn.textContent = 'Agrupar por Liga';
+                sortState = { column: 'game_length_mean_seconds', direction: 'desc' };
                 break;
         }
 
@@ -156,10 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!objective) return;
             if (!grouped[objective]) {
                 grouped[objective] = {
-                    objective: objective,
-                    record_count: 0,
-                    total_games: 0,
-                    weighted_winrate_sum: 0
+                    objective: objective, record_count: 0, total_games: 0, weighted_winrate_sum: 0
                 };
             }
             grouped[objective].record_count++;
@@ -169,10 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return Object.values(grouped).map(group => {
             const totalGames = group.total_games > 0 ? group.total_games : 1;
             return {
-                'objective': group.objective,
-                'record_count': group.record_count,
-                'games': group.total_games,
-                'winrate': group.weighted_winrate_sum / totalGames
+                'objective': group.objective, 'record_count': group.record_count, 'games': group.total_games, 'winrate': group.weighted_winrate_sum / totalGames
             };
         });
     }
@@ -185,10 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!soul) return;
             if (!grouped[soul]) {
                 grouped[soul] = {
-                    soul: soul,
-                    record_count: 0,
-                    total_count: 0,
-                    weighted_winrate_sum: 0
+                    soul: soul, record_count: 0, total_count: 0, weighted_winrate_sum: 0
                 };
             }
             grouped[soul].record_count++;
@@ -198,10 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return Object.values(grouped).map(group => {
             const totalCount = group.total_count > 0 ? group.total_count : 1;
             return {
-                'soul': group.soul,
-                'record_count': group.record_count,
-                'count': group.total_count,
-                'winrate': group.weighted_winrate_sum / totalCount
+                'soul': group.soul, 'record_count': group.record_count, 'count': group.total_count, 'winrate': group.weighted_winrate_sum / totalCount
             };
         });
     }
@@ -221,23 +216,54 @@ document.addEventListener('DOMContentLoaded', () => {
         return Object.values(grouped).map(group => {
             const recordCount = group.record_count > 0 ? group.record_count : 1;
             return {
-                'side': group.side,
+                'side': group.side, 'record_count': group.record_count, 'winrate': group.winrate_sum / recordCount
+            };
+        });
+    }
+
+    function groupDataByLeague(data) {
+        if (data.length === 0) return [];
+        const grouped = {};
+
+        data.forEach(row => {
+            const league = row.league;
+            if (!league) return;
+
+            const timeParts = String(row.game_length_mean).split(':');
+            const seconds = (+timeParts[0] || 0) * 60 + (+timeParts[1] || 0);
+
+            if (!grouped[league]) {
+                grouped[league] = { league: league, record_count: 0, total_seconds: 0 };
+            }
+            
+            grouped[league].record_count++;
+            grouped[league].total_seconds += seconds;
+        });
+
+        return Object.values(grouped).map(group => {
+            const recordCount = group.record_count > 0 ? group.record_count : 1;
+            const avgSeconds = group.total_seconds / recordCount;
+            const minutes = Math.floor(avgSeconds / 60);
+            const seconds = Math.round(avgSeconds % 60).toString().padStart(2, '0');
+            
+            return {
+                'league': group.league,
                 'record_count': group.record_count,
-                'winrate': group.winrate_sum / recordCount
+                'game_length_mean_seconds': avgSeconds,
+                'game_length_mean': `${minutes}:${seconds}`
             };
         });
     }
 
     function renderTable() {
-        const selectedLeagues = choicesLeague.getValue(true);
-        const selectedPatches = choicesPatch.getValue(true);
-        const selectedSplits = choicesSplit.getValue(true);
-
-        let filteredData = allData.filter(item => 
-            (selectedLeagues.length === 0 || selectedLeagues.includes(item.league)) &&
-            (selectedPatches.length === 0 || selectedPatches.includes(String(item.patch))) &&
-            (selectedSplits.length === 0 || selectedSplits.includes(item.split))
-        );
+        let filteredData = allData.filter(item => {
+            const selectedLeagues = choicesLeague.getValue(true);
+            const selectedPatches = choicesPatch.getValue(true);
+            const selectedSplits = choicesSplit.getValue(true);
+            return (selectedLeagues.length === 0 || selectedLeagues.includes(item.league)) &&
+                   (selectedPatches.length === 0 || selectedPatches.includes(String(item.patch))) &&
+                   (selectedSplits.length === 0 || selectedSplits.includes(item.split));
+        });
         
         switch (currentView) {
             case 'champions':
@@ -265,6 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 case 'objectives': dataToRender = groupDataByObjective(filteredData); break;
                 case 'souls': dataToRender = groupDataBySoul(filteredData); break;
                 case 'sides': dataToRender = groupDataBySide(filteredData); break;
+                case 'game_length': dataToRender = groupDataByLeague(filteredData); break;
                 default: dataToRender = filteredData;
             }
         } else {
@@ -289,19 +316,25 @@ document.addEventListener('DOMContentLoaded', () => {
         const getSortIndicator = col => sortState.column === col ? (sortState.direction === 'asc' ? ' ▲' : ' ▼') : '';
         
         let tableHTML = '<table><thead><tr>';
-        headers.forEach(h => tableHTML += `<th data-sort="${h}">${h.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}${getSortIndicator(h)}</th>`);
+        headers.forEach(h => {
+            if (h !== 'game_length_mean_seconds') {
+                tableHTML += `<th data-sort="${h}">${h.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}${getSortIndicator(h)}</th>`;
+            }
+        });
         tableHTML += '</tr></thead><tbody>';
         
         dataToRender.slice(0, 200).forEach(row => {
             tableHTML += '<tr>';
             headers.forEach(header => {
-                let value = row[header];
-                if (typeof value === 'number' && (header.includes('rate') || header.includes('winrate'))) {
-                    value = (value * 100).toFixed(2) + '%';
-                } else if (typeof value === 'number' && value % 1 !== 0) {
-                     value = value.toFixed(2);
+                if (header !== 'game_length_mean_seconds') {
+                    let value = row[header];
+                    if (typeof value === 'number' && (header.includes('rate') || header.includes('winrate'))) {
+                        value = (value * 100).toFixed(2) + '%';
+                    } else if (typeof value === 'number' && value % 1 !== 0) {
+                         value = value.toFixed(2);
+                    }
+                    tableHTML += `<td>${value ?? 'N/A'}</td>`;
                 }
-                tableHTML += `<td>${value ?? 'N/A'}</td>`;
             });
             tableHTML += '</tr>';
         });

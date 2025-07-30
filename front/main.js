@@ -18,6 +18,55 @@ document.addEventListener('DOMContentLoaded', () => {
     const choicesSoul = new Choices('#soul-filter', { removeItemButton: true, placeholder: true, placeholderValue: 'Selecione...' });
     const choicesSide = new Choices('#side-filter', { removeItemButton: true, placeholder: true, placeholderValue: 'Selecione...' });
 
+    function getViewConfig(view) {
+        const defaultConfig = {
+            groupByKey: null,
+            defaultSort: { column: 'winrate', direction: 'desc' },
+            columnOrder: [],
+            groupedColumnOrder: []
+        };
+
+        switch (view) {
+            case 'champions':
+                return {
+                    groupByKey: 'champion',
+                    defaultSort: { column: 'champion', direction: 'asc' },
+                    columnOrder: ['league', 'split','patch', 'champion', 'pickrate', 'banrate', 'picked games', 'banned games', 'total games', 'winrate'],
+                    groupedColumnOrder: ['champion', 'pickrate', 'banrate', 'picked games', 'banned games', 'total games', 'winrate']
+                };
+            case 'objectives':
+                return {
+                    groupByKey: 'objective',
+                    defaultSort: { column: 'winrate', direction: 'desc' },
+                    columnOrder: ['objective', 'league', 'patch', 'split', 'winrate', 'games'],
+                    groupedColumnOrder: ['objective', 'record_count', 'winrate', 'games']
+                };
+            case 'souls':
+                return {
+                    groupByKey: 'soul',
+                    defaultSort: { column: 'winrate', direction: 'desc' },
+                    columnOrder: ['soul', 'league', 'patch', 'split', 'winrate', 'count'],
+                    groupedColumnOrder: ['soul', 'record_count', 'winrate', 'count']
+                };
+            case 'sides':
+                return {
+                    groupByKey: 'side',
+                    defaultSort: { column: 'winrate', direction: 'desc' },
+                    columnOrder: ['side', 'league', 'patch', 'split', 'winrate'],
+                    groupedColumnOrder: ['side', 'record_count', 'winrate']
+                };
+            case 'game_length':
+                return {
+                    groupByKey: 'league',
+                    defaultSort: { column: 'game_length_mean', direction: 'desc' },
+                    columnOrder: ['league', 'patch', 'split', 'game_length_mean'],
+                    groupedColumnOrder: ['league', 'record_count', 'game_length_mean', 'game_length_mean_seconds']
+                };
+            default:
+                return defaultConfig;
+        }
+    }
+
     async function loadAndRender(jsonPath) {
         tableContainer.innerHTML = '<p>Carregando dados...</p>';
         try {
@@ -36,6 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function switchView(view, source) {
         currentView = view;
         isGrouped = false;
+        const config = getViewConfig(view);
 
         document.querySelector('#view-selector button.active').classList.remove('active');
         document.querySelector(`button[data-view="${view}"]`).classList.add('active');
@@ -45,32 +95,12 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('soul-filter-group').classList.toggle('hidden', view !== 'souls');
         document.getElementById('side-filter-group').classList.toggle('hidden', view !== 'sides');
         
-        const isGroupable = ['champions', 'objectives', 'souls', 'sides', 'game_length'].includes(view);
-        groupByBtn.style.display = isGroupable ? 'inline-block' : 'none';
-        
-        switch (view) {
-            case 'champions':
-                groupByBtn.textContent = 'Agrupar por Campeão';
-                sortState = { column: 'banrate', direction: 'desc' };
-                break;
-            case 'objectives':
-                groupByBtn.textContent = 'Agrupar por Objetivo';
-                sortState = { column: 'winrate', direction: 'desc' };
-                break;
-            case 'souls':
-                groupByBtn.textContent = 'Agrupar por Alma';
-                sortState = { column: 'winrate', direction: 'desc' };
-                break;
-            case 'sides':
-                groupByBtn.textContent = 'Agrupar por Lado';
-                sortState = { column: 'winrate', direction: 'desc' };
-                break;
-            case 'game_length':
-                groupByBtn.textContent = 'Agrupar por Liga';
-                sortState = { column: 'game_length_mean_seconds', direction: 'desc' };
-                break;
+        groupByBtn.style.display = config.groupByKey ? 'inline-block' : 'none';
+        if (config.groupByKey) {
+            groupByBtn.textContent = `Agrupar por ${config.groupByKey.charAt(0).toUpperCase() + config.groupByKey.slice(1)}`;
         }
-
+        
+        sortState = config.defaultSort;
         loadAndRender(source);
     }
 
@@ -224,28 +254,22 @@ document.addEventListener('DOMContentLoaded', () => {
     function groupDataByLeague(data) {
         if (data.length === 0) return [];
         const grouped = {};
-
         data.forEach(row => {
             const league = row.league;
             if (!league) return;
-
             const timeParts = String(row.game_length_mean).split(':');
             const seconds = (+timeParts[0] || 0) * 60 + (+timeParts[1] || 0);
-
             if (!grouped[league]) {
                 grouped[league] = { league: league, record_count: 0, total_seconds: 0 };
             }
-            
             grouped[league].record_count++;
             grouped[league].total_seconds += seconds;
         });
-
         return Object.values(grouped).map(group => {
             const recordCount = group.record_count > 0 ? group.record_count : 1;
             const avgSeconds = group.total_seconds / recordCount;
             const minutes = Math.floor(avgSeconds / 60);
             const seconds = Math.round(avgSeconds % 60).toString().padStart(2, '0');
-            
             return {
                 'league': group.league,
                 'record_count': group.record_count,
@@ -256,14 +280,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderTable() {
-        let filteredData = allData.filter(item => {
-            const selectedLeagues = choicesLeague.getValue(true);
-            const selectedPatches = choicesPatch.getValue(true);
-            const selectedSplits = choicesSplit.getValue(true);
-            return (selectedLeagues.length === 0 || selectedLeagues.includes(item.league)) &&
-                   (selectedPatches.length === 0 || selectedPatches.includes(String(item.patch))) &&
-                   (selectedSplits.length === 0 || selectedSplits.includes(item.split));
-        });
+        const selectedLeagues = choicesLeague.getValue(true);
+        const selectedPatches = choicesPatch.getValue(true);
+        const selectedSplits = choicesSplit.getValue(true);
+
+        let filteredData = allData.filter(item => 
+            (selectedLeagues.length === 0 || selectedLeagues.includes(item.league)) &&
+            (selectedPatches.length === 0 || selectedPatches.includes(String(item.patch))) &&
+            (selectedSplits.length === 0 || selectedSplits.includes(item.split))
+        );
         
         switch (currentView) {
             case 'champions':
@@ -312,12 +337,13 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const headers = Object.keys(dataToRender[0] || {});
+        const config = getViewConfig(currentView);
+        const headers = isGrouped ? config.groupedColumnOrder : config.columnOrder;
         const getSortIndicator = col => sortState.column === col ? (sortState.direction === 'asc' ? ' ▲' : ' ▼') : '';
         
         let tableHTML = '<table><thead><tr>';
         headers.forEach(h => {
-            if (h !== 'game_length_mean_seconds') {
+            if (dataToRender[0].hasOwnProperty(h)) {
                 tableHTML += `<th data-sort="${h}">${h.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}${getSortIndicator(h)}</th>`;
             }
         });
@@ -326,7 +352,7 @@ document.addEventListener('DOMContentLoaded', () => {
         dataToRender.slice(0, 200).forEach(row => {
             tableHTML += '<tr>';
             headers.forEach(header => {
-                if (header !== 'game_length_mean_seconds') {
+                if (row.hasOwnProperty(header)) {
                     let value = row[header];
                     if (typeof value === 'number' && (header.includes('rate') || header.includes('winrate'))) {
                         value = (value * 100).toFixed(2) + '%';

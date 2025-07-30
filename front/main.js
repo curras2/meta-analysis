@@ -53,14 +53,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     groupByKey: 'side',
                     defaultSort: { column: 'side', direction: 'asc' },
                     columnOrder: ['league', 'split','patch', 'side', 'winrate'],
-                    groupedColumnOrder: ['side', 'record_count', 'winrate']
+                    groupedColumnOrder: ['side', 'games', 'winrate']
                 };
             case 'game_length':
                 return {
                     groupByKey: 'league',
                     defaultSort: { column: 'game_length_mean', direction: 'desc' },
                     columnOrder: ['league', 'split', 'patch', 'game_length_mean'],
-                    groupedColumnOrder: ['league', 'record_count', 'game_length_mean']
+                    groupedColumnOrder: ['league', 'game_length_mean']
                 };
             default:
                 return defaultConfig;
@@ -246,7 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return Object.values(grouped).map(group => {
             const recordCount = group.record_count > 0 ? group.record_count : 1;
             return {
-                'side': group.side, 'record_count': group.record_count, 'winrate': group.winrate_sum / recordCount
+                'side': group.side, 'games': group.record_count, 'winrate': group.winrate_sum / recordCount
             };
         });
     }

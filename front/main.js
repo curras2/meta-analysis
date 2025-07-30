@@ -37,30 +37,30 @@ document.addEventListener('DOMContentLoaded', () => {
             case 'objectives':
                 return {
                     groupByKey: 'objective',
-                    defaultSort: { column: 'winrate', direction: 'desc' },
-                    columnOrder: ['objective', 'league', 'patch', 'split', 'winrate', 'games'],
-                    groupedColumnOrder: ['objective', 'record_count', 'winrate', 'games']
+                    defaultSort: { column: 'objective', direction: 'asc' },
+                    columnOrder: ['league', 'split', 'patch', 'objective', 'games', 'winrate'],
+                    groupedColumnOrder: ['objective', 'games', 'winrate']
                 };
             case 'souls':
                 return {
                     groupByKey: 'soul',
-                    defaultSort: { column: 'winrate', direction: 'desc' },
-                    columnOrder: ['soul', 'league', 'patch', 'split', 'winrate', 'count'],
-                    groupedColumnOrder: ['soul', 'record_count', 'winrate', 'count']
+                    defaultSort: { column: 'soul', direction: 'asc' },
+                    columnOrder: ['league', 'split', 'patch', 'soul', 'count', 'winrate'],
+                    groupedColumnOrder: ['soul', 'count', 'winrate']
                 };
             case 'sides':
                 return {
                     groupByKey: 'side',
-                    defaultSort: { column: 'winrate', direction: 'desc' },
-                    columnOrder: ['side', 'league', 'patch', 'split', 'winrate'],
+                    defaultSort: { column: 'side', direction: 'asc' },
+                    columnOrder: ['league', 'split','patch', 'side', 'winrate'],
                     groupedColumnOrder: ['side', 'record_count', 'winrate']
                 };
             case 'game_length':
                 return {
                     groupByKey: 'league',
                     defaultSort: { column: 'game_length_mean', direction: 'desc' },
-                    columnOrder: ['league', 'patch', 'split', 'game_length_mean'],
-                    groupedColumnOrder: ['league', 'record_count', 'game_length_mean', 'game_length_mean_seconds']
+                    columnOrder: ['league', 'split', 'patch', 'game_length_mean'],
+                    groupedColumnOrder: ['league', 'record_count', 'game_length_mean']
                 };
             default:
                 return defaultConfig;

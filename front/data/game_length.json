@@ -1,0 +1,422 @@
+[
+  {
+    "league":"LCK",
+    "patch":15.01,
+    "split":"Cup",
+    "game_length_mean":"32:25"
+  },
+  {
+    "league":"LCK",
+    "patch":15.02,
+    "split":"Cup",
+    "game_length_mean":"31:42"
+  },
+  {
+    "league":"LCK",
+    "patch":15.03,
+    "split":"Cup",
+    "game_length_mean":"31:47"
+  },
+  {
+    "league":"LCK",
+    "patch":15.06,
+    "split":"Rounds 1-2",
+    "game_length_mean":"34:03"
+  },
+  {
+    "league":"LCK",
+    "patch":15.07,
+    "split":"Rounds 1-2",
+    "game_length_mean":"31:19"
+  },
+  {
+    "league":"LCK",
+    "patch":15.08,
+    "split":"Rounds 1-2",
+    "game_length_mean":"32:46"
+  },
+  {
+    "league":"LCK",
+    "patch":15.09,
+    "split":"Rounds 1-2",
+    "game_length_mean":"31:18"
+  },
+  {
+    "league":"LCK",
+    "patch":15.1,
+    "split":"Rounds 1-2",
+    "game_length_mean":"32:20"
+  },
+  {
+    "league":"LCK",
+    "patch":15.11,
+    "split":"Rounds 1-2",
+    "game_length_mean":"32:28"
+  },
+  {
+    "league":"LCP",
+    "patch":15.01,
+    "split":"Split 1",
+    "game_length_mean":"32:28"
+  },
+  {
+    "league":"LCP",
+    "patch":15.02,
+    "split":"Split 1",
+    "game_length_mean":"30:38"
+  },
+  {
+    "league":"LCP",
+    "patch":15.03,
+    "split":"Split 1",
+    "game_length_mean":"32:42"
+  },
+  {
+    "league":"LCP",
+    "patch":15.08,
+    "split":"Split 2",
+    "game_length_mean":"29:56"
+  },
+  {
+    "league":"LCP",
+    "patch":15.09,
+    "split":"Split 2",
+    "game_length_mean":"30:31"
+  },
+  {
+    "league":"LCP",
+    "patch":15.1,
+    "split":"Split 2",
+    "game_length_mean":"33:18"
+  },
+  {
+    "league":"LEC",
+    "patch":15.01,
+    "split":"Winter",
+    "game_length_mean":"35:16"
+  },
+  {
+    "league":"LEC",
+    "patch":15.02,
+    "split":"Winter",
+    "game_length_mean":"32:45"
+  },
+  {
+    "league":"LEC",
+    "patch":15.03,
+    "split":"Winter",
+    "game_length_mean":"33:58"
+  },
+  {
+    "league":"LEC",
+    "patch":15.06,
+    "split":"Spring",
+    "game_length_mean":"33:08"
+  },
+  {
+    "league":"LEC",
+    "patch":15.07,
+    "split":"Spring",
+    "game_length_mean":"34:43"
+  },
+  {
+    "league":"LEC",
+    "patch":15.08,
+    "split":"Spring",
+    "game_length_mean":"34:18"
+  },
+  {
+    "league":"LEC",
+    "patch":15.09,
+    "split":"Spring",
+    "game_length_mean":"32:09"
+  },
+  {
+    "league":"LEC",
+    "patch":15.1,
+    "split":"Spring",
+    "game_length_mean":"33:53"
+  },
+  {
+    "league":"LJL",
+    "patch":15.02,
+    "split":"Forge",
+    "game_length_mean":"33:12"
+  },
+  {
+    "league":"LJL",
+    "patch":15.04,
+    "split":"Forge",
+    "game_length_mean":"32:05"
+  },
+  {
+    "league":"LJL",
+    "patch":15.07,
+    "split":"Storm",
+    "game_length_mean":"30:25"
+  },
+  {
+    "league":"LJL",
+    "patch":15.08,
+    "split":"Storm",
+    "game_length_mean":"30:58"
+  },
+  {
+    "league":"LJL",
+    "patch":15.1,
+    "split":"Ignite",
+    "game_length_mean":"29:09"
+  },
+  {
+    "league":"LJL",
+    "patch":15.11,
+    "split":"Ignite",
+    "game_length_mean":"30:39"
+  },
+  {
+    "league":"LJL",
+    "patch":15.12,
+    "split":"Ignite",
+    "game_length_mean":"32:40"
+  },
+  {
+    "league":"LTA S",
+    "patch":15.02,
+    "split":"Split 1",
+    "game_length_mean":"33:57"
+  },
+  {
+    "league":"LTA S",
+    "patch":15.03,
+    "split":"Split 1",
+    "game_length_mean":"37:51"
+  },
+  {
+    "league":"LTA S",
+    "patch":15.07,
+    "split":"Split 2",
+    "game_length_mean":"33:21"
+  },
+  {
+    "league":"LTA S",
+    "patch":15.08,
+    "split":"Split 2",
+    "game_length_mean":"32:44"
+  },
+  {
+    "league":"LTA S",
+    "patch":15.09,
+    "split":"Split 2",
+    "game_length_mean":"32:41"
+  },
+  {
+    "league":"LTA S",
+    "patch":15.1,
+    "split":"Split 2",
+    "game_length_mean":"33:32"
+  },
+  {
+    "league":"LTA S",
+    "patch":15.11,
+    "split":"Split 2",
+    "game_length_mean":"32:46"
+  },
+  {
+    "league":"LTA N",
+    "patch":15.02,
+    "split":"Split 1",
+    "game_length_mean":"32:07"
+  },
+  {
+    "league":"LTA N",
+    "patch":15.03,
+    "split":"Split 1",
+    "game_length_mean":"34:16"
+  },
+  {
+    "league":"LTA N",
+    "patch":15.07,
+    "split":"Split 2",
+    "game_length_mean":"35:07"
+  },
+  {
+    "league":"LTA N",
+    "patch":15.08,
+    "split":"Split 2",
+    "game_length_mean":"33:01"
+  },
+  {
+    "league":"LTA N",
+    "patch":15.09,
+    "split":"Split 2",
+    "game_length_mean":"35:40"
+  },
+  {
+    "league":"LTA N",
+    "patch":15.1,
+    "split":"Split 2",
+    "game_length_mean":"33:39"
+  },
+  {
+    "league":"LTA N",
+    "patch":15.11,
+    "split":"Split 2",
+    "game_length_mean":"34:32"
+  },
+  {
+    "league":"PCS",
+    "patch":15.03,
+    "split":"Split 1",
+    "game_length_mean":"29:20"
+  },
+  {
+    "league":"PCS",
+    "patch":15.04,
+    "split":"Split 1",
+    "game_length_mean":"30:08"
+  },
+  {
+    "league":"PCS",
+    "patch":15.05,
+    "split":"Split 1",
+    "game_length_mean":"29:11"
+  },
+  {
+    "league":"PCS",
+    "patch":15.07,
+    "split":"Split 2",
+    "game_length_mean":"31:00"
+  },
+  {
+    "league":"PCS",
+    "patch":15.08,
+    "split":"Split 2",
+    "game_length_mean":"30:31"
+  },
+  {
+    "league":"PCS",
+    "patch":15.09,
+    "split":"Split 2",
+    "game_length_mean":"29:01"
+  },
+  {
+    "league":"PCS",
+    "patch":15.1,
+    "split":"Split 2",
+    "game_length_mean":"28:33"
+  },
+  {
+    "league":"PCS",
+    "patch":15.11,
+    "split":"Split 2",
+    "game_length_mean":"29:23"
+  },
+  {
+    "league":"PCS",
+    "patch":15.14,
+    "split":"Split 3",
+    "game_length_mean":"33:12"
+  },
+  {
+    "league":"VCS",
+    "patch":15.04,
+    "split":"Spring",
+    "game_length_mean":"32:02"
+  },
+  {
+    "league":"VCS",
+    "patch":15.05,
+    "split":"Spring",
+    "game_length_mean":"31:26"
+  },
+  {
+    "league":"VCS",
+    "patch":15.09,
+    "split":"Summer",
+    "game_length_mean":"31:23"
+  },
+  {
+    "league":"VCS",
+    "patch":15.1,
+    "split":"Summer",
+    "game_length_mean":"31:27"
+  },
+  {
+    "league":"VCS",
+    "patch":15.11,
+    "split":"Summer",
+    "game_length_mean":"31:27"
+  },
+  {
+    "league":"VCS",
+    "patch":15.13,
+    "split":"Finals",
+    "game_length_mean":"29:05"
+  },
+  {
+    "league":"MSI",
+    "patch":15.13,
+    "split":"MSI",
+    "game_length_mean":"32:34"
+  },
+  {
+    "league":"LPL",
+    "patch":15.01,
+    "split":"Split 1",
+    "game_length_mean":"32:37"
+  },
+  {
+    "league":"LPL",
+    "patch":15.02,
+    "split":"Split 1",
+    "game_length_mean":"33:24"
+  },
+  {
+    "league":"LPL",
+    "patch":15.04,
+    "split":"Split 1",
+    "game_length_mean":"32:32"
+  },
+  {
+    "league":"LPL",
+    "patch":15.07,
+    "split":"Split 2",
+    "game_length_mean":"33:29"
+  },
+  {
+    "league":"LPL",
+    "patch":15.08,
+    "split":"Split 2",
+    "game_length_mean":"31:42"
+  },
+  {
+    "league":"LPL",
+    "patch":15.09,
+    "split":"Split 2",
+    "game_length_mean":"33:13"
+  },
+  {
+    "league":"LPL",
+    "patch":15.1,
+    "split":"Split 2",
+    "game_length_mean":"33:22"
+  },
+  {
+    "league":"LPL",
+    "patch":15.11,
+    "split":"Split 2",
+    "game_length_mean":"31:20"
+  },
+  {
+    "league":"LPL",
+    "patch":15.06,
+    "split":"Split 2 Placements",
+    "game_length_mean":"32:05"
+  },
+  {
+    "league":"LPL",
+    "patch":15.14,
+    "split":"Split 3",
+    "game_length_mean":"33:34"
+  }
+]

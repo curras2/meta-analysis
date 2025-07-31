@@ -2,7 +2,6 @@ import df_generators as df_gen
 import analysis as an
 import db_conn as conn
 import traceback
-import os
 
 lol_df = df_gen.create_lol_df()
 
@@ -47,14 +46,16 @@ for league in unique_leagues:
                         player_df = df_gen.create_player_df(columns_filtered_df)
 
                         # Análise
-                        pickrate_dict_list = an.pickrate_analysis(team_df)
-                        banrate_dict_list = an.banrate_analysis(team_df)
-                        wr_champs_dict_list = an.champ_winrate_analysis(player_df)
-                        wr_side_dict_list = an.side_winrate_analysis(team_df)
-                        wr_objectives_dict_list = an.objectives_analysis(team_df)
+                        analysis = an.Analysis(team_df, player_df)
+
+                        pickrate_dict_list = analysis.pickrate_analysis()
+                        banrate_dict_list = analysis.banrate_analysis()
+                        wr_champs_dict_list = analysis.champ_winrate_analysis()
+                        wr_side_dict_list = analysis.side_winrate_analysis()
+                        wr_objectives_dict_list = analysis.objectives_analysis()
                         if league != "LPL":
-                            wr_dragon_soul_dict_list = an.dragon_soul_winrate_analysis(team_df)
-                        game_length_dict_list = an.game_length_analysis(team_df)
+                            wr_dragon_soul_dict_list = analysis.dragon_soul_winrate_analysis()
+                        game_length_dict_list = analysis.game_length_analysis()
 
                         db.upsert_pickrate_record(pickrate_dict_list)
                         db.upsert_banrate_record(banrate_dict_list)

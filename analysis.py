@@ -86,7 +86,7 @@ def side_winrate_analysis(team_df):
 
 def elder_winrate_analysis(team_df):
     elder_df = team_df[["elders", "result"]]
-    elder_df = elder_df[elder_df["elders"] != 0]
+    elder_df = elder_df[elder_df["elders"] > 0]
 
     if not elder_df.empty:
         wr_elder_dict = elder_df.agg(
@@ -252,17 +252,15 @@ def game_length_analysis(team_df):
     return results_list
 
 def objectives_analysis(team_df):
-
-    elder_dict = elder_winrate_analysis(team_df)
     baron_dict = baron_winrate_analysis(team_df)
     herald_dict = herald_winrate_analysis(team_df)
     void_grub_dict = void_grub_winrate_analysis(team_df)
     soul_dict = soul_winrate_analysis(team_df)
     if team_df.iloc[0]["league"] != "LPL":
         atakhan_dict = atakhan_winrate_analysis(team_df)
+        elder_dict = elder_winrate_analysis(team_df)
 
     objectives_list = [
-        elder_dict,
         baron_dict,
         herald_dict,
         void_grub_dict,
@@ -271,6 +269,7 @@ def objectives_analysis(team_df):
 
     if team_df.iloc[0]["league"] != "LPL":
         objectives_list.append(atakhan_dict)
+        objectives_list.append(elder_dict)
 
     objectives_df = pd.DataFrame(objectives_list)
 

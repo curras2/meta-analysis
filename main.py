@@ -23,6 +23,8 @@ leagues_filter = [
     "VCS"
 ]
 
+db = conn.DbConnection()
+
 for league in unique_leagues:
     if league not in leagues_filter:
         continue
@@ -53,27 +55,28 @@ for league in unique_leagues:
                         if league != "LPL":
                             wr_dragon_soul_dict_list = an.dragon_soul_winrate_analysis(team_df)
                         game_length_dict_list = an.game_length_analysis(team_df)
-                        
 
-                        conn.upsert_pickrate_record(pickrate_dict_list)
-                        conn.upsert_banrate_record(banrate_dict_list)
-                        conn.upsert_champion_winrate_record(wr_champs_dict_list)
-                        conn.upsert_side_winrate_record(wr_side_dict_list)
-                        conn.upsert_objectives_winrate_record(wr_objectives_dict_list)
+                        db.upsert_pickrate_record(pickrate_dict_list)
+                        db.upsert_banrate_record(banrate_dict_list)
+                        db.upsert_champion_winrate_record(wr_champs_dict_list)
+                        db.upsert_side_winrate_record(wr_side_dict_list)
+                        db.upsert_objectives_winrate_record(wr_objectives_dict_list)
                         if league != "LPL":
-                            conn.upsert_dragon_soul_winrate_record(wr_dragon_soul_dict_list)
-                        conn.upsert_game_length_mean_record(game_length_dict_list)
+                            db.upsert_dragon_soul_winrate_record(wr_dragon_soul_dict_list)
+                        db.upsert_game_length_mean_record(game_length_dict_list)
+                    
                     except Exception as e:
                         columns_filtered_df.to_csv(f'{league} error.csv')
                         print(f"{league} ---- {traceback.print_exception(e)}")
 
-pickrate_results_dict_list = conn.get_pickrate()
-banrate_results_dict_list = conn.get_banrate()
-champion_winrate_results_dict_list = conn.get_champion_winrate()
-side_winrate_results_dict_list = conn.get_side_winrate()
-objectives_winrate_results_dict_list = conn.get_objectives_winrate()
-dragon_soul_winrate_results_dict_list = conn.get_dragon_soul_winrate()
-game_length_mean_results_dict_list = conn.get_game_length_mean()
+
+pickrate_results_dict_list = db.get_pickrate()
+banrate_results_dict_list = db.get_banrate()
+champion_winrate_results_dict_list = db.get_champion_winrate()
+side_winrate_results_dict_list = db.get_side_winrate()
+objectives_winrate_results_dict_list = db.get_objectives_winrate()
+dragon_soul_winrate_results_dict_list = db.get_dragon_soul_winrate()
+game_length_mean_results_dict_list = db.get_game_length_mean()
 
 pickrate_results_df = df_gen.create_dataframe_from_list(pickrate_results_dict_list)
 banrate_results_df = df_gen.create_dataframe_from_list(banrate_results_dict_list)

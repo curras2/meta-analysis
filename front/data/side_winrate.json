@@ -732,14 +732,14 @@
     "league":"PCS",
     "split":"Split 3",
     "side":"Blue",
-    "winrate":0.5
+    "winrate":0.5454545455
   },
   {
     "patch":15.14,
     "league":"PCS",
     "split":"Split 3",
     "side":"Red",
-    "winrate":0.5
+    "winrate":0.4545454545
   },
   {
     "patch":15.04,
@@ -970,13 +970,167 @@
     "league":"LPL",
     "split":"Split 3",
     "side":"Blue",
-    "winrate":0.6666666667
+    "winrate":0.5180722892
   },
   {
     "patch":15.14,
     "league":"LPL",
     "split":"Split 3",
     "side":"Red",
-    "winrate":0.3333333333
+    "winrate":0.4819277108
+  },
+  {
+    "patch":15.15,
+    "league":"LPL",
+    "split":"Split 3",
+    "side":"Blue",
+    "winrate":0.5238095238
+  },
+  {
+    "patch":15.15,
+    "league":"LPL",
+    "split":"Split 3",
+    "side":"Red",
+    "winrate":0.4761904762
+  },
+  {
+    "patch":15.14,
+    "league":"LCK",
+    "split":"Rounds 3-5",
+    "side":"Blue",
+    "winrate":0.4130434783
+  },
+  {
+    "patch":15.14,
+    "league":"LCK",
+    "split":"Rounds 3-5",
+    "side":"Red",
+    "winrate":0.5869565217
+  },
+  {
+    "patch":15.15,
+    "league":"LCK",
+    "split":"Rounds 3-5",
+    "side":"Blue",
+    "winrate":0.3043478261
+  },
+  {
+    "patch":15.15,
+    "league":"LCK",
+    "split":"Rounds 3-5",
+    "side":"Red",
+    "winrate":0.6956521739
+  },
+  {
+    "patch":15.14,
+    "league":"LCP",
+    "split":"Split 3",
+    "side":"Blue",
+    "winrate":0.6
+  },
+  {
+    "patch":15.14,
+    "league":"LCP",
+    "split":"Split 3",
+    "side":"Red",
+    "winrate":0.4
+  },
+  {
+    "patch":15.15,
+    "league":"LCP",
+    "split":"Split 3",
+    "side":"Blue",
+    "winrate":0.4210526316
+  },
+  {
+    "patch":15.15,
+    "league":"LCP",
+    "split":"Split 3",
+    "side":"Red",
+    "winrate":0.5789473684
+  },
+  {
+    "patch":15.15,
+    "league":"LEC",
+    "split":"Summer",
+    "side":"Blue",
+    "winrate":0.625
+  },
+  {
+    "patch":15.15,
+    "league":"LEC",
+    "split":"Summer",
+    "side":"Red",
+    "winrate":0.375
+  },
+  {
+    "patch":15.14,
+    "league":"LTA S",
+    "split":"Split 3",
+    "side":"Blue",
+    "winrate":0.5
+  },
+  {
+    "patch":15.14,
+    "league":"LTA S",
+    "split":"Split 3",
+    "side":"Red",
+    "winrate":0.5
+  },
+  {
+    "patch":15.15,
+    "league":"LTA S",
+    "split":"Split 3",
+    "side":"Blue",
+    "winrate":0.35
+  },
+  {
+    "patch":15.15,
+    "league":"LTA S",
+    "split":"Split 3",
+    "side":"Red",
+    "winrate":0.65
+  },
+  {
+    "patch":15.14,
+    "league":"LTA N",
+    "split":"Split 3",
+    "side":"Blue",
+    "winrate":0.5
+  },
+  {
+    "patch":15.14,
+    "league":"LTA N",
+    "split":"Split 3",
+    "side":"Red",
+    "winrate":0.5
+  },
+  {
+    "patch":15.15,
+    "league":"LTA N",
+    "split":"Split 3",
+    "side":"Blue",
+    "winrate":0.55
+  },
+  {
+    "patch":15.15,
+    "league":"LTA N",
+    "split":"Split 3",
+    "side":"Red",
+    "winrate":0.45
+  },
+  {
+    "patch":15.15,
+    "league":"PCS",
+    "split":"Split 3",
+    "side":"Blue",
+    "winrate":0.0
+  },
+  {
+    "patch":15.15,
+    "league":"PCS",
+    "split":"Split 3",
+    "side":"Red",
+    "winrate":1.0
   }
 ]

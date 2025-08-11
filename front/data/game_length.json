@@ -315,7 +315,7 @@
     "league":"PCS",
     "patch":15.14,
     "split":"Split 3",
-    "game_length_mean":"33:12"
+    "game_length_mean":"33:41"
   },
   {
     "league":"VCS",
@@ -417,6 +417,72 @@
     "league":"LPL",
     "patch":15.14,
     "split":"Split 3",
-    "game_length_mean":"33:34"
+    "game_length_mean":"32:42"
+  },
+  {
+    "league":"LPL",
+    "patch":15.15,
+    "split":"Split 3",
+    "game_length_mean":"33:08"
+  },
+  {
+    "league":"LCK",
+    "patch":15.14,
+    "split":"Rounds 3-5",
+    "game_length_mean":"33:26"
+  },
+  {
+    "league":"LCK",
+    "patch":15.15,
+    "split":"Rounds 3-5",
+    "game_length_mean":"32:14"
+  },
+  {
+    "league":"LCP",
+    "patch":15.14,
+    "split":"Split 3",
+    "game_length_mean":"34:21"
+  },
+  {
+    "league":"LCP",
+    "patch":15.15,
+    "split":"Split 3",
+    "game_length_mean":"30:53"
+  },
+  {
+    "league":"LEC",
+    "patch":15.15,
+    "split":"Summer",
+    "game_length_mean":"31:19"
+  },
+  {
+    "league":"LTA S",
+    "patch":15.14,
+    "split":"Split 3",
+    "game_length_mean":"31:59"
+  },
+  {
+    "league":"LTA S",
+    "patch":15.15,
+    "split":"Split 3",
+    "game_length_mean":"31:01"
+  },
+  {
+    "league":"LTA N",
+    "patch":15.14,
+    "split":"Split 3",
+    "game_length_mean":"30:39"
+  },
+  {
+    "league":"LTA N",
+    "patch":15.15,
+    "split":"Split 3",
+    "game_length_mean":"33:28"
+  },
+  {
+    "league":"PCS",
+    "patch":15.15,
+    "split":"Split 3",
+    "game_length_mean":"34:21"
   }
 ]

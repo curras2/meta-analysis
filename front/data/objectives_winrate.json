@@ -1,3202 +1,3714 @@
 [
   {
-    "objective":"baron",
-    "league":"LPL",
     "patch":15.01,
     "split":"Split 1",
+    "objective":"baron",
+    "league":"LPL",
     "games":41.0,
     "winrate":0.756097561
   },
   {
-    "objective":"herald",
-    "league":"LPL",
     "patch":15.01,
     "split":"Split 1",
+    "objective":"herald",
+    "league":"LPL",
     "games":43.0,
     "winrate":0.6279069767
   },
   {
-    "objective":"void grub",
-    "league":"LPL",
     "patch":15.01,
     "split":"Split 1",
+    "objective":"void grub",
+    "league":"LPL",
     "games":65.0,
     "winrate":0.5076923077
   },
   {
-    "objective":"soul",
-    "league":"LPL",
     "patch":15.01,
     "split":"Split 1",
+    "objective":"soul",
+    "league":"LPL",
     "games":21.0,
     "winrate":0.9523809524
   },
   {
-    "objective":"baron",
-    "league":"LPL",
     "patch":15.02,
     "split":"Split 1",
+    "objective":"baron",
+    "league":"LPL",
     "games":44.0,
     "winrate":0.75
   },
   {
-    "objective":"herald",
-    "league":"LPL",
     "patch":15.02,
     "split":"Split 1",
+    "objective":"herald",
+    "league":"LPL",
     "games":45.0,
     "winrate":0.6444444444
   },
   {
-    "objective":"void grub",
-    "league":"LPL",
     "patch":15.02,
     "split":"Split 1",
+    "objective":"void grub",
+    "league":"LPL",
     "games":65.0,
     "winrate":0.5692307692
   },
   {
-    "objective":"soul",
-    "league":"LPL",
     "patch":15.02,
     "split":"Split 1",
+    "objective":"soul",
+    "league":"LPL",
     "games":20.0,
     "winrate":0.85
   },
   {
-    "objective":"baron",
-    "league":"LPL",
     "patch":15.04,
     "split":"Split 1",
+    "objective":"baron",
+    "league":"LPL",
     "games":39.0,
     "winrate":0.7948717949
   },
   {
-    "objective":"herald",
-    "league":"LPL",
     "patch":15.04,
     "split":"Split 1",
+    "objective":"herald",
+    "league":"LPL",
     "games":42.0,
     "winrate":0.5952380952
   },
   {
-    "objective":"void grub",
-    "league":"LPL",
     "patch":15.04,
     "split":"Split 1",
+    "objective":"void grub",
+    "league":"LPL",
     "games":65.0,
     "winrate":0.5846153846
   },
   {
-    "objective":"soul",
-    "league":"LPL",
     "patch":15.04,
     "split":"Split 1",
+    "objective":"soul",
+    "league":"LPL",
     "games":13.0,
     "winrate":0.7692307692
   },
   {
-    "objective":"baron",
-    "league":"LPL",
     "patch":15.07,
     "split":"Split 2",
+    "objective":"baron",
+    "league":"LPL",
     "games":78.0,
     "winrate":0.8205128205
   },
   {
-    "objective":"herald",
-    "league":"LPL",
     "patch":15.07,
     "split":"Split 2",
+    "objective":"herald",
+    "league":"LPL",
     "games":81.0,
     "winrate":0.6172839506
   },
   {
-    "objective":"void grub",
-    "league":"LPL",
     "patch":15.07,
     "split":"Split 2",
+    "objective":"void grub",
+    "league":"LPL",
     "games":118.0,
     "winrate":0.5169491525
   },
   {
-    "objective":"soul",
-    "league":"LPL",
     "patch":15.07,
     "split":"Split 2",
+    "objective":"soul",
+    "league":"LPL",
     "games":36.0,
     "winrate":0.8888888889
   },
   {
-    "objective":"baron",
-    "league":"LPL",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"baron",
+    "league":"LPL",
     "games":60.0,
     "winrate":0.8166666667
   },
   {
-    "objective":"herald",
-    "league":"LPL",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"herald",
+    "league":"LPL",
     "games":76.0,
     "winrate":0.6842105263
   },
   {
-    "objective":"void grub",
-    "league":"LPL",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"void grub",
+    "league":"LPL",
     "games":113.0,
     "winrate":0.5840707965
   },
   {
-    "objective":"soul",
-    "league":"LPL",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"soul",
+    "league":"LPL",
     "games":32.0,
     "winrate":0.96875
   },
   {
-    "objective":"baron",
-    "league":"LPL",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"baron",
+    "league":"LPL",
     "games":107.0,
     "winrate":0.7570093458
   },
   {
-    "objective":"herald",
-    "league":"LPL",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"herald",
+    "league":"LPL",
     "games":101.0,
     "winrate":0.6336633663
   },
   {
-    "objective":"void grub",
-    "league":"LPL",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"void grub",
+    "league":"LPL",
     "games":101.0,
     "winrate":0.5940594059
   },
   {
-    "objective":"soul",
-    "league":"LPL",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"soul",
+    "league":"LPL",
     "games":42.0,
     "winrate":0.9047619048
   },
   {
-    "objective":"baron",
-    "league":"LPL",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"baron",
+    "league":"LPL",
     "games":13.0,
     "winrate":0.9230769231
   },
   {
+    "patch":15.1,
+    "split":"Split 2",
     "objective":"herald",
     "league":"LPL",
-    "patch":15.1,
-    "split":"Split 2",
     "games":15.0,
     "winrate":0.6666666667
   },
   {
+    "patch":15.1,
+    "split":"Split 2",
     "objective":"void grub",
     "league":"LPL",
-    "patch":15.1,
-    "split":"Split 2",
     "games":15.0,
     "winrate":0.6666666667
   },
   {
-    "objective":"soul",
-    "league":"LPL",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"soul",
+    "league":"LPL",
     "games":6.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LPL",
     "patch":15.11,
     "split":"Split 2",
+    "objective":"baron",
+    "league":"LPL",
     "games":47.0,
     "winrate":0.8723404255
   },
   {
-    "objective":"herald",
-    "league":"LPL",
     "patch":15.11,
     "split":"Split 2",
+    "objective":"herald",
+    "league":"LPL",
     "games":56.0,
     "winrate":0.6607142857
   },
   {
-    "objective":"void grub",
-    "league":"LPL",
     "patch":15.11,
     "split":"Split 2",
+    "objective":"void grub",
+    "league":"LPL",
     "games":56.0,
     "winrate":0.6071428571
   },
   {
-    "objective":"soul",
-    "league":"LPL",
     "patch":15.11,
     "split":"Split 2",
+    "objective":"soul",
+    "league":"LPL",
     "games":21.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LPL",
     "patch":15.06,
     "split":"Split 2 Placements",
+    "objective":"baron",
+    "league":"LPL",
     "games":54.0,
     "winrate":0.8888888889
   },
   {
-    "objective":"herald",
-    "league":"LPL",
     "patch":15.06,
     "split":"Split 2 Placements",
+    "objective":"herald",
+    "league":"LPL",
     "games":60.0,
     "winrate":0.65
   },
   {
-    "objective":"void grub",
-    "league":"LPL",
     "patch":15.06,
     "split":"Split 2 Placements",
+    "objective":"void grub",
+    "league":"LPL",
     "games":92.0,
     "winrate":0.5869565217
   },
   {
-    "objective":"soul",
-    "league":"LPL",
     "patch":15.06,
     "split":"Split 2 Placements",
+    "objective":"soul",
+    "league":"LPL",
     "games":25.0,
     "winrate":0.88
   },
   {
-    "objective":"baron",
-    "league":"LPL",
     "patch":15.14,
     "split":"Split 3",
-    "games":18.0,
-    "winrate":0.8333333333
+    "objective":"baron",
+    "league":"LPL",
+    "games":78.0,
+    "winrate":0.9230769231
   },
   {
+    "patch":15.14,
+    "split":"Split 3",
     "objective":"herald",
     "league":"LPL",
-    "patch":15.14,
-    "split":"Split 3",
-    "games":18.0,
-    "winrate":0.5555555556
+    "games":83.0,
+    "winrate":0.5301204819
   },
   {
+    "patch":15.14,
+    "split":"Split 3",
     "objective":"void grub",
     "league":"LPL",
-    "patch":15.14,
-    "split":"Split 3",
-    "games":18.0,
-    "winrate":0.6666666667
+    "games":83.0,
+    "winrate":0.5903614458
   },
   {
+    "patch":15.14,
+    "split":"Split 3",
     "objective":"soul",
     "league":"LPL",
-    "patch":15.14,
-    "split":"Split 3",
-    "games":8.0,
-    "winrate":0.875
+    "games":33.0,
+    "winrate":0.9393939394
   },
   {
-    "objective":"baron",
-    "league":"LCK",
     "patch":15.01,
     "split":"Cup",
+    "objective":"baron",
+    "league":"LCK",
     "games":47.0,
     "winrate":0.8723404255
   },
   {
-    "objective":"herald",
-    "league":"LCK",
     "patch":15.01,
     "split":"Cup",
+    "objective":"herald",
+    "league":"LCK",
     "games":49.0,
     "winrate":0.7346938776
   },
   {
-    "objective":"void grub",
-    "league":"LCK",
     "patch":15.01,
     "split":"Cup",
+    "objective":"void grub",
+    "league":"LCK",
     "games":76.0,
     "winrate":0.4868421053
   },
   {
-    "objective":"soul",
-    "league":"LCK",
     "patch":15.01,
     "split":"Cup",
+    "objective":"soul",
+    "league":"LCK",
     "games":19.0,
     "winrate":0.9473684211
   },
   {
-    "objective":"atakhan",
-    "league":"LCK",
     "patch":15.01,
     "split":"Cup",
+    "objective":"atakhan",
+    "league":"LCK",
     "games":48.0,
     "winrate":0.8125
   },
   {
-    "objective":"elder",
-    "league":"LCK",
     "patch":15.01,
     "split":"Cup",
+    "objective":"elder",
+    "league":"LCK",
     "games":4.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LCK",
     "patch":15.02,
     "split":"Cup",
+    "objective":"baron",
+    "league":"LCK",
     "games":21.0,
     "winrate":1.0
   },
   {
-    "objective":"herald",
-    "league":"LCK",
     "patch":15.02,
     "split":"Cup",
+    "objective":"herald",
+    "league":"LCK",
     "games":25.0,
     "winrate":0.52
   },
   {
-    "objective":"void grub",
-    "league":"LCK",
     "patch":15.02,
     "split":"Cup",
+    "objective":"void grub",
+    "league":"LCK",
     "games":34.0,
     "winrate":0.6176470588
   },
   {
-    "objective":"soul",
-    "league":"LCK",
     "patch":15.02,
     "split":"Cup",
+    "objective":"soul",
+    "league":"LCK",
     "games":4.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"LCK",
     "patch":15.02,
     "split":"Cup",
+    "objective":"atakhan",
+    "league":"LCK",
     "games":25.0,
     "winrate":0.8
   },
   {
-    "objective":"elder",
-    "league":"LCK",
     "patch":15.02,
     "split":"Cup",
+    "objective":"elder",
+    "league":"LCK",
     "games":1.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LCK",
     "patch":15.03,
     "split":"Cup",
+    "objective":"baron",
+    "league":"LCK",
     "games":32.0,
     "winrate":0.8125
   },
   {
-    "objective":"herald",
-    "league":"LCK",
     "patch":15.03,
     "split":"Cup",
+    "objective":"herald",
+    "league":"LCK",
     "games":35.0,
     "winrate":0.6571428571
   },
   {
-    "objective":"void grub",
-    "league":"LCK",
     "patch":15.03,
     "split":"Cup",
+    "objective":"void grub",
+    "league":"LCK",
     "games":53.0,
     "winrate":0.6037735849
   },
   {
-    "objective":"soul",
-    "league":"LCK",
     "patch":15.03,
     "split":"Cup",
+    "objective":"soul",
+    "league":"LCK",
     "games":12.0,
     "winrate":0.9166666667
   },
   {
-    "objective":"atakhan",
-    "league":"LCK",
     "patch":15.03,
     "split":"Cup",
+    "objective":"atakhan",
+    "league":"LCK",
     "games":35.0,
     "winrate":0.8
   },
   {
-    "objective":"elder",
-    "league":"LCK",
     "patch":15.03,
     "split":"Cup",
+    "objective":"elder",
+    "league":"LCK",
     "games":2.0,
     "winrate":0.5
   },
   {
-    "objective":"baron",
-    "league":"LCK",
     "patch":15.06,
     "split":"Rounds 1-2",
+    "objective":"baron",
+    "league":"LCK",
     "games":25.0,
     "winrate":0.72
   },
   {
-    "objective":"herald",
-    "league":"LCK",
     "patch":15.06,
     "split":"Rounds 1-2",
+    "objective":"herald",
+    "league":"LCK",
     "games":24.0,
     "winrate":0.4583333333
   },
   {
-    "objective":"void grub",
-    "league":"LCK",
     "patch":15.06,
     "split":"Rounds 1-2",
+    "objective":"void grub",
+    "league":"LCK",
     "games":37.0,
     "winrate":0.5135135135
   },
   {
-    "objective":"soul",
-    "league":"LCK",
     "patch":15.06,
     "split":"Rounds 1-2",
+    "objective":"soul",
+    "league":"LCK",
     "games":10.0,
     "winrate":0.9
   },
   {
-    "objective":"atakhan",
-    "league":"LCK",
     "patch":15.06,
     "split":"Rounds 1-2",
+    "objective":"atakhan",
+    "league":"LCK",
     "games":23.0,
     "winrate":0.7826086957
   },
   {
-    "objective":"elder",
-    "league":"LCK",
     "patch":15.06,
     "split":"Rounds 1-2",
+    "objective":"elder",
+    "league":"LCK",
     "games":2.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LCK",
     "patch":15.07,
     "split":"Rounds 1-2",
+    "objective":"baron",
+    "league":"LCK",
     "games":44.0,
     "winrate":0.9090909091
   },
   {
-    "objective":"herald",
-    "league":"LCK",
     "patch":15.07,
     "split":"Rounds 1-2",
+    "objective":"herald",
+    "league":"LCK",
     "games":50.0,
     "winrate":0.7
   },
   {
-    "objective":"void grub",
-    "league":"LCK",
     "patch":15.07,
     "split":"Rounds 1-2",
+    "objective":"void grub",
+    "league":"LCK",
     "games":71.0,
     "winrate":0.5774647887
   },
   {
-    "objective":"soul",
-    "league":"LCK",
     "patch":15.07,
     "split":"Rounds 1-2",
+    "objective":"soul",
+    "league":"LCK",
     "games":16.0,
     "winrate":0.9375
   },
   {
-    "objective":"atakhan",
-    "league":"LCK",
     "patch":15.07,
     "split":"Rounds 1-2",
+    "objective":"atakhan",
+    "league":"LCK",
     "games":47.0,
     "winrate":0.7872340426
   },
   {
-    "objective":"elder",
-    "league":"LCK",
     "patch":15.07,
     "split":"Rounds 1-2",
+    "objective":"elder",
+    "league":"LCK",
     "games":2.0,
     "winrate":0.0
   },
   {
-    "objective":"baron",
-    "league":"LCK",
     "patch":15.08,
     "split":"Rounds 1-2",
+    "objective":"baron",
+    "league":"LCK",
     "games":45.0,
     "winrate":0.8
   },
   {
-    "objective":"herald",
-    "league":"LCK",
     "patch":15.08,
     "split":"Rounds 1-2",
+    "objective":"herald",
+    "league":"LCK",
     "games":47.0,
     "winrate":0.5957446809
   },
   {
-    "objective":"void grub",
-    "league":"LCK",
     "patch":15.08,
     "split":"Rounds 1-2",
+    "objective":"void grub",
+    "league":"LCK",
     "games":72.0,
     "winrate":0.5833333333
   },
   {
-    "objective":"soul",
-    "league":"LCK",
     "patch":15.08,
     "split":"Rounds 1-2",
+    "objective":"soul",
+    "league":"LCK",
     "games":16.0,
     "winrate":0.9375
   },
   {
-    "objective":"atakhan",
-    "league":"LCK",
     "patch":15.08,
     "split":"Rounds 1-2",
+    "objective":"atakhan",
+    "league":"LCK",
     "games":47.0,
     "winrate":0.7446808511
   },
   {
-    "objective":"elder",
-    "league":"LCK",
     "patch":15.08,
     "split":"Rounds 1-2",
+    "objective":"elder",
+    "league":"LCK",
     "games":5.0,
     "winrate":0.8
   },
   {
-    "objective":"baron",
-    "league":"LCK",
     "patch":15.09,
     "split":"Rounds 1-2",
+    "objective":"baron",
+    "league":"LCK",
     "games":39.0,
     "winrate":0.8205128205
   },
   {
-    "objective":"herald",
-    "league":"LCK",
     "patch":15.09,
     "split":"Rounds 1-2",
+    "objective":"herald",
+    "league":"LCK",
     "games":48.0,
     "winrate":0.6875
   },
   {
-    "objective":"void grub",
-    "league":"LCK",
     "patch":15.09,
     "split":"Rounds 1-2",
+    "objective":"void grub",
+    "league":"LCK",
     "games":48.0,
     "winrate":0.5833333333
   },
   {
-    "objective":"soul",
-    "league":"LCK",
     "patch":15.09,
     "split":"Rounds 1-2",
+    "objective":"soul",
+    "league":"LCK",
     "games":19.0,
     "winrate":0.8947368421
   },
   {
-    "objective":"atakhan",
-    "league":"LCK",
     "patch":15.09,
     "split":"Rounds 1-2",
+    "objective":"atakhan",
+    "league":"LCK",
     "games":47.0,
     "winrate":0.7872340426
   },
   {
-    "objective":"elder",
-    "league":"LCK",
     "patch":15.09,
     "split":"Rounds 1-2",
+    "objective":"elder",
+    "league":"LCK",
     "games":8.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LCK",
     "patch":15.1,
     "split":"Rounds 1-2",
+    "objective":"baron",
+    "league":"LCK",
     "games":52.0,
     "winrate":0.8653846154
   },
   {
-    "objective":"herald",
-    "league":"LCK",
     "patch":15.1,
     "split":"Rounds 1-2",
+    "objective":"herald",
+    "league":"LCK",
     "games":53.0,
     "winrate":0.5660377358
   },
   {
-    "objective":"void grub",
-    "league":"LCK",
     "patch":15.1,
     "split":"Rounds 1-2",
+    "objective":"void grub",
+    "league":"LCK",
     "games":53.0,
     "winrate":0.6603773585
   },
   {
-    "objective":"soul",
-    "league":"LCK",
     "patch":15.1,
     "split":"Rounds 1-2",
+    "objective":"soul",
+    "league":"LCK",
     "games":20.0,
     "winrate":0.9
   },
   {
-    "objective":"atakhan",
-    "league":"LCK",
     "patch":15.1,
     "split":"Rounds 1-2",
+    "objective":"atakhan",
+    "league":"LCK",
     "games":53.0,
     "winrate":0.8113207547
   },
   {
-    "objective":"elder",
-    "league":"LCK",
     "patch":15.1,
     "split":"Rounds 1-2",
+    "objective":"elder",
+    "league":"LCK",
     "games":3.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LCK",
     "patch":15.11,
     "split":"Rounds 1-2",
+    "objective":"baron",
+    "league":"LCK",
     "games":16.0,
     "winrate":0.8125
   },
   {
-    "objective":"herald",
-    "league":"LCK",
     "patch":15.11,
     "split":"Rounds 1-2",
+    "objective":"herald",
+    "league":"LCK",
     "games":18.0,
     "winrate":0.5555555556
   },
   {
-    "objective":"void grub",
-    "league":"LCK",
     "patch":15.11,
     "split":"Rounds 1-2",
+    "objective":"void grub",
+    "league":"LCK",
     "games":18.0,
     "winrate":0.5
   },
   {
-    "objective":"soul",
-    "league":"LCK",
     "patch":15.11,
     "split":"Rounds 1-2",
+    "objective":"soul",
+    "league":"LCK",
     "games":10.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"LCK",
     "patch":15.11,
     "split":"Rounds 1-2",
+    "objective":"atakhan",
+    "league":"LCK",
     "games":18.0,
     "winrate":0.7777777778
   },
   {
-    "objective":"elder",
-    "league":"LCK",
     "patch":15.11,
     "split":"Rounds 1-2",
+    "objective":"elder",
+    "league":"LCK",
     "games":1.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LCP",
     "patch":15.01,
     "split":"Split 1",
+    "objective":"baron",
+    "league":"LCP",
     "games":19.0,
     "winrate":0.7894736842
   },
   {
-    "objective":"herald",
-    "league":"LCP",
     "patch":15.01,
     "split":"Split 1",
+    "objective":"herald",
+    "league":"LCP",
     "games":19.0,
     "winrate":0.5263157895
   },
   {
-    "objective":"void grub",
-    "league":"LCP",
     "patch":15.01,
     "split":"Split 1",
+    "objective":"void grub",
+    "league":"LCP",
     "games":32.0,
     "winrate":0.5625
   },
   {
-    "objective":"soul",
-    "league":"LCP",
     "patch":15.01,
     "split":"Split 1",
+    "objective":"soul",
+    "league":"LCP",
     "games":5.0,
     "winrate":0.8
   },
   {
-    "objective":"atakhan",
-    "league":"LCP",
     "patch":15.01,
     "split":"Split 1",
+    "objective":"atakhan",
+    "league":"LCP",
     "games":19.0,
     "winrate":0.7368421053
   },
   {
-    "objective":"elder",
-    "league":"LCP",
     "patch":15.01,
     "split":"Split 1",
+    "objective":"elder",
+    "league":"LCP",
     "games":2.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LCP",
     "patch":15.02,
     "split":"Split 1",
+    "objective":"baron",
+    "league":"LCP",
     "games":10.0,
     "winrate":0.8
   },
   {
-    "objective":"herald",
-    "league":"LCP",
     "patch":15.02,
     "split":"Split 1",
+    "objective":"herald",
+    "league":"LCP",
     "games":16.0,
     "winrate":0.625
   },
   {
-    "objective":"void grub",
-    "league":"LCP",
     "patch":15.02,
     "split":"Split 1",
+    "objective":"void grub",
+    "league":"LCP",
     "games":25.0,
     "winrate":0.6
   },
   {
-    "objective":"soul",
-    "league":"LCP",
     "patch":15.02,
     "split":"Split 1",
+    "objective":"soul",
+    "league":"LCP",
     "games":6.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"LCP",
     "patch":15.02,
     "split":"Split 1",
+    "objective":"atakhan",
+    "league":"LCP",
     "games":16.0,
     "winrate":0.75
   },
   {
-    "objective":"elder",
-    "league":"LCP",
     "patch":15.02,
     "split":"Split 1",
+    "objective":"elder",
+    "league":"LCP",
     "games":0.0,
     "winrate":0.0
   },
   {
-    "objective":"baron",
-    "league":"LCP",
     "patch":15.03,
     "split":"Split 1",
+    "objective":"baron",
+    "league":"LCP",
     "games":47.0,
     "winrate":0.7659574468
   },
   {
-    "objective":"herald",
-    "league":"LCP",
     "patch":15.03,
     "split":"Split 1",
+    "objective":"herald",
+    "league":"LCP",
     "games":54.0,
     "winrate":0.5185185185
   },
   {
-    "objective":"void grub",
-    "league":"LCP",
     "patch":15.03,
     "split":"Split 1",
+    "objective":"void grub",
+    "league":"LCP",
     "games":80.0,
     "winrate":0.575
   },
   {
-    "objective":"soul",
-    "league":"LCP",
     "patch":15.03,
     "split":"Split 1",
+    "objective":"soul",
+    "league":"LCP",
     "games":20.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"LCP",
     "patch":15.03,
     "split":"Split 1",
+    "objective":"atakhan",
+    "league":"LCP",
     "games":54.0,
     "winrate":0.8518518519
   },
   {
-    "objective":"elder",
-    "league":"LCP",
     "patch":15.03,
     "split":"Split 1",
+    "objective":"elder",
+    "league":"LCP",
     "games":3.0,
     "winrate":0.6666666667
   },
   {
-    "objective":"baron",
-    "league":"LCP",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"baron",
+    "league":"LCP",
     "games":16.0,
     "winrate":1.0
   },
   {
-    "objective":"herald",
-    "league":"LCP",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"herald",
+    "league":"LCP",
     "games":19.0,
     "winrate":0.5789473684
   },
   {
-    "objective":"void grub",
-    "league":"LCP",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"void grub",
+    "league":"LCP",
     "games":28.0,
     "winrate":0.5714285714
   },
   {
-    "objective":"soul",
-    "league":"LCP",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"soul",
+    "league":"LCP",
     "games":6.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"LCP",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"atakhan",
+    "league":"LCP",
     "games":17.0,
     "winrate":0.9411764706
   },
   {
-    "objective":"elder",
-    "league":"LCP",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"elder",
+    "league":"LCP",
     "games":1.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LCP",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"baron",
+    "league":"LCP",
     "games":17.0,
     "winrate":0.9411764706
   },
   {
-    "objective":"herald",
-    "league":"LCP",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"herald",
+    "league":"LCP",
     "games":19.0,
     "winrate":0.7894736842
   },
   {
-    "objective":"void grub",
-    "league":"LCP",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"void grub",
+    "league":"LCP",
     "games":19.0,
     "winrate":0.6315789474
   },
   {
-    "objective":"soul",
-    "league":"LCP",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"soul",
+    "league":"LCP",
     "games":10.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"LCP",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"atakhan",
+    "league":"LCP",
     "games":19.0,
     "winrate":0.7894736842
   },
   {
-    "objective":"elder",
-    "league":"LCP",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"elder",
+    "league":"LCP",
     "games":0.0,
     "winrate":0.0
   },
   {
-    "objective":"baron",
-    "league":"LCP",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"baron",
+    "league":"LCP",
     "games":53.0,
     "winrate":0.8490566038
   },
   {
-    "objective":"herald",
-    "league":"LCP",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"herald",
+    "league":"LCP",
     "games":58.0,
     "winrate":0.7413793103
   },
   {
-    "objective":"void grub",
-    "league":"LCP",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"void grub",
+    "league":"LCP",
     "games":58.0,
     "winrate":0.4310344828
   },
   {
-    "objective":"soul",
-    "league":"LCP",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"soul",
+    "league":"LCP",
     "games":25.0,
     "winrate":0.8
   },
   {
-    "objective":"atakhan",
-    "league":"LCP",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"atakhan",
+    "league":"LCP",
     "games":57.0,
     "winrate":0.8070175439
   },
   {
-    "objective":"elder",
-    "league":"LCP",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"elder",
+    "league":"LCP",
     "games":3.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LEC",
     "patch":15.01,
     "split":"Winter",
+    "objective":"baron",
+    "league":"LEC",
     "games":15.0,
     "winrate":0.8666666667
   },
   {
-    "objective":"herald",
-    "league":"LEC",
     "patch":15.01,
     "split":"Winter",
+    "objective":"herald",
+    "league":"LEC",
     "games":15.0,
     "winrate":0.5333333333
   },
   {
-    "objective":"void grub",
-    "league":"LEC",
     "patch":15.01,
     "split":"Winter",
+    "objective":"void grub",
+    "league":"LEC",
     "games":23.0,
     "winrate":0.5217391304
   },
   {
-    "objective":"soul",
-    "league":"LEC",
     "patch":15.01,
     "split":"Winter",
+    "objective":"soul",
+    "league":"LEC",
     "games":8.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"LEC",
     "patch":15.01,
     "split":"Winter",
+    "objective":"atakhan",
+    "league":"LEC",
     "games":15.0,
     "winrate":0.8666666667
   },
   {
-    "objective":"elder",
-    "league":"LEC",
     "patch":15.01,
     "split":"Winter",
+    "objective":"elder",
+    "league":"LEC",
     "games":3.0,
     "winrate":0.6666666667
   },
   {
-    "objective":"baron",
-    "league":"LEC",
     "patch":15.02,
     "split":"Winter",
+    "objective":"baron",
+    "league":"LEC",
     "games":33.0,
     "winrate":0.8181818182
   },
   {
-    "objective":"herald",
-    "league":"LEC",
     "patch":15.02,
     "split":"Winter",
+    "objective":"herald",
+    "league":"LEC",
     "games":30.0,
     "winrate":0.5333333333
   },
   {
-    "objective":"void grub",
-    "league":"LEC",
     "patch":15.02,
     "split":"Winter",
+    "objective":"void grub",
+    "league":"LEC",
     "games":50.0,
     "winrate":0.48
   },
   {
-    "objective":"soul",
-    "league":"LEC",
     "patch":15.02,
     "split":"Winter",
+    "objective":"soul",
+    "league":"LEC",
     "games":16.0,
     "winrate":0.875
   },
   {
-    "objective":"atakhan",
-    "league":"LEC",
     "patch":15.02,
     "split":"Winter",
+    "objective":"atakhan",
+    "league":"LEC",
     "games":30.0,
     "winrate":0.8
   },
   {
-    "objective":"elder",
-    "league":"LEC",
     "patch":15.02,
     "split":"Winter",
+    "objective":"elder",
+    "league":"LEC",
     "games":2.0,
     "winrate":0.5
   },
   {
-    "objective":"baron",
-    "league":"LEC",
     "patch":15.03,
     "split":"Winter",
+    "objective":"baron",
+    "league":"LEC",
     "games":37.0,
     "winrate":0.8378378378
   },
   {
-    "objective":"herald",
-    "league":"LEC",
     "patch":15.03,
     "split":"Winter",
+    "objective":"herald",
+    "league":"LEC",
     "games":39.0,
     "winrate":0.6666666667
   },
   {
-    "objective":"void grub",
-    "league":"LEC",
     "patch":15.03,
     "split":"Winter",
+    "objective":"void grub",
+    "league":"LEC",
     "games":57.0,
     "winrate":0.5263157895
   },
   {
-    "objective":"soul",
-    "league":"LEC",
     "patch":15.03,
     "split":"Winter",
+    "objective":"soul",
+    "league":"LEC",
     "games":19.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"LEC",
     "patch":15.03,
     "split":"Winter",
+    "objective":"atakhan",
+    "league":"LEC",
     "games":38.0,
     "winrate":0.7631578947
   },
   {
-    "objective":"elder",
-    "league":"LEC",
     "patch":15.03,
     "split":"Winter",
+    "objective":"elder",
+    "league":"LEC",
     "games":4.0,
     "winrate":0.75
   },
   {
-    "objective":"baron",
-    "league":"LEC",
     "patch":15.06,
     "split":"Spring",
+    "objective":"baron",
+    "league":"LEC",
     "games":18.0,
     "winrate":0.7222222222
   },
   {
-    "objective":"herald",
-    "league":"LEC",
     "patch":15.06,
     "split":"Spring",
+    "objective":"herald",
+    "league":"LEC",
     "games":17.0,
     "winrate":0.5882352941
   },
   {
-    "objective":"void grub",
-    "league":"LEC",
     "patch":15.06,
     "split":"Spring",
+    "objective":"void grub",
+    "league":"LEC",
     "games":23.0,
     "winrate":0.5217391304
   },
   {
-    "objective":"soul",
-    "league":"LEC",
     "patch":15.06,
     "split":"Spring",
+    "objective":"soul",
+    "league":"LEC",
     "games":8.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"LEC",
     "patch":15.06,
     "split":"Spring",
+    "objective":"atakhan",
+    "league":"LEC",
     "games":17.0,
     "winrate":0.8235294118
   },
   {
-    "objective":"elder",
-    "league":"LEC",
     "patch":15.06,
     "split":"Spring",
+    "objective":"elder",
+    "league":"LEC",
     "games":5.0,
     "winrate":0.8
   },
   {
-    "objective":"baron",
-    "league":"LEC",
     "patch":15.07,
     "split":"Spring",
+    "objective":"baron",
+    "league":"LEC",
     "games":27.0,
     "winrate":0.8148148148
   },
   {
-    "objective":"herald",
-    "league":"LEC",
     "patch":15.07,
     "split":"Spring",
+    "objective":"herald",
+    "league":"LEC",
     "games":31.0,
     "winrate":0.5161290323
   },
   {
-    "objective":"void grub",
-    "league":"LEC",
     "patch":15.07,
     "split":"Spring",
+    "objective":"void grub",
+    "league":"LEC",
     "games":48.0,
     "winrate":0.5416666667
   },
   {
-    "objective":"soul",
-    "league":"LEC",
     "patch":15.07,
     "split":"Spring",
+    "objective":"soul",
+    "league":"LEC",
     "games":17.0,
     "winrate":0.9411764706
   },
   {
-    "objective":"atakhan",
-    "league":"LEC",
     "patch":15.07,
     "split":"Spring",
+    "objective":"atakhan",
+    "league":"LEC",
     "games":31.0,
     "winrate":0.8064516129
   },
   {
-    "objective":"elder",
-    "league":"LEC",
     "patch":15.07,
     "split":"Spring",
+    "objective":"elder",
+    "league":"LEC",
     "games":5.0,
     "winrate":0.6
   },
   {
-    "objective":"baron",
-    "league":"LEC",
     "patch":15.08,
     "split":"Spring",
+    "objective":"baron",
+    "league":"LEC",
     "games":37.0,
     "winrate":0.8108108108
   },
   {
-    "objective":"herald",
-    "league":"LEC",
     "patch":15.08,
     "split":"Spring",
+    "objective":"herald",
+    "league":"LEC",
     "games":31.0,
     "winrate":0.7096774194
   },
   {
-    "objective":"void grub",
-    "league":"LEC",
     "patch":15.08,
     "split":"Spring",
+    "objective":"void grub",
+    "league":"LEC",
     "games":40.0,
     "winrate":0.575
   },
   {
-    "objective":"soul",
-    "league":"LEC",
     "patch":15.08,
     "split":"Spring",
+    "objective":"soul",
+    "league":"LEC",
     "games":14.0,
     "winrate":0.8571428571
   },
   {
-    "objective":"atakhan",
-    "league":"LEC",
     "patch":15.08,
     "split":"Spring",
+    "objective":"atakhan",
+    "league":"LEC",
     "games":28.0,
     "winrate":0.7142857143
   },
   {
-    "objective":"elder",
-    "league":"LEC",
     "patch":15.08,
     "split":"Spring",
+    "objective":"elder",
+    "league":"LEC",
     "games":4.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LEC",
     "patch":15.09,
     "split":"Spring",
+    "objective":"baron",
+    "league":"LEC",
     "games":29.0,
     "winrate":0.8620689655
   },
   {
-    "objective":"herald",
-    "league":"LEC",
     "patch":15.09,
     "split":"Spring",
+    "objective":"herald",
+    "league":"LEC",
     "games":27.0,
     "winrate":0.7777777778
   },
   {
-    "objective":"void grub",
-    "league":"LEC",
     "patch":15.09,
     "split":"Spring",
+    "objective":"void grub",
+    "league":"LEC",
     "games":27.0,
     "winrate":0.6296296296
   },
   {
-    "objective":"soul",
-    "league":"LEC",
     "patch":15.09,
     "split":"Spring",
+    "objective":"soul",
+    "league":"LEC",
     "games":10.0,
     "winrate":0.9
   },
   {
-    "objective":"atakhan",
-    "league":"LEC",
     "patch":15.09,
     "split":"Spring",
+    "objective":"atakhan",
+    "league":"LEC",
     "games":27.0,
     "winrate":0.8518518519
   },
   {
-    "objective":"elder",
-    "league":"LEC",
     "patch":15.09,
     "split":"Spring",
+    "objective":"elder",
+    "league":"LEC",
     "games":1.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LEC",
     "patch":15.1,
     "split":"Spring",
+    "objective":"baron",
+    "league":"LEC",
     "games":38.0,
     "winrate":0.8157894737
   },
   {
+    "patch":15.1,
+    "split":"Spring",
     "objective":"herald",
     "league":"LEC",
-    "patch":15.1,
-    "split":"Spring",
     "games":33.0,
     "winrate":0.6363636364
   },
   {
+    "patch":15.1,
+    "split":"Spring",
     "objective":"void grub",
     "league":"LEC",
-    "patch":15.1,
-    "split":"Spring",
     "games":33.0,
     "winrate":0.6363636364
   },
   {
-    "objective":"soul",
-    "league":"LEC",
     "patch":15.1,
     "split":"Spring",
+    "objective":"soul",
+    "league":"LEC",
     "games":18.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"LEC",
     "patch":15.1,
     "split":"Spring",
+    "objective":"atakhan",
+    "league":"LEC",
     "games":33.0,
     "winrate":0.8484848485
   },
   {
-    "objective":"elder",
-    "league":"LEC",
     "patch":15.1,
     "split":"Spring",
+    "objective":"elder",
+    "league":"LEC",
     "games":3.0,
     "winrate":0.6666666667
   },
   {
-    "objective":"baron",
-    "league":"LJL",
     "patch":15.02,
     "split":"Forge",
+    "objective":"baron",
+    "league":"LJL",
     "games":15.0,
     "winrate":0.8666666667
   },
   {
-    "objective":"herald",
-    "league":"LJL",
     "patch":15.02,
     "split":"Forge",
+    "objective":"herald",
+    "league":"LJL",
     "games":14.0,
     "winrate":0.6428571429
   },
   {
-    "objective":"void grub",
-    "league":"LJL",
     "patch":15.02,
     "split":"Forge",
+    "objective":"void grub",
+    "league":"LJL",
     "games":19.0,
     "winrate":0.5789473684
   },
   {
-    "objective":"soul",
-    "league":"LJL",
     "patch":15.02,
     "split":"Forge",
+    "objective":"soul",
+    "league":"LJL",
     "games":7.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"LJL",
     "patch":15.02,
     "split":"Forge",
+    "objective":"atakhan",
+    "league":"LJL",
     "games":14.0,
     "winrate":0.6428571429
   },
   {
-    "objective":"elder",
-    "league":"LJL",
     "patch":15.02,
     "split":"Forge",
+    "objective":"elder",
+    "league":"LJL",
     "games":2.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LJL",
     "patch":15.04,
     "split":"Forge",
+    "objective":"baron",
+    "league":"LJL",
     "games":26.0,
     "winrate":0.8461538462
   },
   {
-    "objective":"herald",
-    "league":"LJL",
     "patch":15.04,
     "split":"Forge",
+    "objective":"herald",
+    "league":"LJL",
     "games":34.0,
     "winrate":0.7352941176
   },
   {
-    "objective":"void grub",
-    "league":"LJL",
     "patch":15.04,
     "split":"Forge",
+    "objective":"void grub",
+    "league":"LJL",
     "games":46.0,
     "winrate":0.6956521739
   },
   {
-    "objective":"soul",
-    "league":"LJL",
     "patch":15.04,
     "split":"Forge",
+    "objective":"soul",
+    "league":"LJL",
     "games":13.0,
     "winrate":0.6153846154
   },
   {
-    "objective":"atakhan",
-    "league":"LJL",
     "patch":15.04,
     "split":"Forge",
+    "objective":"atakhan",
+    "league":"LJL",
     "games":34.0,
     "winrate":0.8235294118
   },
   {
-    "objective":"elder",
-    "league":"LJL",
     "patch":15.04,
     "split":"Forge",
+    "objective":"elder",
+    "league":"LJL",
     "games":4.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LJL",
     "patch":15.07,
     "split":"Storm",
+    "objective":"baron",
+    "league":"LJL",
     "games":39.0,
     "winrate":0.9230769231
   },
   {
-    "objective":"herald",
-    "league":"LJL",
     "patch":15.07,
     "split":"Storm",
+    "objective":"herald",
+    "league":"LJL",
     "games":54.0,
     "winrate":0.6111111111
   },
   {
-    "objective":"void grub",
-    "league":"LJL",
     "patch":15.07,
     "split":"Storm",
+    "objective":"void grub",
+    "league":"LJL",
     "games":80.0,
     "winrate":0.6
   },
   {
-    "objective":"soul",
-    "league":"LJL",
     "patch":15.07,
     "split":"Storm",
+    "objective":"soul",
+    "league":"LJL",
     "games":16.0,
     "winrate":0.9375
   },
   {
-    "objective":"atakhan",
-    "league":"LJL",
     "patch":15.07,
     "split":"Storm",
+    "objective":"atakhan",
+    "league":"LJL",
     "games":46.0,
     "winrate":0.7826086957
   },
   {
-    "objective":"elder",
-    "league":"LJL",
     "patch":15.07,
     "split":"Storm",
+    "objective":"elder",
+    "league":"LJL",
     "games":0.0,
     "winrate":0.0
   },
   {
-    "objective":"baron",
-    "league":"LJL",
     "patch":15.08,
     "split":"Storm",
+    "objective":"baron",
+    "league":"LJL",
     "games":11.0,
     "winrate":0.8181818182
   },
   {
-    "objective":"herald",
-    "league":"LJL",
     "patch":15.08,
     "split":"Storm",
+    "objective":"herald",
+    "league":"LJL",
     "games":13.0,
     "winrate":0.6153846154
   },
   {
-    "objective":"void grub",
-    "league":"LJL",
     "patch":15.08,
     "split":"Storm",
+    "objective":"void grub",
+    "league":"LJL",
     "games":21.0,
     "winrate":0.5714285714
   },
   {
-    "objective":"soul",
-    "league":"LJL",
     "patch":15.08,
     "split":"Storm",
+    "objective":"soul",
+    "league":"LJL",
     "games":5.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"LJL",
     "patch":15.08,
     "split":"Storm",
+    "objective":"atakhan",
+    "league":"LJL",
     "games":12.0,
     "winrate":0.8333333333
   },
   {
-    "objective":"elder",
-    "league":"LJL",
     "patch":15.08,
     "split":"Storm",
+    "objective":"elder",
+    "league":"LJL",
     "games":1.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LJL",
     "patch":15.1,
     "split":"Ignite",
+    "objective":"baron",
+    "league":"LJL",
     "games":16.0,
     "winrate":0.875
   },
   {
-    "objective":"herald",
-    "league":"LJL",
     "patch":15.1,
     "split":"Ignite",
+    "objective":"herald",
+    "league":"LJL",
     "games":23.0,
     "winrate":0.6956521739
   },
   {
-    "objective":"void grub",
-    "league":"LJL",
     "patch":15.1,
     "split":"Ignite",
+    "objective":"void grub",
+    "league":"LJL",
     "games":23.0,
     "winrate":0.7391304348
   },
   {
-    "objective":"soul",
-    "league":"LJL",
     "patch":15.1,
     "split":"Ignite",
+    "objective":"soul",
+    "league":"LJL",
     "games":5.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"LJL",
     "patch":15.1,
     "split":"Ignite",
+    "objective":"atakhan",
+    "league":"LJL",
     "games":22.0,
     "winrate":0.7272727273
   },
   {
-    "objective":"elder",
-    "league":"LJL",
     "patch":15.1,
     "split":"Ignite",
+    "objective":"elder",
+    "league":"LJL",
     "games":2.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LJL",
     "patch":15.11,
     "split":"Ignite",
+    "objective":"baron",
+    "league":"LJL",
     "games":9.0,
     "winrate":0.8888888889
   },
   {
-    "objective":"herald",
-    "league":"LJL",
     "patch":15.11,
     "split":"Ignite",
+    "objective":"herald",
+    "league":"LJL",
     "games":12.0,
     "winrate":0.6666666667
   },
   {
-    "objective":"void grub",
-    "league":"LJL",
     "patch":15.11,
     "split":"Ignite",
+    "objective":"void grub",
+    "league":"LJL",
     "games":12.0,
     "winrate":0.8333333333
   },
   {
-    "objective":"soul",
-    "league":"LJL",
     "patch":15.11,
     "split":"Ignite",
+    "objective":"soul",
+    "league":"LJL",
     "games":6.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"LJL",
     "patch":15.11,
     "split":"Ignite",
+    "objective":"atakhan",
+    "league":"LJL",
     "games":12.0,
     "winrate":0.9166666667
   },
   {
-    "objective":"elder",
-    "league":"LJL",
     "patch":15.11,
     "split":"Ignite",
+    "objective":"elder",
+    "league":"LJL",
     "games":1.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LJL",
     "patch":15.12,
     "split":"Ignite",
+    "objective":"baron",
+    "league":"LJL",
     "games":9.0,
     "winrate":0.8888888889
   },
   {
-    "objective":"herald",
-    "league":"LJL",
     "patch":15.12,
     "split":"Ignite",
+    "objective":"herald",
+    "league":"LJL",
     "games":12.0,
     "winrate":0.25
   },
   {
-    "objective":"void grub",
-    "league":"LJL",
     "patch":15.12,
     "split":"Ignite",
+    "objective":"void grub",
+    "league":"LJL",
     "games":12.0,
     "winrate":0.6666666667
   },
   {
-    "objective":"soul",
-    "league":"LJL",
     "patch":15.12,
     "split":"Ignite",
+    "objective":"soul",
+    "league":"LJL",
     "games":6.0,
     "winrate":0.3333333333
   },
   {
-    "objective":"atakhan",
-    "league":"LJL",
     "patch":15.12,
     "split":"Ignite",
+    "objective":"atakhan",
+    "league":"LJL",
     "games":12.0,
     "winrate":0.75
   },
   {
-    "objective":"elder",
-    "league":"LJL",
     "patch":15.12,
     "split":"Ignite",
+    "objective":"elder",
+    "league":"LJL",
     "games":1.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LTA S",
     "patch":15.02,
     "split":"Split 1",
+    "objective":"baron",
+    "league":"LTA S",
     "games":23.0,
     "winrate":0.8260869565
   },
   {
-    "objective":"herald",
-    "league":"LTA S",
     "patch":15.02,
     "split":"Split 1",
+    "objective":"herald",
+    "league":"LTA S",
     "games":23.0,
     "winrate":0.6086956522
   },
   {
-    "objective":"void grub",
-    "league":"LTA S",
     "patch":15.02,
     "split":"Split 1",
+    "objective":"void grub",
+    "league":"LTA S",
     "games":33.0,
     "winrate":0.6363636364
   },
   {
-    "objective":"soul",
-    "league":"LTA S",
     "patch":15.02,
     "split":"Split 1",
+    "objective":"soul",
+    "league":"LTA S",
     "games":11.0,
     "winrate":0.9090909091
   },
   {
-    "objective":"atakhan",
-    "league":"LTA S",
     "patch":15.02,
     "split":"Split 1",
+    "objective":"atakhan",
+    "league":"LTA S",
     "games":22.0,
     "winrate":0.7272727273
   },
   {
-    "objective":"elder",
-    "league":"LTA S",
     "patch":15.02,
     "split":"Split 1",
+    "objective":"elder",
+    "league":"LTA S",
     "games":3.0,
     "winrate":0.6666666667
   },
   {
-    "objective":"baron",
-    "league":"LTA S",
     "patch":15.03,
     "split":"Split 1",
+    "objective":"baron",
+    "league":"LTA S",
     "games":7.0,
     "winrate":0.8571428571
   },
   {
-    "objective":"herald",
-    "league":"LTA S",
     "patch":15.03,
     "split":"Split 1",
+    "objective":"herald",
+    "league":"LTA S",
     "games":7.0,
     "winrate":0.5714285714
   },
   {
-    "objective":"void grub",
-    "league":"LTA S",
     "patch":15.03,
     "split":"Split 1",
+    "objective":"void grub",
+    "league":"LTA S",
     "games":12.0,
     "winrate":0.5833333333
   },
   {
-    "objective":"soul",
-    "league":"LTA S",
     "patch":15.03,
     "split":"Split 1",
+    "objective":"soul",
+    "league":"LTA S",
     "games":4.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"LTA S",
     "patch":15.03,
     "split":"Split 1",
+    "objective":"atakhan",
+    "league":"LTA S",
     "games":7.0,
     "winrate":0.8571428571
   },
   {
-    "objective":"elder",
-    "league":"LTA S",
     "patch":15.03,
     "split":"Split 1",
+    "objective":"elder",
+    "league":"LTA S",
     "games":3.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LTA S",
     "patch":15.07,
     "split":"Split 2",
+    "objective":"baron",
+    "league":"LTA S",
     "games":16.0,
     "winrate":0.875
   },
   {
-    "objective":"herald",
-    "league":"LTA S",
     "patch":15.07,
     "split":"Split 2",
+    "objective":"herald",
+    "league":"LTA S",
     "games":16.0,
     "winrate":0.6875
   },
   {
-    "objective":"void grub",
-    "league":"LTA S",
     "patch":15.07,
     "split":"Split 2",
+    "objective":"void grub",
+    "league":"LTA S",
     "games":24.0,
     "winrate":0.5
   },
   {
-    "objective":"soul",
-    "league":"LTA S",
     "patch":15.07,
     "split":"Split 2",
+    "objective":"soul",
+    "league":"LTA S",
     "games":9.0,
     "winrate":0.8888888889
   },
   {
-    "objective":"atakhan",
-    "league":"LTA S",
     "patch":15.07,
     "split":"Split 2",
+    "objective":"atakhan",
+    "league":"LTA S",
     "games":16.0,
     "winrate":0.75
   },
   {
-    "objective":"elder",
-    "league":"LTA S",
     "patch":15.07,
     "split":"Split 2",
+    "objective":"elder",
+    "league":"LTA S",
     "games":2.0,
     "winrate":0.5
   },
   {
-    "objective":"baron",
-    "league":"LTA S",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"baron",
+    "league":"LTA S",
     "games":17.0,
     "winrate":0.9411764706
   },
   {
-    "objective":"herald",
-    "league":"LTA S",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"herald",
+    "league":"LTA S",
     "games":21.0,
     "winrate":0.6666666667
   },
   {
-    "objective":"void grub",
-    "league":"LTA S",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"void grub",
+    "league":"LTA S",
     "games":31.0,
     "winrate":0.4838709677
   },
   {
-    "objective":"soul",
-    "league":"LTA S",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"soul",
+    "league":"LTA S",
     "games":12.0,
     "winrate":0.9166666667
   },
   {
-    "objective":"atakhan",
-    "league":"LTA S",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"atakhan",
+    "league":"LTA S",
     "games":20.0,
     "winrate":0.75
   },
   {
-    "objective":"elder",
-    "league":"LTA S",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"elder",
+    "league":"LTA S",
     "games":2.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LTA S",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"baron",
+    "league":"LTA S",
     "games":15.0,
     "winrate":0.8
   },
   {
-    "objective":"herald",
-    "league":"LTA S",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"herald",
+    "league":"LTA S",
     "games":21.0,
     "winrate":0.619047619
   },
   {
-    "objective":"void grub",
-    "league":"LTA S",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"void grub",
+    "league":"LTA S",
     "games":21.0,
     "winrate":0.3333333333
   },
   {
-    "objective":"soul",
-    "league":"LTA S",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"soul",
+    "league":"LTA S",
     "games":9.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"LTA S",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"atakhan",
+    "league":"LTA S",
     "games":19.0,
     "winrate":0.8421052632
   },
   {
-    "objective":"elder",
-    "league":"LTA S",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"elder",
+    "league":"LTA S",
     "games":3.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LTA S",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"baron",
+    "league":"LTA S",
     "games":16.0,
     "winrate":0.875
   },
   {
-    "objective":"herald",
-    "league":"LTA S",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"herald",
+    "league":"LTA S",
     "games":17.0,
     "winrate":0.7058823529
   },
   {
-    "objective":"void grub",
-    "league":"LTA S",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"void grub",
+    "league":"LTA S",
     "games":17.0,
     "winrate":0.5882352941
   },
   {
-    "objective":"soul",
-    "league":"LTA S",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"soul",
+    "league":"LTA S",
     "games":7.0,
     "winrate":0.7142857143
   },
   {
-    "objective":"atakhan",
-    "league":"LTA S",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"atakhan",
+    "league":"LTA S",
     "games":17.0,
     "winrate":0.8235294118
   },
   {
-    "objective":"elder",
-    "league":"LTA S",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"elder",
+    "league":"LTA S",
     "games":1.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LTA S",
     "patch":15.11,
     "split":"Split 2",
+    "objective":"baron",
+    "league":"LTA S",
     "games":19.0,
     "winrate":0.8421052632
   },
   {
+    "patch":15.11,
+    "split":"Split 2",
     "objective":"herald",
     "league":"LTA S",
-    "patch":15.11,
-    "split":"Split 2",
     "games":22.0,
     "winrate":0.4090909091
   },
   {
+    "patch":15.11,
+    "split":"Split 2",
     "objective":"void grub",
     "league":"LTA S",
-    "patch":15.11,
-    "split":"Split 2",
     "games":22.0,
     "winrate":0.4090909091
   },
   {
-    "objective":"soul",
-    "league":"LTA S",
     "patch":15.11,
     "split":"Split 2",
+    "objective":"soul",
+    "league":"LTA S",
     "games":11.0,
     "winrate":0.9090909091
   },
   {
-    "objective":"atakhan",
-    "league":"LTA S",
     "patch":15.11,
     "split":"Split 2",
+    "objective":"atakhan",
+    "league":"LTA S",
     "games":22.0,
     "winrate":0.9545454545
   },
   {
-    "objective":"elder",
-    "league":"LTA S",
     "patch":15.11,
     "split":"Split 2",
+    "objective":"elder",
+    "league":"LTA S",
     "games":2.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LTA N",
     "patch":15.02,
     "split":"Split 1",
+    "objective":"baron",
+    "league":"LTA N",
     "games":20.0,
     "winrate":0.95
   },
   {
-    "objective":"herald",
-    "league":"LTA N",
     "patch":15.02,
     "split":"Split 1",
+    "objective":"herald",
+    "league":"LTA N",
     "games":21.0,
     "winrate":0.6666666667
   },
   {
-    "objective":"void grub",
-    "league":"LTA N",
     "patch":15.02,
     "split":"Split 1",
+    "objective":"void grub",
+    "league":"LTA N",
     "games":33.0,
     "winrate":0.5454545455
   },
   {
-    "objective":"soul",
-    "league":"LTA N",
     "patch":15.02,
     "split":"Split 1",
+    "objective":"soul",
+    "league":"LTA N",
     "games":10.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"LTA N",
     "patch":15.02,
     "split":"Split 1",
+    "objective":"atakhan",
+    "league":"LTA N",
     "games":21.0,
     "winrate":0.8571428571
   },
   {
-    "objective":"elder",
-    "league":"LTA N",
     "patch":15.02,
     "split":"Split 1",
+    "objective":"elder",
+    "league":"LTA N",
     "games":0.0,
     "winrate":0.0
   },
   {
-    "objective":"baron",
-    "league":"LTA N",
     "patch":15.03,
     "split":"Split 1",
+    "objective":"baron",
+    "league":"LTA N",
     "games":5.0,
     "winrate":1.0
   },
   {
-    "objective":"herald",
-    "league":"LTA N",
     "patch":15.03,
     "split":"Split 1",
+    "objective":"herald",
+    "league":"LTA N",
     "games":5.0,
     "winrate":0.2
   },
   {
-    "objective":"void grub",
-    "league":"LTA N",
     "patch":15.03,
     "split":"Split 1",
+    "objective":"void grub",
+    "league":"LTA N",
     "games":7.0,
     "winrate":0.4285714286
   },
   {
-    "objective":"soul",
-    "league":"LTA N",
     "patch":15.03,
     "split":"Split 1",
+    "objective":"soul",
+    "league":"LTA N",
     "games":3.0,
     "winrate":0.6666666667
   },
   {
-    "objective":"atakhan",
-    "league":"LTA N",
     "patch":15.03,
     "split":"Split 1",
+    "objective":"atakhan",
+    "league":"LTA N",
     "games":5.0,
     "winrate":0.4
   },
   {
-    "objective":"elder",
-    "league":"LTA N",
     "patch":15.03,
     "split":"Split 1",
+    "objective":"elder",
+    "league":"LTA N",
     "games":0.0,
     "winrate":0.0
   },
   {
-    "objective":"baron",
-    "league":"LTA N",
     "patch":15.07,
     "split":"Split 2",
+    "objective":"baron",
+    "league":"LTA N",
     "games":18.0,
     "winrate":0.7222222222
   },
   {
-    "objective":"herald",
-    "league":"LTA N",
     "patch":15.07,
     "split":"Split 2",
+    "objective":"herald",
+    "league":"LTA N",
     "games":16.0,
     "winrate":0.6875
   },
   {
-    "objective":"void grub",
-    "league":"LTA N",
     "patch":15.07,
     "split":"Split 2",
+    "objective":"void grub",
+    "league":"LTA N",
     "games":23.0,
     "winrate":0.5652173913
   },
   {
-    "objective":"soul",
-    "league":"LTA N",
     "patch":15.07,
     "split":"Split 2",
+    "objective":"soul",
+    "league":"LTA N",
     "games":7.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"LTA N",
     "patch":15.07,
     "split":"Split 2",
+    "objective":"atakhan",
+    "league":"LTA N",
     "games":15.0,
     "winrate":0.6666666667
   },
   {
-    "objective":"elder",
-    "league":"LTA N",
     "patch":15.07,
     "split":"Split 2",
+    "objective":"elder",
+    "league":"LTA N",
     "games":0.0,
     "winrate":0.0
   },
   {
-    "objective":"baron",
-    "league":"LTA N",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"baron",
+    "league":"LTA N",
     "games":23.0,
     "winrate":0.8695652174
   },
   {
-    "objective":"herald",
-    "league":"LTA N",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"herald",
+    "league":"LTA N",
     "games":21.0,
     "winrate":0.5714285714
   },
   {
-    "objective":"void grub",
-    "league":"LTA N",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"void grub",
+    "league":"LTA N",
     "games":27.0,
     "winrate":0.6296296296
   },
   {
-    "objective":"soul",
-    "league":"LTA N",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"soul",
+    "league":"LTA N",
     "games":5.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"LTA N",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"atakhan",
+    "league":"LTA N",
     "games":21.0,
     "winrate":0.8571428571
   },
   {
-    "objective":"elder",
-    "league":"LTA N",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"elder",
+    "league":"LTA N",
     "games":1.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LTA N",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"baron",
+    "league":"LTA N",
     "games":21.0,
     "winrate":0.7619047619
   },
   {
-    "objective":"herald",
-    "league":"LTA N",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"herald",
+    "league":"LTA N",
     "games":19.0,
     "winrate":0.5263157895
   },
   {
-    "objective":"void grub",
-    "league":"LTA N",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"void grub",
+    "league":"LTA N",
     "games":19.0,
     "winrate":0.6315789474
   },
   {
-    "objective":"soul",
-    "league":"LTA N",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"soul",
+    "league":"LTA N",
     "games":13.0,
     "winrate":0.8461538462
   },
   {
-    "objective":"atakhan",
-    "league":"LTA N",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"atakhan",
+    "league":"LTA N",
     "games":19.0,
     "winrate":0.5263157895
   },
   {
-    "objective":"elder",
-    "league":"LTA N",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"elder",
+    "league":"LTA N",
     "games":4.0,
     "winrate":0.75
   },
   {
-    "objective":"baron",
-    "league":"LTA N",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"baron",
+    "league":"LTA N",
     "games":14.0,
     "winrate":0.8571428571
   },
   {
-    "objective":"herald",
-    "league":"LTA N",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"herald",
+    "league":"LTA N",
     "games":15.0,
     "winrate":0.6666666667
   },
   {
-    "objective":"void grub",
-    "league":"LTA N",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"void grub",
+    "league":"LTA N",
     "games":15.0,
     "winrate":0.2666666667
   },
   {
-    "objective":"soul",
-    "league":"LTA N",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"soul",
+    "league":"LTA N",
     "games":8.0,
     "winrate":0.875
   },
   {
-    "objective":"atakhan",
-    "league":"LTA N",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"atakhan",
+    "league":"LTA N",
     "games":15.0,
     "winrate":0.7333333333
   },
   {
-    "objective":"elder",
-    "league":"LTA N",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"elder",
+    "league":"LTA N",
     "games":1.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"LTA N",
     "patch":15.11,
     "split":"Split 2",
+    "objective":"baron",
+    "league":"LTA N",
     "games":28.0,
     "winrate":0.7142857143
   },
   {
-    "objective":"herald",
-    "league":"LTA N",
     "patch":15.11,
     "split":"Split 2",
+    "objective":"herald",
+    "league":"LTA N",
     "games":24.0,
     "winrate":0.6666666667
   },
   {
-    "objective":"void grub",
-    "league":"LTA N",
     "patch":15.11,
     "split":"Split 2",
+    "objective":"void grub",
+    "league":"LTA N",
     "games":24.0,
     "winrate":0.7916666667
   },
   {
-    "objective":"soul",
-    "league":"LTA N",
     "patch":15.11,
     "split":"Split 2",
+    "objective":"soul",
+    "league":"LTA N",
     "games":10.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"LTA N",
     "patch":15.11,
     "split":"Split 2",
+    "objective":"atakhan",
+    "league":"LTA N",
     "games":24.0,
     "winrate":0.7083333333
   },
   {
-    "objective":"elder",
-    "league":"LTA N",
     "patch":15.11,
     "split":"Split 2",
+    "objective":"elder",
+    "league":"LTA N",
     "games":3.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"PCS",
     "patch":15.03,
     "split":"Split 1",
+    "objective":"baron",
+    "league":"PCS",
     "games":24.0,
     "winrate":0.75
   },
   {
-    "objective":"herald",
-    "league":"PCS",
     "patch":15.03,
     "split":"Split 1",
+    "objective":"herald",
+    "league":"PCS",
     "games":31.0,
     "winrate":0.7096774194
   },
   {
-    "objective":"void grub",
-    "league":"PCS",
     "patch":15.03,
     "split":"Split 1",
+    "objective":"void grub",
+    "league":"PCS",
     "games":47.0,
     "winrate":0.5957446809
   },
   {
-    "objective":"soul",
-    "league":"PCS",
     "patch":15.03,
     "split":"Split 1",
+    "objective":"soul",
+    "league":"PCS",
     "games":7.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"PCS",
     "patch":15.03,
     "split":"Split 1",
+    "objective":"atakhan",
+    "league":"PCS",
     "games":29.0,
     "winrate":0.7931034483
   },
   {
-    "objective":"elder",
-    "league":"PCS",
     "patch":15.03,
     "split":"Split 1",
+    "objective":"elder",
+    "league":"PCS",
     "games":1.0,
     "winrate":0.0
   },
   {
-    "objective":"baron",
-    "league":"PCS",
     "patch":15.04,
     "split":"Split 1",
+    "objective":"baron",
+    "league":"PCS",
     "games":23.0,
     "winrate":0.8260869565
   },
   {
-    "objective":"herald",
-    "league":"PCS",
     "patch":15.04,
     "split":"Split 1",
+    "objective":"herald",
+    "league":"PCS",
     "games":27.0,
     "winrate":0.6666666667
   },
   {
-    "objective":"void grub",
-    "league":"PCS",
     "patch":15.04,
     "split":"Split 1",
+    "objective":"void grub",
+    "league":"PCS",
     "games":40.0,
     "winrate":0.6
   },
   {
-    "objective":"soul",
-    "league":"PCS",
     "patch":15.04,
     "split":"Split 1",
+    "objective":"soul",
+    "league":"PCS",
     "games":6.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"PCS",
     "patch":15.04,
     "split":"Split 1",
+    "objective":"atakhan",
+    "league":"PCS",
     "games":27.0,
     "winrate":0.7777777778
   },
   {
-    "objective":"elder",
-    "league":"PCS",
     "patch":15.04,
     "split":"Split 1",
+    "objective":"elder",
+    "league":"PCS",
     "games":0.0,
     "winrate":0.0
   },
   {
-    "objective":"baron",
-    "league":"PCS",
     "patch":15.05,
     "split":"Split 1",
+    "objective":"baron",
+    "league":"PCS",
     "games":14.0,
     "winrate":1.0
   },
   {
-    "objective":"herald",
-    "league":"PCS",
     "patch":15.05,
     "split":"Split 1",
+    "objective":"herald",
+    "league":"PCS",
     "games":21.0,
     "winrate":0.8095238095
   },
   {
-    "objective":"void grub",
-    "league":"PCS",
     "patch":15.05,
     "split":"Split 1",
+    "objective":"void grub",
+    "league":"PCS",
     "games":30.0,
     "winrate":0.5333333333
   },
   {
-    "objective":"soul",
-    "league":"PCS",
     "patch":15.05,
     "split":"Split 1",
+    "objective":"soul",
+    "league":"PCS",
     "games":3.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"PCS",
     "patch":15.05,
     "split":"Split 1",
+    "objective":"atakhan",
+    "league":"PCS",
     "games":18.0,
     "winrate":0.8333333333
   },
   {
-    "objective":"elder",
-    "league":"PCS",
     "patch":15.05,
     "split":"Split 1",
+    "objective":"elder",
+    "league":"PCS",
     "games":0.0,
     "winrate":0.0
   },
   {
-    "objective":"baron",
-    "league":"PCS",
     "patch":15.07,
     "split":"Split 2",
+    "objective":"baron",
+    "league":"PCS",
     "games":26.0,
     "winrate":0.8076923077
   },
   {
-    "objective":"herald",
-    "league":"PCS",
     "patch":15.07,
     "split":"Split 2",
+    "objective":"herald",
+    "league":"PCS",
     "games":31.0,
     "winrate":0.8387096774
   },
   {
-    "objective":"void grub",
-    "league":"PCS",
     "patch":15.07,
     "split":"Split 2",
+    "objective":"void grub",
+    "league":"PCS",
     "games":52.0,
     "winrate":0.5576923077
   },
   {
-    "objective":"soul",
-    "league":"PCS",
     "patch":15.07,
     "split":"Split 2",
+    "objective":"soul",
+    "league":"PCS",
     "games":9.0,
     "winrate":0.7777777778
   },
   {
-    "objective":"atakhan",
-    "league":"PCS",
     "patch":15.07,
     "split":"Split 2",
+    "objective":"atakhan",
+    "league":"PCS",
     "games":28.0,
     "winrate":0.7857142857
   },
   {
-    "objective":"elder",
-    "league":"PCS",
     "patch":15.07,
     "split":"Split 2",
+    "objective":"elder",
+    "league":"PCS",
     "games":3.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"PCS",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"baron",
+    "league":"PCS",
     "games":22.0,
     "winrate":0.8636363636
   },
   {
-    "objective":"herald",
-    "league":"PCS",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"herald",
+    "league":"PCS",
     "games":26.0,
     "winrate":0.5384615385
   },
   {
-    "objective":"void grub",
-    "league":"PCS",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"void grub",
+    "league":"PCS",
     "games":38.0,
     "winrate":0.6052631579
   },
   {
-    "objective":"soul",
-    "league":"PCS",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"soul",
+    "league":"PCS",
     "games":7.0,
     "winrate":0.8571428571
   },
   {
-    "objective":"atakhan",
-    "league":"PCS",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"atakhan",
+    "league":"PCS",
     "games":25.0,
     "winrate":0.84
   },
   {
-    "objective":"elder",
-    "league":"PCS",
     "patch":15.08,
     "split":"Split 2",
+    "objective":"elder",
+    "league":"PCS",
     "games":0.0,
     "winrate":0.0
   },
   {
-    "objective":"baron",
-    "league":"PCS",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"baron",
+    "league":"PCS",
     "games":14.0,
     "winrate":0.8571428571
   },
   {
-    "objective":"herald",
-    "league":"PCS",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"herald",
+    "league":"PCS",
     "games":25.0,
     "winrate":0.76
   },
   {
-    "objective":"void grub",
-    "league":"PCS",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"void grub",
+    "league":"PCS",
     "games":25.0,
     "winrate":0.52
   },
   {
-    "objective":"soul",
-    "league":"PCS",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"soul",
+    "league":"PCS",
     "games":4.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"PCS",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"atakhan",
+    "league":"PCS",
     "games":24.0,
     "winrate":0.75
   },
   {
-    "objective":"elder",
-    "league":"PCS",
     "patch":15.09,
     "split":"Split 2",
+    "objective":"elder",
+    "league":"PCS",
     "games":1.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"PCS",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"baron",
+    "league":"PCS",
     "games":18.0,
     "winrate":0.8888888889
   },
   {
-    "objective":"herald",
-    "league":"PCS",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"herald",
+    "league":"PCS",
     "games":29.0,
     "winrate":0.8620689655
   },
   {
-    "objective":"void grub",
-    "league":"PCS",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"void grub",
+    "league":"PCS",
     "games":30.0,
     "winrate":0.7666666667
   },
   {
-    "objective":"soul",
-    "league":"PCS",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"soul",
+    "league":"PCS",
     "games":12.0,
     "winrate":0.9166666667
   },
   {
-    "objective":"atakhan",
-    "league":"PCS",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"atakhan",
+    "league":"PCS",
     "games":28.0,
     "winrate":0.8928571429
   },
   {
-    "objective":"elder",
-    "league":"PCS",
     "patch":15.1,
     "split":"Split 2",
+    "objective":"elder",
+    "league":"PCS",
     "games":1.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"PCS",
     "patch":15.11,
     "split":"Split 2",
+    "objective":"baron",
+    "league":"PCS",
     "games":27.0,
     "winrate":0.7407407407
   },
   {
-    "objective":"herald",
-    "league":"PCS",
     "patch":15.11,
     "split":"Split 2",
+    "objective":"herald",
+    "league":"PCS",
     "games":35.0,
     "winrate":0.6285714286
   },
   {
-    "objective":"void grub",
-    "league":"PCS",
     "patch":15.11,
     "split":"Split 2",
+    "objective":"void grub",
+    "league":"PCS",
     "games":35.0,
     "winrate":0.5714285714
   },
   {
-    "objective":"soul",
-    "league":"PCS",
     "patch":15.11,
     "split":"Split 2",
+    "objective":"soul",
+    "league":"PCS",
     "games":14.0,
     "winrate":0.7857142857
   },
   {
-    "objective":"atakhan",
-    "league":"PCS",
     "patch":15.11,
     "split":"Split 2",
+    "objective":"atakhan",
+    "league":"PCS",
     "games":33.0,
     "winrate":0.7272727273
   },
   {
-    "objective":"elder",
-    "league":"PCS",
     "patch":15.11,
     "split":"Split 2",
-    "games":2.0,
-    "winrate":1.0
-  },
-  {
-    "objective":"baron",
-    "league":"PCS",
-    "patch":15.14,
-    "split":"Split 3",
-    "games":8.0,
-    "winrate":0.75
-  },
-  {
-    "objective":"herald",
-    "league":"PCS",
-    "patch":15.14,
-    "split":"Split 3",
-    "games":8.0,
-    "winrate":0.75
-  },
-  {
-    "objective":"void grub",
-    "league":"PCS",
-    "patch":15.14,
-    "split":"Split 3",
-    "games":8.0,
-    "winrate":0.75
-  },
-  {
-    "objective":"soul",
-    "league":"PCS",
-    "patch":15.14,
-    "split":"Split 3",
-    "games":5.0,
-    "winrate":0.6
-  },
-  {
-    "objective":"atakhan",
-    "league":"PCS",
-    "patch":15.14,
-    "split":"Split 3",
-    "games":7.0,
-    "winrate":0.7142857143
-  },
-  {
     "objective":"elder",
     "league":"PCS",
-    "patch":15.14,
-    "split":"Split 3",
     "games":2.0,
     "winrate":1.0
   },
   {
+    "patch":15.14,
+    "split":"Split 3",
     "objective":"baron",
-    "league":"VCS",
+    "league":"PCS",
+    "games":11.0,
+    "winrate":0.8181818182
+  },
+  {
+    "patch":15.14,
+    "split":"Split 3",
+    "objective":"herald",
+    "league":"PCS",
+    "games":11.0,
+    "winrate":0.6363636364
+  },
+  {
+    "patch":15.14,
+    "split":"Split 3",
+    "objective":"void grub",
+    "league":"PCS",
+    "games":11.0,
+    "winrate":0.6363636364
+  },
+  {
+    "patch":15.14,
+    "split":"Split 3",
+    "objective":"soul",
+    "league":"PCS",
+    "games":6.0,
+    "winrate":0.5
+  },
+  {
+    "patch":15.14,
+    "split":"Split 3",
+    "objective":"atakhan",
+    "league":"PCS",
+    "games":10.0,
+    "winrate":0.8
+  },
+  {
+    "patch":15.14,
+    "split":"Split 3",
+    "objective":"elder",
+    "league":"PCS",
+    "games":2.0,
+    "winrate":1.0
+  },
+  {
     "patch":15.04,
     "split":"Spring",
+    "objective":"baron",
+    "league":"VCS",
     "games":25.0,
     "winrate":0.76
   },
   {
-    "objective":"herald",
-    "league":"VCS",
     "patch":15.04,
     "split":"Spring",
+    "objective":"herald",
+    "league":"VCS",
     "games":26.0,
     "winrate":0.6923076923
   },
   {
-    "objective":"void grub",
-    "league":"VCS",
     "patch":15.04,
     "split":"Spring",
+    "objective":"void grub",
+    "league":"VCS",
     "games":41.0,
     "winrate":0.5609756098
   },
   {
-    "objective":"soul",
-    "league":"VCS",
     "patch":15.04,
     "split":"Spring",
+    "objective":"soul",
+    "league":"VCS",
     "games":7.0,
     "winrate":0.8571428571
   },
   {
-    "objective":"atakhan",
-    "league":"VCS",
     "patch":15.04,
     "split":"Spring",
+    "objective":"atakhan",
+    "league":"VCS",
     "games":26.0,
     "winrate":0.8076923077
   },
   {
-    "objective":"elder",
-    "league":"VCS",
     "patch":15.04,
     "split":"Spring",
+    "objective":"elder",
+    "league":"VCS",
     "games":1.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"VCS",
     "patch":15.05,
     "split":"Spring",
+    "objective":"baron",
+    "league":"VCS",
     "games":29.0,
     "winrate":1.0
   },
   {
-    "objective":"herald",
-    "league":"VCS",
     "patch":15.05,
     "split":"Spring",
+    "objective":"herald",
+    "league":"VCS",
     "games":29.0,
     "winrate":0.6896551724
   },
   {
-    "objective":"void grub",
-    "league":"VCS",
     "patch":15.05,
     "split":"Spring",
+    "objective":"void grub",
+    "league":"VCS",
     "games":47.0,
     "winrate":0.5957446809
   },
   {
-    "objective":"soul",
-    "league":"VCS",
     "patch":15.05,
     "split":"Spring",
+    "objective":"soul",
+    "league":"VCS",
     "games":12.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"VCS",
     "patch":15.05,
     "split":"Spring",
+    "objective":"atakhan",
+    "league":"VCS",
     "games":29.0,
     "winrate":0.8965517241
   },
   {
-    "objective":"elder",
-    "league":"VCS",
     "patch":15.05,
     "split":"Spring",
+    "objective":"elder",
+    "league":"VCS",
     "games":2.0,
     "winrate":0.5
   },
   {
-    "objective":"baron",
-    "league":"VCS",
     "patch":15.09,
     "split":"Summer",
+    "objective":"baron",
+    "league":"VCS",
     "games":21.0,
     "winrate":0.8571428571
   },
   {
-    "objective":"herald",
-    "league":"VCS",
     "patch":15.09,
     "split":"Summer",
+    "objective":"herald",
+    "league":"VCS",
     "games":25.0,
     "winrate":0.48
   },
   {
-    "objective":"void grub",
-    "league":"VCS",
     "patch":15.09,
     "split":"Summer",
+    "objective":"void grub",
+    "league":"VCS",
     "games":25.0,
     "winrate":0.6
   },
   {
-    "objective":"soul",
-    "league":"VCS",
     "patch":15.09,
     "split":"Summer",
+    "objective":"soul",
+    "league":"VCS",
     "games":4.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"VCS",
     "patch":15.09,
     "split":"Summer",
+    "objective":"atakhan",
+    "league":"VCS",
     "games":25.0,
     "winrate":0.88
   },
   {
-    "objective":"elder",
-    "league":"VCS",
     "patch":15.09,
     "split":"Summer",
+    "objective":"elder",
+    "league":"VCS",
     "games":1.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"VCS",
     "patch":15.1,
     "split":"Summer",
+    "objective":"baron",
+    "league":"VCS",
     "games":24.0,
     "winrate":0.9583333333
   },
   {
-    "objective":"herald",
-    "league":"VCS",
     "patch":15.1,
     "split":"Summer",
+    "objective":"herald",
+    "league":"VCS",
     "games":26.0,
     "winrate":0.7692307692
   },
   {
-    "objective":"void grub",
-    "league":"VCS",
     "patch":15.1,
     "split":"Summer",
+    "objective":"void grub",
+    "league":"VCS",
     "games":26.0,
     "winrate":0.5
   },
   {
-    "objective":"soul",
-    "league":"VCS",
     "patch":15.1,
     "split":"Summer",
+    "objective":"soul",
+    "league":"VCS",
     "games":15.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"VCS",
     "patch":15.1,
     "split":"Summer",
+    "objective":"atakhan",
+    "league":"VCS",
     "games":26.0,
     "winrate":0.8846153846
   },
   {
-    "objective":"elder",
-    "league":"VCS",
     "patch":15.1,
     "split":"Summer",
+    "objective":"elder",
+    "league":"VCS",
     "games":2.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"VCS",
     "patch":15.11,
     "split":"Summer",
+    "objective":"baron",
+    "league":"VCS",
     "games":27.0,
     "winrate":0.8518518519
   },
   {
-    "objective":"herald",
-    "league":"VCS",
     "patch":15.11,
     "split":"Summer",
+    "objective":"herald",
+    "league":"VCS",
     "games":30.0,
     "winrate":0.7666666667
   },
   {
-    "objective":"void grub",
-    "league":"VCS",
     "patch":15.11,
     "split":"Summer",
+    "objective":"void grub",
+    "league":"VCS",
     "games":30.0,
     "winrate":0.7333333333
   },
   {
-    "objective":"soul",
-    "league":"VCS",
     "patch":15.11,
     "split":"Summer",
+    "objective":"soul",
+    "league":"VCS",
     "games":13.0,
     "winrate":0.8461538462
   },
   {
-    "objective":"atakhan",
-    "league":"VCS",
     "patch":15.11,
     "split":"Summer",
+    "objective":"atakhan",
+    "league":"VCS",
     "games":30.0,
     "winrate":0.8
   },
   {
-    "objective":"elder",
-    "league":"VCS",
     "patch":15.11,
     "split":"Summer",
+    "objective":"elder",
+    "league":"VCS",
     "games":3.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"VCS",
     "patch":15.13,
     "split":"Finals",
+    "objective":"baron",
+    "league":"VCS",
     "games":4.0,
     "winrate":0.75
   },
   {
-    "objective":"herald",
-    "league":"VCS",
     "patch":15.13,
     "split":"Finals",
+    "objective":"herald",
+    "league":"VCS",
     "games":5.0,
     "winrate":0.2
   },
   {
-    "objective":"void grub",
-    "league":"VCS",
     "patch":15.13,
     "split":"Finals",
+    "objective":"void grub",
+    "league":"VCS",
     "games":5.0,
     "winrate":0.6
   },
   {
-    "objective":"soul",
-    "league":"VCS",
     "patch":15.13,
     "split":"Finals",
+    "objective":"soul",
+    "league":"VCS",
     "games":2.0,
     "winrate":1.0
   },
   {
-    "objective":"atakhan",
-    "league":"VCS",
     "patch":15.13,
     "split":"Finals",
+    "objective":"atakhan",
+    "league":"VCS",
     "games":5.0,
     "winrate":0.8
   },
   {
-    "objective":"elder",
-    "league":"VCS",
     "patch":15.13,
     "split":"Finals",
+    "objective":"elder",
+    "league":"VCS",
     "games":1.0,
     "winrate":1.0
   },
   {
-    "objective":"baron",
-    "league":"MSI",
     "patch":15.13,
     "split":"MSI",
+    "objective":"baron",
+    "league":"MSI",
     "games":76.0,
     "winrate":0.8157894737
   },
   {
-    "objective":"herald",
-    "league":"MSI",
     "patch":15.13,
     "split":"MSI",
+    "objective":"herald",
+    "league":"MSI",
     "games":80.0,
     "winrate":0.725
   },
   {
-    "objective":"void grub",
-    "league":"MSI",
     "patch":15.13,
     "split":"MSI",
+    "objective":"void grub",
+    "league":"MSI",
     "games":80.0,
     "winrate":0.55
   },
   {
-    "objective":"soul",
-    "league":"MSI",
     "patch":15.13,
     "split":"MSI",
+    "objective":"soul",
+    "league":"MSI",
     "games":37.0,
     "winrate":0.9459459459
   },
   {
-    "objective":"atakhan",
-    "league":"MSI",
     "patch":15.13,
     "split":"MSI",
+    "objective":"atakhan",
+    "league":"MSI",
     "games":80.0,
     "winrate":0.775
   },
   {
-    "objective":"elder",
-    "league":"MSI",
     "patch":15.13,
     "split":"MSI",
+    "objective":"elder",
+    "league":"MSI",
     "games":9.0,
     "winrate":0.8888888889
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"baron",
+    "league":"LPL",
+    "games":46.0,
+    "winrate":0.7826086957
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"herald",
+    "league":"LPL",
+    "games":41.0,
+    "winrate":0.6829268293
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"void grub",
+    "league":"LPL",
+    "games":42.0,
+    "winrate":0.5238095238
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"soul",
+    "league":"LPL",
+    "games":18.0,
+    "winrate":0.9444444444
+  },
+  {
+    "patch":15.14,
+    "split":"Rounds 3-5",
+    "objective":"baron",
+    "league":"LCK",
+    "games":46.0,
+    "winrate":0.7608695652
+  },
+  {
+    "patch":15.14,
+    "split":"Rounds 3-5",
+    "objective":"herald",
+    "league":"LCK",
+    "games":46.0,
+    "winrate":0.6086956522
+  },
+  {
+    "patch":15.14,
+    "split":"Rounds 3-5",
+    "objective":"void grub",
+    "league":"LCK",
+    "games":45.0,
+    "winrate":0.4222222222
+  },
+  {
+    "patch":15.14,
+    "split":"Rounds 3-5",
+    "objective":"soul",
+    "league":"LCK",
+    "games":22.0,
+    "winrate":0.9545454545
+  },
+  {
+    "patch":15.14,
+    "split":"Rounds 3-5",
+    "objective":"atakhan",
+    "league":"LCK",
+    "games":46.0,
+    "winrate":0.6739130435
+  },
+  {
+    "patch":15.14,
+    "split":"Rounds 3-5",
+    "objective":"elder",
+    "league":"LCK",
+    "games":5.0,
+    "winrate":0.6
+  },
+  {
+    "patch":15.15,
+    "split":"Rounds 3-5",
+    "objective":"baron",
+    "league":"LCK",
+    "games":27.0,
+    "winrate":0.8148148148
+  },
+  {
+    "patch":15.15,
+    "split":"Rounds 3-5",
+    "objective":"herald",
+    "league":"LCK",
+    "games":23.0,
+    "winrate":0.4347826087
+  },
+  {
+    "patch":15.15,
+    "split":"Rounds 3-5",
+    "objective":"void grub",
+    "league":"LCK",
+    "games":23.0,
+    "winrate":0.5652173913
+  },
+  {
+    "patch":15.15,
+    "split":"Rounds 3-5",
+    "objective":"soul",
+    "league":"LCK",
+    "games":7.0,
+    "winrate":0.7142857143
+  },
+  {
+    "patch":15.15,
+    "split":"Rounds 3-5",
+    "objective":"atakhan",
+    "league":"LCK",
+    "games":23.0,
+    "winrate":0.8260869565
+  },
+  {
+    "patch":15.15,
+    "split":"Rounds 3-5",
+    "objective":"elder",
+    "league":"LCK",
+    "games":0.0,
+    "winrate":0.0
+  },
+  {
+    "patch":15.14,
+    "split":"Split 3",
+    "objective":"baron",
+    "league":"LCP",
+    "games":10.0,
+    "winrate":0.6
+  },
+  {
+    "patch":15.14,
+    "split":"Split 3",
+    "objective":"herald",
+    "league":"LCP",
+    "games":10.0,
+    "winrate":0.7
+  },
+  {
+    "patch":15.14,
+    "split":"Split 3",
+    "objective":"void grub",
+    "league":"LCP",
+    "games":10.0,
+    "winrate":0.7
+  },
+  {
+    "patch":15.14,
+    "split":"Split 3",
+    "objective":"soul",
+    "league":"LCP",
+    "games":4.0,
+    "winrate":0.5
+  },
+  {
+    "patch":15.14,
+    "split":"Split 3",
+    "objective":"atakhan",
+    "league":"LCP",
+    "games":10.0,
+    "winrate":0.8
+  },
+  {
+    "patch":15.14,
+    "split":"Split 3",
+    "objective":"elder",
+    "league":"LCP",
+    "games":1.0,
+    "winrate":1.0
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"baron",
+    "league":"LCP",
+    "games":16.0,
+    "winrate":0.9375
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"herald",
+    "league":"LCP",
+    "games":18.0,
+    "winrate":0.8333333333
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"void grub",
+    "league":"LCP",
+    "games":19.0,
+    "winrate":0.4736842105
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"soul",
+    "league":"LCP",
+    "games":12.0,
+    "winrate":1.0
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"atakhan",
+    "league":"LCP",
+    "games":19.0,
+    "winrate":0.8947368421
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"elder",
+    "league":"LCP",
+    "games":0.0,
+    "winrate":0.0
+  },
+  {
+    "patch":15.15,
+    "split":"Summer",
+    "objective":"baron",
+    "league":"LEC",
+    "games":23.0,
+    "winrate":0.9130434783
+  },
+  {
+    "patch":15.15,
+    "split":"Summer",
+    "objective":"herald",
+    "league":"LEC",
+    "games":24.0,
+    "winrate":0.875
+  },
+  {
+    "patch":15.15,
+    "split":"Summer",
+    "objective":"void grub",
+    "league":"LEC",
+    "games":24.0,
+    "winrate":0.4583333333
+  },
+  {
+    "patch":15.15,
+    "split":"Summer",
+    "objective":"soul",
+    "league":"LEC",
+    "games":8.0,
+    "winrate":1.0
+  },
+  {
+    "patch":15.15,
+    "split":"Summer",
+    "objective":"atakhan",
+    "league":"LEC",
+    "games":24.0,
+    "winrate":0.7083333333
+  },
+  {
+    "patch":15.15,
+    "split":"Summer",
+    "objective":"elder",
+    "league":"LEC",
+    "games":2.0,
+    "winrate":1.0
+  },
+  {
+    "patch":15.14,
+    "split":"Split 3",
+    "objective":"baron",
+    "league":"LTA S",
+    "games":7.0,
+    "winrate":1.0
+  },
+  {
+    "patch":15.14,
+    "split":"Split 3",
+    "objective":"herald",
+    "league":"LTA S",
+    "games":10.0,
+    "winrate":0.6
+  },
+  {
+    "patch":15.14,
+    "split":"Split 3",
+    "objective":"void grub",
+    "league":"LTA S",
+    "games":10.0,
+    "winrate":0.6
+  },
+  {
+    "patch":15.14,
+    "split":"Split 3",
+    "objective":"soul",
+    "league":"LTA S",
+    "games":6.0,
+    "winrate":0.8333333333
+  },
+  {
+    "patch":15.14,
+    "split":"Split 3",
+    "objective":"atakhan",
+    "league":"LTA S",
+    "games":10.0,
+    "winrate":0.8
+  },
+  {
+    "patch":15.14,
+    "split":"Split 3",
+    "objective":"elder",
+    "league":"LTA S",
+    "games":0.0,
+    "winrate":0.0
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"baron",
+    "league":"LTA S",
+    "games":20.0,
+    "winrate":0.9
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"herald",
+    "league":"LTA S",
+    "games":20.0,
+    "winrate":0.5
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"void grub",
+    "league":"LTA S",
+    "games":20.0,
+    "winrate":0.6
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"soul",
+    "league":"LTA S",
+    "games":12.0,
+    "winrate":1.0
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"atakhan",
+    "league":"LTA S",
+    "games":20.0,
+    "winrate":0.8
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"elder",
+    "league":"LTA S",
+    "games":0.0,
+    "winrate":0.0
+  },
+  {
+    "patch":15.14,
+    "split":"Split 3",
+    "objective":"baron",
+    "league":"LTA N",
+    "games":7.0,
+    "winrate":1.0
+  },
+  {
+    "patch":15.14,
+    "split":"Split 3",
+    "objective":"herald",
+    "league":"LTA N",
+    "games":8.0,
+    "winrate":0.75
+  },
+  {
+    "patch":15.14,
+    "split":"Split 3",
+    "objective":"void grub",
+    "league":"LTA N",
+    "games":8.0,
+    "winrate":0.375
+  },
+  {
+    "patch":15.14,
+    "split":"Split 3",
+    "objective":"soul",
+    "league":"LTA N",
+    "games":3.0,
+    "winrate":1.0
+  },
+  {
+    "patch":15.14,
+    "split":"Split 3",
+    "objective":"atakhan",
+    "league":"LTA N",
+    "games":8.0,
+    "winrate":0.75
+  },
+  {
+    "patch":15.14,
+    "split":"Split 3",
+    "objective":"elder",
+    "league":"LTA N",
+    "games":0.0,
+    "winrate":0.0
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"baron",
+    "league":"LTA N",
+    "games":20.0,
+    "winrate":0.85
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"herald",
+    "league":"LTA N",
+    "games":20.0,
+    "winrate":0.6
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"void grub",
+    "league":"LTA N",
+    "games":20.0,
+    "winrate":0.7
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"soul",
+    "league":"LTA N",
+    "games":9.0,
+    "winrate":1.0
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"atakhan",
+    "league":"LTA N",
+    "games":20.0,
+    "winrate":0.7
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"elder",
+    "league":"LTA N",
+    "games":4.0,
+    "winrate":1.0
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"baron",
+    "league":"PCS",
+    "games":4.0,
+    "winrate":0.75
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"herald",
+    "league":"PCS",
+    "games":4.0,
+    "winrate":0.5
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"void grub",
+    "league":"PCS",
+    "games":4.0,
+    "winrate":0.5
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"soul",
+    "league":"PCS",
+    "games":3.0,
+    "winrate":0.6666666667
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"atakhan",
+    "league":"PCS",
+    "games":4.0,
+    "winrate":0.75
+  },
+  {
+    "patch":15.15,
+    "split":"Split 3",
+    "objective":"elder",
+    "league":"PCS",
+    "games":0.0,
+    "winrate":0.0
   }
 ]
